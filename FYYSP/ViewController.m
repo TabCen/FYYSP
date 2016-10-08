@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "ModelOne.h"
 
 @interface ViewController ()
+
+@property(nonatomic,strong)NSArray *array;
 
 @end
 
@@ -17,14 +20,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"测试git操作");
+//    [ModelOne requestDataWith_IDBlock:^(id object, NSError *error) {
+//        self.array=(NSArray *)object;
+//        NSLog(@"%ld",self.array.count);
+//    }];
+    [ModelOne requestDataWith_ArrayBlock:^(NSArray *array, NSError *error) {
+        self.array=array;
+        NSLog(@"%ld",self.array.count);
+    }];
     
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  FYYSP
+//
+//  Created by  chenfei on 16/10/8.
+//  Copyright © 2016年 chenfei. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "AFNetworking.h"
+#import "MJExtension.h"
+
+#endif /* PrefixHeader_pch */
