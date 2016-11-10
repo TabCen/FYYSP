@@ -42,9 +42,10 @@
 		9FD9C2181DA8CF4500E50986 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9C2071DA8CF4500E50986 /* UIProgressView+AFNetworking.m */; };
 		9FD9C2191DA8CF4500E50986 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9C2091DA8CF4500E50986 /* UIRefreshControl+AFNetworking.m */; };
 		9FD9C21A1DA8CF4500E50986 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9C20B1DA8CF4500E50986 /* UIWebView+AFNetworking.m */; };
-		9FD9C21E1DA8D14F00E50986 /* GlobalSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9C21D1DA8D14F00E50986 /* GlobalSingleton.m */; };
 		9FD9C2211DA8D70200E50986 /* ModelOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9C2201DA8D70200E50986 /* ModelOne.m */; };
 		9FD9C2261DA8EC1800E50986 /* NSObject+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9C2251DA8EC1800E50986 /* NSObject+Model.m */; };
+		9FFAE2E81DD46E3900D46DEC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FFAE2E71DD46E3900D46DEC /* AVFoundation.framework */; };
+		9FFAE2EC1DD46F4A00D46DEC /* GlobalSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAE2EB1DD46F4A00D46DEC /* GlobalSingleton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,8 +91,8 @@
 		9F8F49D41DA9387C006E4E0E /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
 		9FCE48E91D9D71E000E4BC13 /* FYYSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYYSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCE48ED1D9D71E000E4BC13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9FCE48EF1D9D71E000E4BC13 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9FCE48F01D9D71E000E4BC13 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9FCE48EF1D9D71E000E4BC13 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
+		9FCE48F01D9D71E000E4BC13 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
 		9FCE48F21D9D71E000E4BC13 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9FCE48F31D9D71E000E4BC13 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9FCE48F61D9D71E000E4BC13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -139,12 +140,13 @@
 		9FD9C2091DA8CF4500E50986 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		9FD9C20A1DA8CF4500E50986 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		9FD9C20B1DA8CF4500E50986 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		9FD9C21C1DA8D14F00E50986 /* GlobalSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalSingleton.h; sourceTree = "<group>"; };
-		9FD9C21D1DA8D14F00E50986 /* GlobalSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalSingleton.m; sourceTree = "<group>"; };
 		9FD9C21F1DA8D70200E50986 /* ModelOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelOne.h; sourceTree = "<group>"; };
 		9FD9C2201DA8D70200E50986 /* ModelOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelOne.m; sourceTree = "<group>"; };
 		9FD9C2241DA8EC1800E50986 /* NSObject+Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Model.h"; sourceTree = "<group>"; };
 		9FD9C2251DA8EC1800E50986 /* NSObject+Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Model.m"; sourceTree = "<group>"; };
+		9FFAE2E71DD46E3900D46DEC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9FFAE2EA1DD46F4A00D46DEC /* GlobalSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalSingleton.h; sourceTree = "<group>"; };
+		9FFAE2EB1DD46F4A00D46DEC /* GlobalSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalSingleton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FFAE2E81DD46E3900D46DEC /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +212,7 @@
 				9FCE49081D9D71E000E4BC13 /* FYYSPTests */,
 				9FCE49131D9D71E000E4BC13 /* FYYSPUITests */,
 				9FCE48EA1D9D71E000E4BC13 /* Products */,
+				9FFAE2E61DD46E3900D46DEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -225,15 +229,10 @@
 		9FCE48EB1D9D71E000E4BC13 /* FYYSP */ = {
 			isa = PBXGroup;
 			children = (
-				9FCE48EF1D9D71E000E4BC13 /* AppDelegate.h */,
-				9FCE48F01D9D71E000E4BC13 /* AppDelegate.m */,
-				9FD9C1E11DA89C1800E50986 /* Class */,
-				9FD9C1E41DA89C1800E50986 /* Utils */,
-				9FD9C1E01DA89C1800E50986 /* 3Tools */,
-				9FD9C1E21DA89C1800E50986 /* FrameWorks */,
-				9FD9C1E31DA89C1800E50986 /* NetWork */,
-				9FD9C21B1DA8D14F00E50986 /* GlobalService */,
-				9FD9C1E61DA89CD900E50986 /* Config */,
+				9FD9C1E11DA89C1800E50986 /* Class(主要类) */,
+				9FD9C1E41DA89C1800E50986 /* Utils(工具) */,
+				9FD9C1E61DA89CD900E50986 /* Config(配置) */,
+				9FD9C1E01DA89C1800E50986 /* 3Tools(第三方) */,
 				9FCE48EC1D9D71E000E4BC13 /* Supporting Files */,
 			);
 			path = FYYSP;
@@ -274,50 +273,44 @@
 			path = FYYSPUITests;
 			sourceTree = "<group>";
 		};
-		9FD9C1E01DA89C1800E50986 /* 3Tools */ = {
+		9FD9C1E01DA89C1800E50986 /* 3Tools(第三方) */ = {
 			isa = PBXGroup;
 			children = (
 				9F8F49BD1DA9387C006E4E0E /* MJExtension */,
 				9FD9C1E81DA8CF4500E50986 /* AFNetworking3.0 */,
 			);
+			name = "3Tools(第三方)";
 			path = 3Tools;
 			sourceTree = "<group>";
 		};
-		9FD9C1E11DA89C1800E50986 /* Class */ = {
+		9FD9C1E11DA89C1800E50986 /* Class(主要类) */ = {
 			isa = PBXGroup;
 			children = (
+				9FFAE2E01DD46CE600D46DEC /* Base(重写) */,
+				9FFAE2E11DD46CE600D46DEC /* Main(主要) */,
+				9FFAE2E21DD46CE600D46DEC /* Other(其它) */,
 			);
+			name = "Class(主要类)";
 			path = Class;
 			sourceTree = "<group>";
 		};
-		9FD9C1E21DA89C1800E50986 /* FrameWorks */ = {
+		9FD9C1E41DA89C1800E50986 /* Utils(工具) */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = FrameWorks;
-			sourceTree = "<group>";
-		};
-		9FD9C1E31DA89C1800E50986 /* NetWork */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NetWork;
-			sourceTree = "<group>";
-		};
-		9FD9C1E41DA89C1800E50986 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
+				9FFAE2ED1DD4712400D46DEC /* NetWork */,
 				9FD9C2241DA8EC1800E50986 /* NSObject+Model.h */,
 				9FD9C2251DA8EC1800E50986 /* NSObject+Model.m */,
 			);
+			name = "Utils(工具)";
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		9FD9C1E61DA89CD900E50986 /* Config */ = {
+		9FD9C1E61DA89CD900E50986 /* Config(配置) */ = {
 			isa = PBXGroup;
 			children = (
 				9FD9C1E71DA89D9E00E50986 /* PrefixHeader.pch */,
 			);
+			name = "Config(配置)";
 			path = Config;
 			sourceTree = "<group>";
 		};
@@ -377,13 +370,55 @@
 			path = "UIKit+AFNetworking";
 			sourceTree = "<group>";
 		};
-		9FD9C21B1DA8D14F00E50986 /* GlobalService */ = {
+		9FFAE2E01DD46CE600D46DEC /* Base(重写) */ = {
 			isa = PBXGroup;
 			children = (
-				9FD9C21C1DA8D14F00E50986 /* GlobalSingleton.h */,
-				9FD9C21D1DA8D14F00E50986 /* GlobalSingleton.m */,
+			);
+			name = "Base(重写)";
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9FFAE2E11DD46CE600D46DEC /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Main(主要)";
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9FFAE2E21DD46CE600D46DEC /* Other(其它) */ = {
+			isa = PBXGroup;
+			children = (
+				9FFAE2E91DD46F4A00D46DEC /* GlobalService */,
+				9FCE48EF1D9D71E000E4BC13 /* AppDelegate.h */,
+				9FCE48F01D9D71E000E4BC13 /* AppDelegate.m */,
+			);
+			name = "Other(其它)";
+			path = Other;
+			sourceTree = "<group>";
+		};
+		9FFAE2E61DD46E3900D46DEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FFAE2E71DD46E3900D46DEC /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9FFAE2E91DD46F4A00D46DEC /* GlobalService */ = {
+			isa = PBXGroup;
+			children = (
+				9FFAE2EA1DD46F4A00D46DEC /* GlobalSingleton.h */,
+				9FFAE2EB1DD46F4A00D46DEC /* GlobalSingleton.m */,
 			);
 			path = GlobalService;
+			sourceTree = "<group>";
+		};
+		9FFAE2ED1DD4712400D46DEC /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetWork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,13 +551,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FD9C21E1DA8D14F00E50986 /* GlobalSingleton.m in Sources */,
 				9F8F49DB1DA9387C006E4E0E /* NSObject+MJClass.m in Sources */,
 				9FD9C2261DA8EC1800E50986 /* NSObject+Model.m in Sources */,
 				9FD9C20E1DA8CF4500E50986 /* AFSecurityPolicy.m in Sources */,
 				9FD9C2101DA8CF4500E50986 /* AFURLResponseSerialization.m in Sources */,
 				9F8F49D91DA9387C006E4E0E /* MJPropertyKey.m in Sources */,
 				9F8F49DA1DA9387C006E4E0E /* MJPropertyType.m in Sources */,
+				9FFAE2EC1DD46F4A00D46DEC /* GlobalSingleton.m in Sources */,
 				9FCE48F41D9D71E000E4BC13 /* ViewController.m in Sources */,
 				9FCE48FA1D9D71E000E4BC13 /* FYYSP.xcdatamodeld in Sources */,
 				9FD9C20C1DA8CF4500E50986 /* AFHTTPSessionManager.m in Sources */,

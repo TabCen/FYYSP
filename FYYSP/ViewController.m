@@ -24,11 +24,12 @@
 //        self.array=(NSArray *)object;
 //        NSLog(@"%ld",self.array.count);
 //    }];
+    
+    //实现了model层进行网络请求。网络请求在model层对象对应的类方法中进行，通过回调的方法把请求的数据传给控制器。
     [ModelOne requestDataWith_ArrayBlock:^(NSArray *array, NSError *error) {
         self.array=array;
         NSLog(@"%ld",self.array.count);
     }];
-    
 }
 
 - (void)didReceiveMemoryWarning {

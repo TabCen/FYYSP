@@ -1,7 +1,7 @@
 //
 //  PrefixHeader.pch
 //  FYYSP
-//
+/// 这里的配置文件是对项目中进行宏定义
 //  Created by  chenfei on 16/10/8.
 //  Copyright © 2016年 chenfei. All rights reserved.
 //

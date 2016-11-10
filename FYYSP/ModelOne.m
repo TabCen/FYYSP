@@ -57,10 +57,9 @@
                          @"a":@"list",
                          @"c":@"data"
                          };
-
+    
     return [manage POST:@"http://api.budejie.com/api/api_open.php" parameters:dict progress:^(NSProgress * _Nonnull uploadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
         NSMutableArray *array=[ModelOne mj_objectArrayWithKeyValuesArray:(NSArray *)[responseObject valueForKeyPath:@"list"]];
         
         block(array,nil);
