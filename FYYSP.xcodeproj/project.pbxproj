@@ -45,7 +45,6 @@
 		9FD9C2211DA8D70200E50986 /* ModelOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9C2201DA8D70200E50986 /* ModelOne.m */; };
 		9FD9C2261DA8EC1800E50986 /* NSObject+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9C2251DA8EC1800E50986 /* NSObject+Model.m */; };
 		9FFAE2E81DD46E3900D46DEC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FFAE2E71DD46E3900D46DEC /* AVFoundation.framework */; };
-		9FFAE2EC1DD46F4A00D46DEC /* GlobalSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAE2EB1DD46F4A00D46DEC /* GlobalSingleton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,8 +144,6 @@
 		9FD9C2241DA8EC1800E50986 /* NSObject+Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Model.h"; sourceTree = "<group>"; };
 		9FD9C2251DA8EC1800E50986 /* NSObject+Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Model.m"; sourceTree = "<group>"; };
 		9FFAE2E71DD46E3900D46DEC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		9FFAE2EA1DD46F4A00D46DEC /* GlobalSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalSingleton.h; sourceTree = "<group>"; };
-		9FFAE2EB1DD46F4A00D46DEC /* GlobalSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalSingleton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -408,8 +405,6 @@
 		9FFAE2E91DD46F4A00D46DEC /* GlobalService */ = {
 			isa = PBXGroup;
 			children = (
-				9FFAE2EA1DD46F4A00D46DEC /* GlobalSingleton.h */,
-				9FFAE2EB1DD46F4A00D46DEC /* GlobalSingleton.m */,
 			);
 			path = GlobalService;
 			sourceTree = "<group>";
@@ -557,7 +552,6 @@
 				9FD9C2101DA8CF4500E50986 /* AFURLResponseSerialization.m in Sources */,
 				9F8F49D91DA9387C006E4E0E /* MJPropertyKey.m in Sources */,
 				9F8F49DA1DA9387C006E4E0E /* MJPropertyType.m in Sources */,
-				9FFAE2EC1DD46F4A00D46DEC /* GlobalSingleton.m in Sources */,
 				9FCE48F41D9D71E000E4BC13 /* ViewController.m in Sources */,
 				9FCE48FA1D9D71E000E4BC13 /* FYYSP.xcdatamodeld in Sources */,
 				9FD9C20C1DA8CF4500E50986 /* AFHTTPSessionManager.m in Sources */,
