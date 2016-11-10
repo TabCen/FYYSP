@@ -23,33 +23,6 @@
     return self;
 }
 
-//+(NSURLSessionDataTask *)requestDataWith_IDBlock:(void (^)(id, NSError *))block{
-//    AFHTTPSessionManager *manage=[[AFHTTPSessionManager alloc]init];
-//    
-//    NSDictionary *dict=@{
-//                         @"a":@"list",
-//                         @"c":@"data"
-//                         };
-//    
-//    return [manage POST:@"http://api.budejie.com/api/api_open.php" parameters:dict progress:^(NSProgress * _Nonnull uploadProgress) {
-//    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        
-//        NSInteger num=((NSArray *)[responseObject valueForKey:@"list"]).count;
-//        
-//        NSMutableArray *array=[NSMutableArray arrayWithCapacity:num];
-//        
-//        for (int i=0; i<num; i++) {
-//            NSDictionary *dict=[(NSArray *)[responseObject valueForKey:@"list"] objectAtIndex:i];
-//            ModelOne *model = [[ModelOne alloc]initWithAttribute:dict];
-//            [array addObject:model];
-//            
-//        }
-//        block(array,nil);
-//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//        block(nil,error);
-//    }];
-//}
-
 +(NSURLSessionDataTask *)requestDataWith_ArrayBlock:(void (^)(NSArray *, NSError *))block{
     AFHTTPSessionManager *manage=[[AFHTTPSessionManager alloc]init];
     
