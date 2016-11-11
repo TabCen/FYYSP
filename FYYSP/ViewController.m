@@ -24,6 +24,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    UIButton *button=[[UIButton alloc]initWithFrame:CGRectMake(0 , 100 , 100, 40)];
+    button.backgroundColor=[UIColor redColor];
+    [button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:button];
+    
+    
 //    [ModelOne requestDataWith_IDBlock:^(id object, NSError *error) {
 //        self.array=(NSArray *)object;
 //        NSLog(@"%ld",self.array.count);
@@ -36,6 +44,17 @@
 //        NSLog(@"%ld",self.array.count);
 //    }];
 }
+
+
+- (void)buttonClicked:(id)sender{
+    
+    BaseViewController *baseVC=[[BaseViewController alloc]init];
+    
+    baseVC.hidesBottomBarWhenPushed=YES;
+    [self.navigationController pushViewController:baseVC animated:YES];
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

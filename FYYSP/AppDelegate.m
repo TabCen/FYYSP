@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "BaseNavigationController.h"
+#import "ViewController.h"
+#import "BaseNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +19,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor=[UIColor whiteColor];
+    ViewController *vc=[[ViewController alloc]init];
+    BaseNavigationController *nv=[[BaseNavigationController alloc]initWithRootViewController:vc];
+    self.window.rootViewController=nv;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

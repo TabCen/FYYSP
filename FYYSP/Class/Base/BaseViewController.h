@@ -10,4 +10,7 @@
 
 @interface BaseViewController : UIViewController
 
+@property(nonatomic,assign)BOOL allowPanBackGesture;
+
+
 @end
