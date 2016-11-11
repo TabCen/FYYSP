@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "ModelOne.h"
 
-#import "BaseViewController.h"
+
 
 @interface ViewController ()
 
@@ -23,7 +23,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     
     UIButton *button=[[UIButton alloc]initWithFrame:CGRectMake(0 , 100 , 100, 40)];
     button.backgroundColor=[UIColor redColor];
@@ -49,8 +48,9 @@
 - (void)buttonClicked:(id)sender{
     
     BaseViewController *baseVC=[[BaseViewController alloc]init];
-    
     baseVC.hidesBottomBarWhenPushed=YES;
+    baseVC.hideNavigationBar=YES;
+    baseVC.allowPanBackGesture=YES;
     [self.navigationController pushViewController:baseVC animated:YES];
 }
 

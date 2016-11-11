@@ -12,5 +12,6 @@
 
 @property(nonatomic,assign)BOOL allowPanBackGesture;
 
+@property(nonatomic,assign)BOOL hideNavigationBar;
 
 @end
