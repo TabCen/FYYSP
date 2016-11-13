@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSObject+Model.h"
 
 @interface ModelOne : NSObject
 

@@ -1,14 +1,14 @@
 //
-//  NSObject+Model.h
+//  BaseModel.h
 //  FYYSP
-//
-//  Created by  chenfei on 16/10/8.
+//  Model层进行网络请求
+//  Created by  chenfei on 2016/11/11.
 //  Copyright © 2016年 chenfei. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (Model)
+@interface BaseModel : NSObject
 
 /**
  *  Model层网络请求返回数组
@@ -36,7 +36,5 @@
  *  @return 类似AFN网络请求可以不做接受返回值
  */
 +(NSURLSessionDataTask *)requestDataWith_IDBlock:(void (^)(id object,NSError *error))block;
-
-
 
 @end

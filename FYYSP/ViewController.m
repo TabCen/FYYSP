@@ -30,7 +30,6 @@
     
     [self.view addSubview:button];
     
-    
 //    [ModelOne requestDataWith_IDBlock:^(id object, NSError *error) {
 //        self.array=(NSArray *)object;
 //        NSLog(@"%ld",self.array.count);
@@ -50,7 +49,7 @@
     BaseViewController *baseVC=[[BaseViewController alloc]init];
     baseVC.hidesBottomBarWhenPushed=YES;
     baseVC.hideNavigationBar=YES;
-    baseVC.allowPanBackGesture=YES;
+    baseVC.allowPanBackGesture_system=YES;
     [self.navigationController pushViewController:baseVC animated:YES];
 }
 

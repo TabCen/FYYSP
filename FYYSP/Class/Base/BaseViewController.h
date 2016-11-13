@@ -10,8 +10,12 @@
 
 @interface BaseViewController : UIViewController
 
-@property(nonatomic,assign)BOOL allowPanBackGesture;
+@property(nonatomic,assign)BOOL allowPanBackGesture_system;
 
 @property(nonatomic,assign)BOOL hideNavigationBar;
+
+#pragma mark - 常用方法
+
+- (void)setBackButton:(BOOL)isShown;
 
 @end

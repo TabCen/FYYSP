@@ -38,7 +38,7 @@
 }
 
 -(void)allow_Nav_InteractivePopGesture{
-    if (!self.allowPanBackGesture) {
+    if (!self.allowPanBackGesture_system) {
         return;
     }
     
@@ -46,6 +46,7 @@
         self.navigationController.interactivePopGestureRecognizer.enabled=YES;
         self.navigationController.interactivePopGestureRecognizer.delegate=self;
     }
+    
 //    NSArray *gestureArray = self.navigationController.view.gestureRecognizers;//获取所有的手势
 //    for (UIGestureRecognizer *gesture in gestureArray) {
 //        if ([gesture isKindOfClass:[UIScreenEdgePanGestureRecognizer class]]) {
@@ -64,5 +65,20 @@
     }
 }
 
+
+#pragma mark - 常用方法
+
+- (void)setBackButton:(BOOL)isShown{
+    if (isShown)
+    {
+        UIButton *backBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 10, 18)];
+        [backBtn setImage:[UIImage imageNamed:@"cancel-left"] forState:UIControlStateNormal];
+        [backBtn addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+    } else
+    {
+        self.navigationItem.leftBarButtonItem = nil;
+    }
+}
 
 @end
