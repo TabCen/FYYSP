@@ -57,45 +57,30 @@
 
 - (void)buttonClicked:(id)sender{
     
+    UIViewController *b=[[UIViewController alloc]init];
+    b.view.backgroundColor=[UIColor redColor];
+    [self.navigationController pushViewController:b animated:YES];
+    
 //    BaseViewController *baseVC=[[BaseViewController alloc]init];
 //    baseVC.hidesBottomBarWhenPushed=YES;
 //    baseVC.hideNavigationBar=YES;
 //    baseVC.allowPanBackGesture_system=YES;
 //    [self.navigationController pushViewController:baseVC animated:YES];
     
-    NSURLSession *session=[NSURLSession sharedSession];
-    
-    NSURL *url=[NSURL URLWithString:@"http://api.budejie.com/api/api_open.php"];
-    
-    NSURLSessionDataTask *task=[session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        if (!error) {
-            
-        }
-    }];
-    
-    [task resume];
+//    NSURLSession *session=[NSURLSession sharedSession];
+//    
+//    NSURL *url=[NSURL URLWithString:@"http://api.budejie.com/api/api_open.php"];
+//    
+//    NSURLSessionDataTask *task=[session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+//        if (!error) {
+//            
+//        }
+//    }];
+//    
+//    [task resume];
     
 }
 
-/**
- a          true	string	参数值为list，如果想要获取“新帖”板块的帖子，则传入"newlist"即可
- appname	false	string	参数为baisishequ 分享到朋友圈时候使用
- asid       false	string	AC824640-5493-4DAD-B356-F84136BE8A55
- c          true	string	data
- client     false	string	iphone
- device     false	string	ios设备
- from       false	string	ios
- jbk        false	int	一般为“0”
- maxtime	true	string	第一次加载帖子时候不需要传入此关键字，当需要加载下一页时：需要传入加载上一页时返回值字段“maxtime”中的内容。
- openudid	false	string	19deb9dde5ccf65fe1623b59a5ebeff55bcbc319
- page       false	int	当前所加载的页码数，默认为0
- per        false	int	每页显示的帖子数量，默认为20
- sub_flag	false	int	1
- type       false	int	1为全部，10为图片，29为段子，31为音频，41为视频，默认为1
- uid        false	string	当前所登陆的用户id,如果未登录则为空
- ver        false	string	当前所安装的app的版本
-
- */
 -(void)button2Clicked:(id)sender{
     NSURL *url=[NSURL URLWithString:@"http://api.budejie.com"];
     

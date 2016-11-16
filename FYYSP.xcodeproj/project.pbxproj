@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F0BAAE01DDAB6420096BDD4 /* CFProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BAADD1DDAB6420096BDD4 /* CFProgressHUD.m */; };
+		9F0BAAE11DDAB6420096BDD4 /* WCGraintCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BAADF1DDAB6420096BDD4 /* WCGraintCircleLayer.m */; };
+		9F0BAAE91DDAE5050096BDD4 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BAAE81DDAE5050096BDD4 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		9F23B9A91DD9BBB100BD66A3 /* CFNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F23B9A81DD9BBB100BD66A3 /* CFNetworkingManager.m */; };
+		9F23B9AC1DD9BBC300BD66A3 /* PRO_NewtworkingManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F23B9AB1DD9BBC300BD66A3 /* PRO_NewtworkingManage.m */; };
 		9F288E881DD4CECF00280690 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F288E871DD4CECF00280690 /* BaseViewController.m */; };
 		9F288E8D1DD547BA00280690 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F288E8C1DD547BA00280690 /* BaseNavigationController.m */; };
 		9F288EA91DD55F3300280690 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F288E8F1DD55F3300280690 /* Info.plist */; };
@@ -131,6 +136,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F0BAADC1DDAB6420096BDD4 /* CFProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFProgressHUD.h; sourceTree = "<group>"; };
+		9F0BAADD1DDAB6420096BDD4 /* CFProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFProgressHUD.m; sourceTree = "<group>"; };
+		9F0BAADE1DDAB6420096BDD4 /* WCGraintCircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCGraintCircleLayer.h; sourceTree = "<group>"; };
+		9F0BAADF1DDAB6420096BDD4 /* WCGraintCircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCGraintCircleLayer.m; sourceTree = "<group>"; };
+		9F0BAAE71DDAE5050096BDD4 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		9F0BAAE81DDAE5050096BDD4 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		9F23B9A71DD9BBB100BD66A3 /* CFNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNetworkingManager.h; sourceTree = "<group>"; };
+		9F23B9A81DD9BBB100BD66A3 /* CFNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFNetworkingManager.m; sourceTree = "<group>"; };
+		9F23B9AA1DD9BBC300BD66A3 /* PRO_NewtworkingManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRO_NewtworkingManage.h; sourceTree = "<group>"; };
+		9F23B9AB1DD9BBC300BD66A3 /* PRO_NewtworkingManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRO_NewtworkingManage.m; sourceTree = "<group>"; };
 		9F288E861DD4CECF00280690 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		9F288E871DD4CECF00280690 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		9F288E8A1DD4DC8000280690 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
@@ -377,6 +392,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F0BAADB1DDAB6420096BDD4 /* CFProgressHub */ = {
+			isa = PBXGroup;
+			children = (
+				9F0BAADC1DDAB6420096BDD4 /* CFProgressHUD.h */,
+				9F0BAADD1DDAB6420096BDD4 /* CFProgressHUD.m */,
+				9F0BAADE1DDAB6420096BDD4 /* WCGraintCircleLayer.h */,
+				9F0BAADF1DDAB6420096BDD4 /* WCGraintCircleLayer.m */,
+			);
+			path = CFProgressHub;
+			sourceTree = "<group>";
+		};
+		9F0BAAE61DDAE5050096BDD4 /* FDFullscreenPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				9F0BAAE71DDAE5050096BDD4 /* UINavigationController+FDFullscreenPopGesture.h */,
+				9F0BAAE81DDAE5050096BDD4 /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = FDFullscreenPopGesture;
+			sourceTree = "<group>";
+		};
 		9F288E8E1DD55F3300280690 /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
@@ -738,6 +773,8 @@
 		9FD9C1E01DA89C1800E50986 /* 3Tools(第三方) */ = {
 			isa = PBXGroup;
 			children = (
+				9F0BAAE61DDAE5050096BDD4 /* FDFullscreenPopGesture */,
+				9F0BAADB1DDAB6420096BDD4 /* CFProgressHub */,
 				9F288F331DD594C000280690 /* SDWebImage */,
 				9F288EFA1DD56A2700280690 /* IQKeyboardManager */,
 				9F288EF61DD5633000280690 /* MBProgresssHUD */,
@@ -891,6 +928,10 @@
 		9FFAE2ED1DD4712400D46DEC /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				9F23B9AA1DD9BBC300BD66A3 /* PRO_NewtworkingManage.h */,
+				9F23B9AB1DD9BBC300BD66A3 /* PRO_NewtworkingManage.m */,
+				9F23B9A71DD9BBB100BD66A3 /* CFNetworkingManager.h */,
+				9F23B9A81DD9BBB100BD66A3 /* CFNetworkingManager.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -962,6 +1003,7 @@
 				TargetAttributes = {
 					9FCE48E81D9D71E000E4BC13 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2JX92W966H;
 					};
 					9FCE49041D9D71E000E4BC13 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1031,6 +1073,7 @@
 				9F288F591DD594C000280690 /* SDWebImageDecoder.m in Sources */,
 				9F288F211DD56A2700280690 /* IQUITextFieldView+Additions.m in Sources */,
 				9F8F49DB1DA9387C006E4E0E /* NSObject+MJClass.m in Sources */,
+				9F0BAAE91DDAE5050096BDD4 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				9F288EEB1DD5604F00280690 /* MJRefreshBackStateFooter.m in Sources */,
 				9F288F2C1DD56A2700280690 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				9F288F581DD594C000280690 /* SDWebImageCompat.m in Sources */,
@@ -1069,6 +1112,8 @@
 				9F288F611DD594C000280690 /* UIImage+WebP.m in Sources */,
 				9F288EF11DD5604F00280690 /* UIScrollView+MJExtension.m in Sources */,
 				9F288F5C1DD594C000280690 /* SDWebImageManager.m in Sources */,
+				9F23B9A91DD9BBB100BD66A3 /* CFNetworkingManager.m in Sources */,
+				9F23B9AC1DD9BBC300BD66A3 /* PRO_NewtworkingManage.m in Sources */,
 				9F288E881DD4CECF00280690 /* BaseViewController.m in Sources */,
 				9F288EE41DD5604F00280690 /* MJRefreshFooter.m in Sources */,
 				9FD9C2181DA8CF4500E50986 /* UIProgressView+AFNetworking.m in Sources */,
@@ -1100,6 +1145,7 @@
 				9F288F5F1DD594C000280690 /* UIImage+GIF.m in Sources */,
 				9F288EAD1DD55F3300280690 /* MASLayoutConstraint.m in Sources */,
 				9F8F49DF1DA9387C006E4E0E /* NSString+MJExtension.m in Sources */,
+				9F0BAAE11DDAB6420096BDD4 /* WCGraintCircleLayer.m in Sources */,
 				9F288EAA1DD55F3300280690 /* MASCompositeConstraint.m in Sources */,
 				9F288F641DD594C000280690 /* UIView+WebCacheOperation.m in Sources */,
 				9F8F49D81DA9387C006E4E0E /* MJProperty.m in Sources */,
@@ -1112,6 +1158,7 @@
 				9F288F261DD56A2700280690 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				9F288F671DD5952900280690 /* BaseModel.m in Sources */,
 				9F288F1F1DD56A2700280690 /* IQNSArray+Sort.m in Sources */,
+				9F0BAAE01DDAB6420096BDD4 /* CFProgressHUD.m in Sources */,
 				9F288EB31DD55F3300280690 /* ViewController+MASAdditions.m in Sources */,
 				9FD9C2121DA8CF4500E50986 /* AFAutoPurgingImageCache.m in Sources */,
 				9F288F241DD56A2700280690 /* IQUIWindow+Hierarchy.m in Sources */,
@@ -1264,6 +1311,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2JX92W966H;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FYYSP/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = FYYSP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1276,6 +1324,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2JX92W966H;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FYYSP/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = FYYSP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
