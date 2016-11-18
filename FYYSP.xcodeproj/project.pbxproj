@@ -11,7 +11,6 @@
 		9F0BAAE11DDAB6420096BDD4 /* WCGraintCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BAADF1DDAB6420096BDD4 /* WCGraintCircleLayer.m */; };
 		9F0BAAE91DDAE5050096BDD4 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BAAE81DDAE5050096BDD4 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		9F23B9A91DD9BBB100BD66A3 /* CFNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F23B9A81DD9BBB100BD66A3 /* CFNetworkingManager.m */; };
-		9F23B9AC1DD9BBC300BD66A3 /* PRO_NewtworkingManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F23B9AB1DD9BBC300BD66A3 /* PRO_NewtworkingManage.m */; };
 		9F288E881DD4CECF00280690 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F288E871DD4CECF00280690 /* BaseViewController.m */; };
 		9F288E8D1DD547BA00280690 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F288E8C1DD547BA00280690 /* BaseNavigationController.m */; };
 		9F288EA91DD55F3300280690 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F288E8F1DD55F3300280690 /* Info.plist */; };
@@ -144,8 +143,6 @@
 		9F0BAAE81DDAE5050096BDD4 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		9F23B9A71DD9BBB100BD66A3 /* CFNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNetworkingManager.h; sourceTree = "<group>"; };
 		9F23B9A81DD9BBB100BD66A3 /* CFNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFNetworkingManager.m; sourceTree = "<group>"; };
-		9F23B9AA1DD9BBC300BD66A3 /* PRO_NewtworkingManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRO_NewtworkingManage.h; sourceTree = "<group>"; };
-		9F23B9AB1DD9BBC300BD66A3 /* PRO_NewtworkingManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRO_NewtworkingManage.m; sourceTree = "<group>"; };
 		9F288E861DD4CECF00280690 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		9F288E871DD4CECF00280690 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		9F288E8A1DD4DC8000280690 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
@@ -928,8 +925,6 @@
 		9FFAE2ED1DD4712400D46DEC /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
-				9F23B9AA1DD9BBC300BD66A3 /* PRO_NewtworkingManage.h */,
-				9F23B9AB1DD9BBC300BD66A3 /* PRO_NewtworkingManage.m */,
 				9F23B9A71DD9BBB100BD66A3 /* CFNetworkingManager.h */,
 				9F23B9A81DD9BBB100BD66A3 /* CFNetworkingManager.m */,
 			);
@@ -1113,7 +1108,6 @@
 				9F288EF11DD5604F00280690 /* UIScrollView+MJExtension.m in Sources */,
 				9F288F5C1DD594C000280690 /* SDWebImageManager.m in Sources */,
 				9F23B9A91DD9BBB100BD66A3 /* CFNetworkingManager.m in Sources */,
-				9F23B9AC1DD9BBC300BD66A3 /* PRO_NewtworkingManage.m in Sources */,
 				9F288E881DD4CECF00280690 /* BaseViewController.m in Sources */,
 				9F288EE41DD5604F00280690 /* MJRefreshFooter.m in Sources */,
 				9FD9C2181DA8CF4500E50986 /* UIProgressView+AFNetworking.m in Sources */,

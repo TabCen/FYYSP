@@ -39,27 +39,28 @@
     [btn2 addTarget:self action:@selector(btn2didClicked) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn2];
     
-    
+}
 
+-(void)btnclicked{
+    NSURL *url = [NSURL URLWithString:@"http://api.budejie.com/api/api_open.php?a=list&c=data"];
+    NSURLRequest *request=[[NSURLRequest alloc]initWithURL:url];
+
+    NSURLSession *session=[NSURLSession sharedSession];
+
+    NSURLSessionDataTask * task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"%@",error);
+        }else{
+
+            NSLog(@"%@",data);
+        }
+    }];
+    
+    [task resume];
+    
 }
 
 -(void)btn1didClicked{
-
-//    NSURL *url = [NSURL URLWithString:@"http://api.budejie.com/api/api_open.php?a=list&c=data"];
-//    NSURLRequest *request=[[NSURLRequest alloc]initWithURL:url];
-
-//    NSURLSession *session=[NSURLSession sharedSession];
-//
-//    NSURLSessionDataTask * task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-//        if (error) {
-//            NSLog(@"%@",error);
-//        }else{
-//            
-//            NSLog(@"%@",data);
-//        }
-//    }];
-//    
-//    [task resume];
     
     [[CFNetworkingManager manager] GET:@"http://api.budejie.com/api/api_open.php?a=list&c=data" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"%@",responseObject);
