@@ -48,7 +48,6 @@ typedef enum : NSUInteger {
                                 failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure
                                 showHUD:(BOOL)showHUD;
 
-
 - (void)cancelRequest;
 
 @end

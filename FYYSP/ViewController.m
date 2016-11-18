@@ -16,7 +16,7 @@
 
 @interface ViewController ()
 
-@property(nonatomic,strong)NSArray *array;
+@property(nonatomic,strong)NSArray *model_array;
 
 
 @end
@@ -57,21 +57,24 @@
     }];
     
     [task resume];
-    
 }
 
 -(void)btn1didClicked{
-    
-    [[CFNetworkingManager manager] GET:@"http://api.budejie.com/api/api_open.php?a=list&c=data" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"%@",responseObject);
-    
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        if (error) {
-            NSLog(@"%@",error);
+    [ModelOne requestDataWith_ArrayBlock:^(NSArray *array, NSError *error) {
+        if (!error) {
+            self.model_array = array;
+            [self printLog];
+        }else{
+            NSLog(@"异常存在的情况");
         }
-    } showHUD:YES];
-    
+    }];
 }
+
+-(void)printLog{
+    ModelOne *one = (ModelOne *)[self.model_array objectAtIndex:0];
+    NSLog(@"--->>>>name:%@   image0:%@",one.name,one.image0);
+}
+
 
 -(void)btn2didClicked{
     NSMutableDictionary *parms= [NSMutableDictionary dictionary ];
@@ -95,6 +98,7 @@
     } showHUD:YES];
     
 }
+
 
 
 - (void)didReceiveMemoryWarning {

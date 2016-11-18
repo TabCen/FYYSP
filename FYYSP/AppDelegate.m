@@ -25,7 +25,6 @@
     ViewController *vc=[[ViewController alloc]init];
 //    UIViewController *vc=[[UIViewController alloc]init];
     
-    
     BaseNavigationController *nv=[[BaseNavigationController alloc]initWithRootViewController:vc];
     self.window.rootViewController=nv;
     [self.window makeKeyAndVisible];

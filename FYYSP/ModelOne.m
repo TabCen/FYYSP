@@ -7,6 +7,7 @@
 //
 
 #import "ModelOne.h"
+#import "CFNetworkingManager.h"
 
 
 @implementation ModelOne
@@ -24,21 +25,16 @@
 }
 
 +(NSURLSessionDataTask *)requestDataWith_ArrayBlock:(void (^)(NSArray *, NSError *))block{
-    AFHTTPSessionManager *manage=[[AFHTTPSessionManager alloc]init];
-    
-    NSDictionary *dict=@{
-                         @"a":@"list",
-                         @"c":@"data"
-                         };
-    
-    return [manage POST:@"http://api.budejie.com/api/api_open.php" parameters:dict progress:^(NSProgress * _Nonnull uploadProgress) {
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    return [[CFNetworkingManager manager] GET:@"http://api.budejie.com/api/api_open.php?a=list&c=data" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSMutableArray *array=[ModelOne mj_objectArrayWithKeyValuesArray:(NSArray *)[responseObject valueForKeyPath:@"list"]];
-        
-        block(array,nil);
+        if (block) {
+            block([NSArray arrayWithArray:array],nil);
+        }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        block(nil,error);
-    }];
+        if (block) {
+            block([NSArray array], error);
+        }
+    } showHUD:YES];
 }
 
 @end
