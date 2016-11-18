@@ -8,8 +8,73 @@
 
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
+/**
+    设置常用宏
+*/
 
-#import "AFNetworking.h"
-#import "MJExtension.h"
+///判断是否是真机还是模拟器
+#if TARGET_IPHONE_SIMULATOR//模拟器
+#define IS_IPHONE NO
+#elif TARGET_OS_IPHONE//真机
+#define IS_IPHONE YES
+#endif
+///判断是iPhone／iPad
+#define IS_IPHONE_DEVICE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_IPAD_DEVICE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
+///系统版本号
+#define DEVICE_SYSTEM_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+///App版本号
+#define appMPVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+///屏幕宽度和高度///屏幕适配比例 、自适应比例
+#define Screen_Full_Height [UIScreen mainScreen].bounds.size.height
+#define Screen_Full_Width [UIScreen mainScreen].bounds.size.width
+
+#define Screen_Scale_Heigth_6 Screen_Full_Height/667.0
+#define Screen_Scale_Width_6 Screen_Full_Width/375.0
+#define Screen_Scale_Heigth_5 Screen_Full_Height/568.0
+#define Screen_Scale_Width_5 Screen_Full_Width/320.0
+#define Screen_Scale_Heigth_6P Screen_Full_Height/736.0
+#define Screen_Scale_Width_6P Screen_Full_Width/414.0
+///颜色
+#define COLOR(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+#define COLOR_RGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define COLOR_RGBA(rgbValue,a) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
+///weakSelf
+#define WEAK_SELF(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+///获取图片资源
+#define GetImage(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
+
+///获取沙盒 Document
+#define kPathDocument [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
+///获取沙盒 Cache
+#define kPathCache [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+
+///GCD相关
+//在Global Queue上运行
+#define DISPATCH_ON_GLOBAL_QUEUE_HIGH(globalQueueBlocl) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), globalQueueBlocl);
+#define DISPATCH_ON_GLOBAL_QUEUE_DEFAULT(globalQueueBlocl) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), globalQueueBlocl);
+#define DISPATCH_ON_GLOBAL_QUEUE_LOW(globalQueueBlocl) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), globalQueueBlocl);
+#define DISPATCH_ON_GLOBAL_QUEUE_BACKGROUND(globalQueueBlocl) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), globalQueueBlocl);
+
+//GCD - 一次性执行
+#define kDISPATCH_ONCE_BLOCK(onceBlock) static dispatch_once_t onceToken; dispatch_once(&onceToken, onceBlock);
+//GCD - 在Main线程上运行
+#define kDISPATCH_MAIN_THREAD(mainQueueBlock) dispatch_async(dispatch_get_main_queue(), mainQueueBlock);
+//GCD - 开启异步线程
+#define kDISPATCH_GLOBAL_QUEUE_DEFAULT(globalQueueBlock) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), globalQueueBlocl);
+
+///APPLog
+#ifdef DEBUG
+#define AppLog(format,...)  NSLog((@"[函数名:%s]\n" "[行号:%d]\n" format),__FUNCTION__,__LINE__,##__VA_ARGS__)
+#else
+#define AppLog(...)
+#endif
+
+/**
+    设置编译头文件
+ */
+#import "Header.h"
 
 #endif /* PrefixHeader_pch */

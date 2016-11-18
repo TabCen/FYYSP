@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "BaseNavigationController.h"
+#import "ViewController.h"
+#import "BaseNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +19,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor=[UIColor whiteColor];
+    ViewController *vc=[[ViewController alloc]init];
+//    UIViewController *vc=[[UIViewController alloc]init];
+    
+    BaseNavigationController *nv=[[BaseNavigationController alloc]initWithRootViewController:vc];
+    self.window.rootViewController=nv;
+    [self.window makeKeyAndVisible];
+    
+    
+    [self judgeTheReachAbility];
+    
     return YES;
 }
 
@@ -121,6 +137,33 @@
             abort();
         }
     }
+}
+
+#pragma mark - 功能模块
+
+-(void)judgeTheReachAbility{
+    AFNetworkReachabilityManager *manager=[AFNetworkReachabilityManager sharedManager];
+    [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        //        NSLog(@"Reachability:%@",AFStringFromNetworkReachabilityStatus(status));
+        switch (status) {
+            case AFNetworkReachabilityStatusNotReachable:{
+                NSLog(@"++没有网络+++");
+            }break;
+            case AFNetworkReachabilityStatusReachableViaWiFi:{
+                NSLog(@"++wifi网络+++");
+            }break;
+            case AFNetworkReachabilityStatusUnknown:{
+                NSLog(@"++未知网络+++");
+            }break;
+            case AFNetworkReachabilityStatusReachableViaWWAN:{
+                NSLog(@"++wwan网络+++");
+            }break;
+            default:
+                break;
+        }
+    }];
+
+    [manager startMonitoring];
 }
 
 @end

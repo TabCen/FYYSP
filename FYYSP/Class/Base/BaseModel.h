@@ -1,14 +1,16 @@
 //
-//  NSObject+Model.h
+//  BaseModel.h
 //  FYYSP
-//
-//  Created by  chenfei on 16/10/8.
+//  Model层进行网络请求
+//  Created by  chenfei on 2016/11/11.
 //  Copyright © 2016年 chenfei. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (Model)
+@interface BaseModel : NSObject
+
+//@property(nonatomic)
 
 /**
  *  Model层网络请求返回数组
