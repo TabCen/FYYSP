@@ -11,12 +11,5 @@
 @implementation BaseModel
 
 
-//+(NSURLSessionDataTask *)requestDataWith_DictBlock:(void (^)(NSDictionary *dict,NSError *error))block{
-//    
-////    AFHTTPSessionManager *manager=[[AFHTTPSessionManager alloc]initWithBaseURL:];
-//    
-//
-//}
-
 
 @end

@@ -30,6 +30,9 @@
     self.window.rootViewController=nv;
     [self.window makeKeyAndVisible];
     
+    
+    [self judgeTheReachAbility];
+    
     return YES;
 }
 
@@ -135,6 +138,33 @@
             abort();
         }
     }
+}
+
+#pragma mark - 功能模块
+
+-(void)judgeTheReachAbility{
+    AFNetworkReachabilityManager *manager=[AFNetworkReachabilityManager sharedManager];
+    [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        //        NSLog(@"Reachability:%@",AFStringFromNetworkReachabilityStatus(status));
+        switch (status) {
+            case AFNetworkReachabilityStatusNotReachable:{
+                NSLog(@"++没有网络+++");
+            }break;
+            case AFNetworkReachabilityStatusReachableViaWiFi:{
+                NSLog(@"++wifi网络+++");
+            }break;
+            case AFNetworkReachabilityStatusUnknown:{
+                NSLog(@"++未知网络+++");
+            }break;
+            case AFNetworkReachabilityStatusReachableViaWWAN:{
+                NSLog(@"++wwan网络+++");
+            }break;
+            default:
+                break;
+        }
+    }];
+
+    [manager startMonitoring];
 }
 
 @end

@@ -10,6 +10,8 @@
 
 @interface BaseModel : NSObject
 
+//@property(nonatomic)
+
 /**
  *  Model层网络请求返回数组
  *

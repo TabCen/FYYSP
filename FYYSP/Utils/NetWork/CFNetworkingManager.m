@@ -48,6 +48,12 @@
                                success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
                                failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure
                                showHUD:(BOOL)showHUD{
+    if (![self reachable]) {
+        NSLog(@"没有网络不需要请求");
+        
+        return nil;
+    }
+    
     if (showHUD==YES) {
         [MBProgressHUD showHUDAddedTo:currentWindow animated:YES];
     }
@@ -82,6 +88,13 @@
                                 success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
                                 failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure
                                 showHUD:(BOOL)showHUD{
+    
+    if (![self reachable]) {
+        NSLog(@"没有网络不需要请求");
+        
+        return nil;
+    }
+    
     if (showHUD==YES) {
         [MBProgressHUD showHUDAddedTo:currentWindow animated:YES];
     }
@@ -150,6 +163,9 @@
     self.manage.requestSerializer.timeoutInterval = _timeoutInterval;
 }
 
+-(BOOL)reachable{
+    return [AFNetworkReachabilityManager sharedManager].reachable;
+}
 
 
 @end
