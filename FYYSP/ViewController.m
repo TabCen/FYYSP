@@ -45,53 +45,53 @@
 
 -(void)btn1didClicked{
 
-    NSURL *url = [NSURL URLWithString:@"http://api.budejie.com/api/api_open.php?a=list&c=data"];
-    NSURLRequest *request=[[NSURLRequest alloc]initWithURL:url];
+//    NSURL *url = [NSURL URLWithString:@"http://api.budejie.com/api/api_open.php?a=list&c=data"];
+//    NSURLRequest *request=[[NSURLRequest alloc]initWithURL:url];
 
-    NSURLSession *session=[NSURLSession sharedSession];
-
-    NSURLSessionDataTask * task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+//    NSURLSession *session=[NSURLSession sharedSession];
+//
+//    NSURLSessionDataTask * task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+//        if (error) {
+//            NSLog(@"%@",error);
+//        }else{
+//            
+//            NSLog(@"%@",data);
+//        }
+//    }];
+//    
+//    [task resume];
+    
+    [[CFNetworkingManager manager] GET:@"http://api.budejie.com/api/api_open.php?a=list&c=data" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"%@",responseObject);
+    
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         if (error) {
             NSLog(@"%@",error);
-        }else{
-            
-            NSLog(@"%@",data);
         }
-    }];
-    
-    [task resume];
+    } showHUD:YES];
     
 }
 
 -(void)btn2didClicked{
-    
-    
-    
-}
-
--(void)requestImageVerify{
     NSMutableDictionary *parms= [NSMutableDictionary dictionary ];
     //公共参数
     parms[@"fund['function']"] = @"NP015";//功能号
     parms[@"fund['fundchannel']"]=@"ios";
     
-    AFHTTPSessionManager *requestSessionManager=[AFHTTPSessionManager manager];
+    CFNetworkingManager *manager= [[CFNetworkingManager alloc]init];
     
-    requestSessionManager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    manager.responseSerializer = Type_AFHTTPResponseSerializer;
     
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    
-    [requestSessionManager POST:@"https://app.gomefund.com/fundApp/passportRequestImp.json?" parameters:parms progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [manager POST:@"https://app.gomefund.com/fundApp/passportRequestImp.json?" parameters:parms progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSString *tempStr=[[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
         tempStr =[tempStr stringByReplacingOccurrencesOfString:@"\\n" withString:@"\n"];
         tempStr =[tempStr stringByReplacingOccurrencesOfString:@"\"" withString:@""];
         NSLog(@"--->>>>\n%@",tempStr);
-        
-        [MBProgressHUD hideHUDForView:self.view animated:NO];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        [MBProgressHUD hideHUDForView:self.view animated:NO];
-        NSLog(@"%@",error);
-    }];
+        if (error) {
+            NSLog(@"失败了");
+        }
+    } showHUD:YES];
     
 }
 
@@ -99,5 +99,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
 
 @end

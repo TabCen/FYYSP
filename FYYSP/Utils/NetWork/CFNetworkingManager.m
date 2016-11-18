@@ -116,10 +116,10 @@
 
 #pragma mark - 懒加载
 
--(void)setRequestSerializer:(requestSerializerType *)requestSerializer{
+-(void)setRequestSerializer:(requestSerializerType)requestSerializer{
     _requestSerializer = requestSerializer;
     //在设置时需要设置manager 的RequestSerializer的样式
-    switch ((int)_requestSerializer) {
+    switch (_requestSerializer) {
         case Type_AFJSONRequestSerializer:{
             self.manage.requestSerializer = [AFJSONRequestSerializer serializer];
         }break;
@@ -130,10 +130,10 @@
     }
 }
 
--(void)setResponseSerializer:(responseSerializerType *)responseSerializer{
+-(void)setResponseSerializer:(responseSerializerType)responseSerializer{
     _responseSerializer = responseSerializer;
     
-    switch ((int)_responseSerializer) {
+    switch (_responseSerializer) {
         case Type_AFHTTPResponseSerializer:{
             self.manage.responseSerializer = [AFHTTPResponseSerializer serializer];
         }break;
@@ -148,7 +148,6 @@
     _timeoutInterval = timeoutInterval;
     
     self.manage.requestSerializer.timeoutInterval = _timeoutInterval;
-    
 }
 
 

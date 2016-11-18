@@ -25,9 +25,9 @@ typedef enum : NSUInteger {
 
 @interface CFNetworkingManager : NSObject
 
-@property(nonatomic,assign)requestSerializerType   *requestSerializer;
+@property(nonatomic,assign)requestSerializerType   requestSerializer;
 
-@property(nonatomic,assign)responseSerializerType  *responseSerializer;
+@property(nonatomic,assign)responseSerializerType  responseSerializer;
 
 @property(nonatomic,assign)NSInteger                timeoutInterval;
 
