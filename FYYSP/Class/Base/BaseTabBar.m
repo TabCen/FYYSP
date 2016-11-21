@@ -26,8 +26,8 @@
         //添加中间按钮
         self.moreButton=[[UIButton alloc] initWithFrame:CGRectZero];
         _moreButton.layer.cornerRadius=22;
-        [_moreButton setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
-        [_moreButton setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
+        [_moreButton setBackgroundImage:[UIImage imageNamed:@"icon_tabbar_like_25x25_"] forState:UIControlStateNormal];
+        [_moreButton setBackgroundImage:[UIImage imageNamed:@"icon_tabbar_like_active_25x25_"] forState:UIControlStateHighlighted];
         [self addSubview:_moreButton];
         [self bringSubviewToFront:_moreButton];
         
