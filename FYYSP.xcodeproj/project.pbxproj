@@ -85,6 +85,8 @@
 		9F73FF2E1DE2DF4D00BFFE36 /* UIViewController+BaseExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F73FF2C1DE2DF4D00BFFE36 /* UIViewController+BaseExtension.m */; };
 		9F73FF3B1DE2E77400BFFE36 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F73FF371DE2E77400BFFE36 /* SettingViewController.m */; };
 		9F73FF3C1DE2E77400BFFE36 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F73FF381DE2E77400BFFE36 /* SettingViewController.xib */; };
+		9F73FF421DE2FCC700BFFE36 /* SettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F73FF401DE2FCC700BFFE36 /* SettingTableViewCell.m */; };
+		9F73FF431DE2FCC700BFFE36 /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F73FF411DE2FCC700BFFE36 /* SettingTableViewCell.xib */; };
 		9F8F49D51DA9387C006E4E0E /* MJDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F49BF1DA9387C006E4E0E /* MJDictionaryCache.m */; };
 		9F8F49D61DA9387C006E4E0E /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F49C21DA9387C006E4E0E /* MJExtensionConst.m */; };
 		9F8F49D71DA9387C006E4E0E /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F49C41DA9387C006E4E0E /* MJFoundation.m */; };
@@ -302,6 +304,9 @@
 		9F73FF381DE2E77400BFFE36 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		9F73FF3D1DE2E8E100BFFE36 /* ColorSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorSet.h; sourceTree = "<group>"; };
 		9F73FF3E1DE2E8F600BFFE36 /* URLSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLSet.h; sourceTree = "<group>"; };
+		9F73FF3F1DE2FCC700BFFE36 /* SettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewCell.h; sourceTree = "<group>"; };
+		9F73FF401DE2FCC700BFFE36 /* SettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewCell.m; sourceTree = "<group>"; };
+		9F73FF411DE2FCC700BFFE36 /* SettingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
 		9F8F49BE1DA9387C006E4E0E /* MJDictionaryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDictionaryCache.h; sourceTree = "<group>"; };
 		9F8F49BF1DA9387C006E4E0E /* MJDictionaryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDictionaryCache.m; sourceTree = "<group>"; };
 		9F8F49C01DA9387C006E4E0E /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
@@ -771,6 +776,9 @@
 		9F73FF3A1DE2E77400BFFE36 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				9F73FF3F1DE2FCC700BFFE36 /* SettingTableViewCell.h */,
+				9F73FF401DE2FCC700BFFE36 /* SettingTableViewCell.m */,
+				9F73FF411DE2FCC700BFFE36 /* SettingTableViewCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1144,6 +1152,7 @@
 				9F288F2D1DD56A2700280690 /* IQKeyboardManager.bundle in Resources */,
 				9FCE48FC1D9D71E000E4BC13 /* Assets.xcassets in Resources */,
 				9F288EEF1DD5604F00280690 /* MJRefresh.bundle in Resources */,
+				9F73FF431DE2FCC700BFFE36 /* SettingTableViewCell.xib in Resources */,
 				9F73FF281DE2BA1900BFFE36 /* HomeViewController.xib in Resources */,
 				9FCE48F71D9D71E000E4BC13 /* Main.storyboard in Resources */,
 				9F73FF3C1DE2E77400BFFE36 /* SettingViewController.xib in Resources */,
@@ -1202,6 +1211,7 @@
 				9F3C28FA1DDC5DF100908E2D /* ViewController.m in Sources */,
 				9F288F5A1DD594C000280690 /* SDWebImageDownloader.m in Sources */,
 				9F8F49DD1DA9387C006E4E0E /* NSObject+MJKeyValue.m in Sources */,
+				9F73FF421DE2FCC700BFFE36 /* SettingTableViewCell.m in Sources */,
 				9F288F551DD594C000280690 /* MKAnnotationView+WebCache.m in Sources */,
 				9F288EED1DD5604F00280690 /* MJRefreshNormalHeader.m in Sources */,
 				9FD9C2151DA8CF4500E50986 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
