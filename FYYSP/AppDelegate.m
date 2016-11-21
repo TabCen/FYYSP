@@ -19,6 +19,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //设置引导页的停留时间
+    [NSThread sleepForTimeInterval:3];
+    //设置非导航栏状态下的状态栏状态，iOS9以后弃用，并且每一个UIViewController默认的状态栏状态为显示。所以可以不用显示，但安全起见放到rootVIewController里面再设置一下导航栏的状态
+//    [[UIApplication sharedApplication] setStatusBarHidden:YES];
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor=[UIColor whiteColor];
@@ -29,7 +33,9 @@
     self.window.rootViewController=nv;
     [self.window makeKeyAndVisible];
     
+    [self setRootViewController];
     
+    //联网状态改变时调用的方法
     [self judgeTheReachAbility];
     
     return YES;
@@ -141,6 +147,14 @@
 
 #pragma mark - 功能模块
 
+-(void)setRootViewController{
+    
+
+
+
+
+}
+
 -(void)judgeTheReachAbility{
     AFNetworkReachabilityManager *manager=[AFNetworkReachabilityManager sharedManager];
     [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
@@ -165,5 +179,8 @@
 
     [manager startMonitoring];
 }
+
+
+
 
 @end

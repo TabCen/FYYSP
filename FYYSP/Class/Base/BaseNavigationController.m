@@ -24,6 +24,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+/**
+ 返回状态栏的状态
+//设置非导航栏状态下的状态栏状态，iOS9以后弃用，并且每一个UIViewController默认的状态栏状态为显示。所以可以不用显示，但安全起见放到rootVIewController里面再设置一下导航栏的状态
+ @return 默认返回的就是NO
+ */
+-(BOOL)prefersStatusBarHidden{
+    
+    return NO;
+}
+
 /*
 #pragma mark - Navigation
 
