@@ -21,12 +21,11 @@
     self = [super initWithFrame:frame];
     if (self) {
         
-        [self setBackgroundImage:[UIImage imageNamed:@"tabbar-light"]];
-        
+//        [self setBackgroundImage:[UIImage imageNamed:@"tabbar-light"]];
         //添加中间按钮
         self.moreButton=[[UIButton alloc] initWithFrame:CGRectZero];
         _moreButton.layer.cornerRadius=22;
-        [_moreButton setBackgroundImage:[UIImage imageNamed:@"icon_tabbar_like_25x25_"] forState:UIControlStateNormal];
+        [_moreButton setBackgroundImage:[UIImage imageNamed:@"icon_tabbar_like_active_25x25_"] forState:UIControlStateNormal];
         [_moreButton setBackgroundImage:[UIImage imageNamed:@"icon_tabbar_like_active_25x25_"] forState:UIControlStateHighlighted];
         [self addSubview:_moreButton];
         [self bringSubviewToFront:_moreButton];
@@ -36,9 +35,11 @@
         __weak typeof(self) weakself=self;
         
         [_moreButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.equalTo(@44);
-            make.height.equalTo(@44);
-            make.center.equalTo(weakself);
+            make.width.equalTo(@60);    //44
+            make.height.equalTo(@60);   //44
+//            make.center.equalTo(weakself);
+            make.centerX.equalTo(weakself);
+            make.centerY.equalTo(weakself).offset(-20);
         }];
     }
     return self;

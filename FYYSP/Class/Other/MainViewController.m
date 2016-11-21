@@ -59,7 +59,7 @@
     self.viewControllers=@[nav1,nav2,nav3,nav4];
     
     //设置每个TabbarItem的属性
-    NSArray * tabMessage    = @[@"首页",@"其它",@"其它",@"我的"];
+    NSArray * tabMessage    = @[@"首页",@"阅读",@"通告",@"我的"];
     NSArray * tabImages     = @[@"icon_tabbar_home_25x25_",@"icon_tabbar_subscription_25x25_",@"icon_tabbar_notification_25x25_",@"icon_tabbar_me_25x25_"];
     NSArray * tabSelImages  = @[@"icon_tabbar_home_active_25x25_",@"icon_tabbar_subscription_active_25x25_",@"icon_tabbar_notification_active_25x25_",@"icon_tabbar_me_active_25x25_"];
     

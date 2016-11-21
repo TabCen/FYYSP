@@ -74,6 +74,8 @@
         UIButton *backBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 10, 18)];
         [backBtn setImage:[UIImage imageNamed:@"cancel-left"] forState:UIControlStateNormal];
         [backBtn addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
+        [backBtn setTintColor:k_BaseColor];
+        
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
     } else
     {
