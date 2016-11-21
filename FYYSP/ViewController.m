@@ -73,6 +73,7 @@
 -(void)printLog{
     ModelOne *one = (ModelOne *)[self.model_array objectAtIndex:0];
     NSLog(@"--->>>>name:%@   image0:%@",one.name,one.image0);
+    
 }
 
 
