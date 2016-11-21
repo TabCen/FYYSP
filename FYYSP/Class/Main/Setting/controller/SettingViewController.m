@@ -8,9 +8,15 @@
 
 #import "SettingViewController.h"
 
+#import "SettingTableViewCell.h"
+
 #import "UIViewController+BaseExtension.h"
 
-@interface SettingViewController ()
+static NSString * const ID_Setting = @"Setting_Cell_ID";
+
+@interface SettingViewController ()<UITableViewDelegate , UITableViewDataSource>
+
+@property(nonatomic,strong)UITableView  *tableView;
 
 @end
 
@@ -24,11 +30,47 @@
     
     self.navigationItem.title = @"设置";
     
+    [self addTableView];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)addTableView{
+    
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, Screen_Full_Width, Screen_Full_Height) style:UITableViewStyleGrouped];
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    [self.tableView registerNib:[UINib nibWithNibName:@"SettingTableViewCell" bundle:nil] forCellReuseIdentifier:ID_Setting];
+    [self.view addSubview:_tableView];
+    
+    
+    
+}
+
+
+#pragma mark - TableView Deleaget &Datasource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    SettingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID_Setting forIndexPath:indexPath];
+    
+    return cell;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 60.0f;
 }
 
 /*

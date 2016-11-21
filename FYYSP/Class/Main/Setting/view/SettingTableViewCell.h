@@ -10,4 +10,10 @@
 
 @interface SettingTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *label_tittle;
+
+@property (weak, nonatomic) IBOutlet UILabel *label_introduce;
+
+@property (weak, nonatomic) IBOutlet UISwitch *switch_btn;
+
 @end
