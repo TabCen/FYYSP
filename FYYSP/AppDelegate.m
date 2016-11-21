@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "BaseNavigationController.h"
 #import "ViewController.h"
-#import "BaseNavigationController.h"
+#import "MainViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,15 +23,6 @@
     [NSThread sleepForTimeInterval:3];
     //设置非导航栏状态下的状态栏状态，iOS9以后弃用，并且每一个UIViewController默认的状态栏状态为显示。所以可以不用显示，但安全起见放到rootVIewController里面再设置一下导航栏的状态
 //    [[UIApplication sharedApplication] setStatusBarHidden:YES];
-    
-    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.backgroundColor=[UIColor whiteColor];
-    ViewController *vc=[[ViewController alloc]init];
-//    UIViewController *vc=[[UIViewController alloc]init];
-    
-    BaseNavigationController *nv=[[BaseNavigationController alloc]initWithRootViewController:vc];
-    self.window.rootViewController=nv;
-    [self.window makeKeyAndVisible];
     
     [self setRootViewController];
     
@@ -148,11 +139,13 @@
 #pragma mark - 功能模块
 
 -(void)setRootViewController{
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor=[UIColor whiteColor];
+    MainViewController *vc=[[MainViewController alloc]init];
     
-
-
-
-
+    BaseNavigationController *nv=[[BaseNavigationController alloc]initWithRootViewController:vc];
+    self.window.rootViewController=nv;
+    [self.window makeKeyAndVisible];
 }
 
 -(void)judgeTheReachAbility{
