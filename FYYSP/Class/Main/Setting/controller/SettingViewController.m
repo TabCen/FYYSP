@@ -14,7 +14,7 @@
 
 static NSString * const ID_Setting = @"Setting_Cell_ID";
 
-@interface SettingViewController ()<UITableViewDelegate , UITableViewDataSource>
+@interface SettingViewController ()<UITableViewDelegate , UITableViewDataSource , CFTableViewCellDelegate>
 
 @property(nonatomic,strong)UITableView  *tableView;
 
@@ -44,10 +44,9 @@ static NSString * const ID_Setting = @"Setting_Cell_ID";
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, Screen_Full_Width, Screen_Full_Height) style:UITableViewStyleGrouped];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    
     [self.tableView registerNib:[UINib nibWithNibName:@"SettingTableViewCell" bundle:nil] forCellReuseIdentifier:ID_Setting];
     [self.view addSubview:_tableView];
-    
-    
     
 }
 
@@ -66,11 +65,22 @@ static NSString * const ID_Setting = @"Setting_Cell_ID";
     
     SettingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID_Setting forIndexPath:indexPath];
     
+    cell.delegate = self;
+    
+    cell.indexPath = indexPath;
+    
     return cell;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 60.0f;
+}
+
+#pragma mark - cell中按钮的点击时间
+- (void)tableViewCell:(UITableViewCell *)tableViewCell didSelectSwitchButtonAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSLog(@"%ld按钮状态改变了",(long)indexPath.row);
+
 }
 
 /*

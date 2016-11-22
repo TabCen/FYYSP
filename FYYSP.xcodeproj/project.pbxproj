@@ -145,6 +145,7 @@
 /* Begin PBXFileReference section */
 		9F01A03F1DE3E376009518AA /* UIViewController+BaseCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BaseCategory.h"; sourceTree = "<group>"; };
 		9F01A0401DE3E376009518AA /* UIViewController+BaseCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BaseCategory.m"; sourceTree = "<group>"; };
+		9F01A0431DE3FDEE009518AA /* CFTableViewCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFTableViewCellDelegate.h; sourceTree = "<group>"; };
 		9F0BAADC1DDAB6420096BDD4 /* CFProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFProgressHUD.h; sourceTree = "<group>"; };
 		9F0BAADD1DDAB6420096BDD4 /* CFProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFProgressHUD.m; sourceTree = "<group>"; };
 		9F0BAADE1DDAB6420096BDD4 /* WCGraintCircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCGraintCircleLayer.h; sourceTree = "<group>"; };
@@ -424,6 +425,7 @@
 		9F01A03E1DE3E353009518AA /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				9F01A0431DE3FDEE009518AA /* CFTableViewCellDelegate.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";

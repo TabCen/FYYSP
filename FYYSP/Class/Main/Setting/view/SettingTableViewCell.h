@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+#import "CFTableViewCellDelegate.h"
+
 @interface SettingTableViewCell : UITableViewCell
+
+@property (strong, nonatomic)NSIndexPath       *indexPath;
+
+@property (weak, nonatomic) id <CFTableViewCellDelegate> delegate;
 
 @property (weak, nonatomic) IBOutlet UILabel *label_tittle;
 
