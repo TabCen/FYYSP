@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9F01A0411DE3E376009518AA /* UIViewController+BaseCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F01A0401DE3E376009518AA /* UIViewController+BaseCategory.m */; };
+		9F01A0491DE40C3A009518AA /* GlobalSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F01A0481DE40C3A009518AA /* GlobalSingleton.m */; };
 		9F0BAAE01DDAB6420096BDD4 /* CFProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BAADD1DDAB6420096BDD4 /* CFProgressHUD.m */; };
 		9F0BAAE11DDAB6420096BDD4 /* WCGraintCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BAADF1DDAB6420096BDD4 /* WCGraintCircleLayer.m */; };
 		9F0BAAE91DDAE5050096BDD4 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BAAE81DDAE5050096BDD4 /* UINavigationController+FDFullscreenPopGesture.m */; };
@@ -146,6 +147,8 @@
 		9F01A03F1DE3E376009518AA /* UIViewController+BaseCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BaseCategory.h"; sourceTree = "<group>"; };
 		9F01A0401DE3E376009518AA /* UIViewController+BaseCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BaseCategory.m"; sourceTree = "<group>"; };
 		9F01A0431DE3FDEE009518AA /* CFTableViewCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFTableViewCellDelegate.h; sourceTree = "<group>"; };
+		9F01A0471DE40C3A009518AA /* GlobalSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalSingleton.h; sourceTree = "<group>"; };
+		9F01A0481DE40C3A009518AA /* GlobalSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalSingleton.m; sourceTree = "<group>"; };
 		9F0BAADC1DDAB6420096BDD4 /* CFProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFProgressHUD.h; sourceTree = "<group>"; };
 		9F0BAADD1DDAB6420096BDD4 /* CFProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFProgressHUD.m; sourceTree = "<group>"; };
 		9F0BAADE1DDAB6420096BDD4 /* WCGraintCircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCGraintCircleLayer.h; sourceTree = "<group>"; };
@@ -1048,6 +1051,8 @@
 		9FFAE2E91DD46F4A00D46DEC /* GlobalService */ = {
 			isa = PBXGroup;
 			children = (
+				9F01A0471DE40C3A009518AA /* GlobalSingleton.h */,
+				9F01A0481DE40C3A009518AA /* GlobalSingleton.m */,
 			);
 			path = GlobalService;
 			sourceTree = "<group>";
@@ -1238,6 +1243,7 @@
 				9F288F5D1DD594C000280690 /* SDWebImagePrefetcher.m in Sources */,
 				9F288F271DD56A2700280690 /* IQTextView.m in Sources */,
 				9F288EB21DD55F3300280690 /* View+MASAdditions.m in Sources */,
+				9F01A0491DE40C3A009518AA /* GlobalSingleton.m in Sources */,
 				9F288EF01DD5604F00280690 /* MJRefreshConst.m in Sources */,
 				9F288F611DD594C000280690 /* UIImage+WebP.m in Sources */,
 				9F288EF11DD5604F00280690 /* UIScrollView+MJExtension.m in Sources */,
