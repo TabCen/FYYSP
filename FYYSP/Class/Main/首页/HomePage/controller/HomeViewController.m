@@ -10,7 +10,7 @@
 
 #import "SettingViewController.h"
 
-#import "UIViewController+BaseExtension.h"
+#import "UIViewController+BaseCategory.h"
 
 @interface HomeViewController ()
 

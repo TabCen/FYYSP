@@ -10,7 +10,7 @@
 
 #import "SettingTableViewCell.h"
 
-#import "UIViewController+BaseExtension.h"
+#import "UIViewController+BaseCategory.h"
 
 static NSString * const ID_Setting = @"Setting_Cell_ID";
 

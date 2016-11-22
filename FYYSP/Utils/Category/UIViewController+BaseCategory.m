@@ -1,15 +1,14 @@
 //
-//  UIViewController+BaseExtension.m
-//  CFSegmentViewDemo
+//  UIViewController+BaseCategory.m
+//  FYYSP
 //
-//  Created by  chenfei on 2016/11/8.
+//  Created by  chenfei on 2016/11/22.
 //  Copyright © 2016年 chenfei. All rights reserved.
 //
 
-#import "UIViewController+BaseExtension.h"
+#import "UIViewController+BaseCategory.h"
 
-@implementation UIViewController (BaseExtension)
-
+@implementation UIViewController (BaseCategory)
 
 -(void)setNavBar{
     UIButton *backBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 10, 18)];
@@ -22,7 +21,7 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
--(void)setNavRightBarBtnItemWithImage:(UIImage *)image function:(nullable SEL)action{
+-(void)setNavRightBarBtnItemWithImage:( UIImage * _Nullable )image function:(nullable SEL)action{
     UIBarButtonItem *right_Bar_Btn=
     [[UIBarButtonItem alloc]initWithImage:image
                                     style:UIBarButtonItemStylePlain
@@ -32,7 +31,6 @@
     
     [self.navigationItem setRightBarButtonItem:right_Bar_Btn];
 }
-
 
 
 @end
