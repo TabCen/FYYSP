@@ -33,10 +33,8 @@
 }
 
 -(void)otherThings{
-//    AppLog(@"%@",[NSUserDefaults standardUserDefaults]);
-    AppLog(@"%@",kPathCache);
     
-//    AppLog(@"%@",[[GlobalSingleton instence] versionAndBuild]);
+    
 }
 
 -(void)rightBarBtnClicked{

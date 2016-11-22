@@ -53,10 +53,17 @@
 ///获取图片资源
 #define GetImage(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
 
-///获取沙盒 Document
+///获取沙盒 目录
+#define kPath  NSHomeDirectory()
+///Document             iTunes会同步此文件夹，适合存储重要数据
 #define kPathDocument [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
-///获取沙盒 Cache
+///Library/Cache        iTunes不会同步此文件夹，适合存储体积大，不需要备份的非重要数据
 #define kPathCache [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+///Library/Preferences  iTunes会同步此文件夹，适合存储应用的设置信息
+#define kPathPreferences  [NSString stringWithFormat:@"%@/Library/Preference",NSHomeDirectory()]
+///tmp                  临时文件，用完就删除
+#define kPathTmp NSTemporaryDirectory()
+
 
 ///GCD相关
 //在Global Queue上运行
@@ -83,7 +90,6 @@
     设置编译头文件
  */
 #import "Header.h"
-
 
 /**
     设置  颜色
