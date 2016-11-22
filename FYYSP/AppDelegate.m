@@ -141,12 +141,24 @@
 -(void)setRootViewController{
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor=[UIColor whiteColor];
-    MainViewController *vc=[[MainViewController alloc]init];
     
-    self.window.rootViewController=vc;
+    //设置主界面
+    [self enterMainViewController];
+    
     [self.window makeKeyAndVisible];
 }
 
+/**
+    设置主页面
+ */
+-(void)enterMainViewController{
+    MainViewController *vc=[[MainViewController alloc]init];
+    self.window.rootViewController=vc;
+}
+
+/**
+    判断网络状态
+ */
 -(void)judgeTheReachAbility{
     AFNetworkReachabilityManager *manager=[AFNetworkReachabilityManager sharedManager];
     [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {

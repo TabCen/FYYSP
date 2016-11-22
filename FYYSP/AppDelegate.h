@@ -20,6 +20,10 @@
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
+/**
+ 设置主页面
+ */
+-(void)enterMainViewController;
 
 @end
 

@@ -28,7 +28,7 @@
                         </constraints>
                     </switch>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="内置音效" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gry-mQ-Dr9">
-                        <rect key="frame" x="15" y="5.5" width="229" height="17"/>
+                        <rect key="frame" x="15" y="5.5" width="259" height="17"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="17" id="sxt-aY-fI4"/>
                         </constraints>
@@ -37,7 +37,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="应用内按钮点击音效" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibb-FF-Cfu">
-                        <rect key="frame" x="15" y="31.5" width="229" height="12"/>
+                        <rect key="frame" x="15" y="31.5" width="259" height="12"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="12" id="Z28-6x-eVa"/>
                         </constraints>
@@ -47,7 +47,7 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="W2t-yr-O8f" firstAttribute="leading" secondItem="gry-mQ-Dr9" secondAttribute="trailing" constant="50" id="5nO-n2-xiQ"/>
+                    <constraint firstItem="W2t-yr-O8f" firstAttribute="leading" secondItem="gry-mQ-Dr9" secondAttribute="trailing" constant="20" id="5nO-n2-xiQ"/>
                     <constraint firstItem="ibb-FF-Cfu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="centerYWithinMargins" constant="4" id="HQ2-xE-KDO"/>
                     <constraint firstItem="gry-mQ-Dr9" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="centerYWithinMargins" constant="-4" id="Ikw-PT-SBH"/>
                     <constraint firstItem="gry-mQ-Dr9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="JcN-hr-oR8"/>

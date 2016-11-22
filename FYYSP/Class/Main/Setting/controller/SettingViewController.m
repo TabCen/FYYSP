@@ -64,11 +64,11 @@ static NSString * const ID_Setting = @"Setting_Cell_ID";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     SettingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID_Setting forIndexPath:indexPath];
-    
+    cell.label_tittle.text = @"引导页开启";
+    cell.label_introduce.text = @"开启后，重新进入应用可看到引导页";
     cell.delegate = self;
-    
     cell.indexPath = indexPath;
-    
+
     return cell;
 }
 
@@ -76,7 +76,7 @@ static NSString * const ID_Setting = @"Setting_Cell_ID";
     return 60.0f;
 }
 
-#pragma mark - cell中按钮的点击时间
+#pragma mark - cell中按钮的点击事件
 - (void)tableViewCell:(UITableViewCell *)tableViewCell didSelectSwitchButtonAtIndexPath:(NSIndexPath *)indexPath{
     
     NSLog(@"%ld按钮状态改变了",(long)indexPath.row);
