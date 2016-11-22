@@ -10,4 +10,9 @@
 
 @interface GlobalSingleton : NSObject
 
++(instancetype)instence;
+
+///获取版本号和build号
+-(NSString *)versionAndBuild;
+
 @end

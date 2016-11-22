@@ -713,6 +713,13 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		9F40FDE61DE428E100B1D44E /* LeaderView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LeaderView;
+			sourceTree = "<group>";
+		};
 		9F73FF0E1DE2B90500BFFE36 /* Main(主要) */ = {
 			isa = PBXGroup;
 			children = (
@@ -1029,6 +1036,7 @@
 		9FFAE2E21DD46CE600D46DEC /* Other(其它) */ = {
 			isa = PBXGroup;
 			children = (
+				9F40FDE61DE428E100B1D44E /* LeaderView */,
 				9FFAE2E91DD46F4A00D46DEC /* GlobalService */,
 				9FCE48EF1D9D71E000E4BC13 /* AppDelegate.h */,
 				9FCE48F01D9D71E000E4BC13 /* AppDelegate.m */,

@@ -12,5 +12,6 @@
 #import "AFNetworking.h"
 #import "MJExtension.h"
 #import "Masonry.h"
+#import "GlobalSingleton.h"
 
 #endif /* Header_h */

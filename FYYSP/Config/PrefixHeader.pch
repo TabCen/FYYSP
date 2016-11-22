@@ -24,8 +24,15 @@
 
 ///系统版本号
 #define DEVICE_SYSTEM_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
-///App版本号
-#define appMPVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+///App  版本号
+#define appVersion [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]
+///App build
+#define appBuild [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]
+///App  名
+#define appName [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"]
+///App  支持的最低系统版本
+#define appMinmumOSVersion [[NSBundle mainBundle] objectForInfoDictionaryKey:@"MinimumOSVersion"]
 
 ///屏幕宽度和高度///屏幕适配比例 、自适应比例
 #define Screen_Full_Height [UIScreen mainScreen].bounds.size.height

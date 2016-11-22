@@ -25,8 +25,19 @@
     
     [self setNavRightBarBtnItemWithImage:[UIImage imageNamed:@"button_write_toolbar_more"]
                                 function:@selector(rightBarBtnClicked)];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:@"123" forKey:@"first"];
+    
+    [self otherThings];
+    
 }
 
+-(void)otherThings{
+//    AppLog(@"%@",[NSUserDefaults standardUserDefaults]);
+    AppLog(@"%@",kPathCache);
+    
+//    AppLog(@"%@",[[GlobalSingleton instence] versionAndBuild]);
+}
 
 -(void)rightBarBtnClicked{
     SettingViewController *setVC=[[SettingViewController alloc]init];

@@ -33,4 +33,12 @@ static GlobalSingleton *shareFile = nil;
     
 }
 
+#pragma mark - 共享方法
+
+-(NSString *)versionAndBuild{
+    return [NSString stringWithFormat:@"%@(%@)",appVersion,appBuild];
+}
+
+
+
 @end
