@@ -12,6 +12,8 @@
 
 #import "UIViewController+BaseCategory.h"
 
+#import "CFFileManager.h"
+
 @interface HomeViewController ()
 
 @end
@@ -20,6 +22,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [CFFileManager createFileInPreferences_FileName:@""];
     
     self.navigationItem.title = @"首页";
     

@@ -86,6 +86,8 @@
 #define AppLog(...)
 #endif
 
+#define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
+
 /**
     设置编译头文件
  */
