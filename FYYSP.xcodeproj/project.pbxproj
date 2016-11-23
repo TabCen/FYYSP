@@ -12,6 +12,10 @@
 		9F0BAAE01DDAB6420096BDD4 /* CFProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BAADD1DDAB6420096BDD4 /* CFProgressHUD.m */; };
 		9F0BAAE11DDAB6420096BDD4 /* WCGraintCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BAADF1DDAB6420096BDD4 /* WCGraintCircleLayer.m */; };
 		9F0BAAE91DDAE5050096BDD4 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BAAE81DDAE5050096BDD4 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		9F159A901DE476FA001CA0CA /* SettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F159A8F1DE476FA001CA0CA /* SettingModel.m */; };
+		9F159A941DE4833C001CA0CA /* SubItemsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F159A931DE4833C001CA0CA /* SubItemsModel.m */; };
+		9F159A9B1DE53518001CA0CA /* SettingArrowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F159A991DE53518001CA0CA /* SettingArrowTableViewCell.m */; };
+		9F159A9C1DE53518001CA0CA /* SettingArrowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F159A9A1DE53518001CA0CA /* SettingArrowTableViewCell.xib */; };
 		9F23B9A91DD9BBB100BD66A3 /* CFNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F23B9A81DD9BBB100BD66A3 /* CFNetworkingManager.m */; };
 		9F288E881DD4CECF00280690 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F288E871DD4CECF00280690 /* BaseViewController.m */; };
 		9F288E8D1DD547BA00280690 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F288E8C1DD547BA00280690 /* BaseNavigationController.m */; };
@@ -81,6 +85,8 @@
 		9F288F671DD5952900280690 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F288F661DD5952900280690 /* BaseModel.m */; };
 		9F288F6A1DD59DB700280690 /* BaseTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F288F691DD59DB700280690 /* BaseTabBar.m */; };
 		9F3C28FA1DDC5DF100908E2D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C28F91DDC5DF100908E2D /* ViewController.m */; };
+		9F60896E1DE56F7E00B90CAB /* TestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F60896C1DE56F7E00B90CAB /* TestTableViewCell.m */; };
+		9F60896F1DE56F7E00B90CAB /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F60896D1DE56F7E00B90CAB /* TestTableViewCell.xib */; };
 		9F73FF271DE2BA1900BFFE36 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F73FF231DE2BA1900BFFE36 /* HomeViewController.m */; };
 		9F73FF281DE2BA1900BFFE36 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F73FF241DE2BA1900BFFE36 /* HomeViewController.xib */; };
 		9F73FF2B1DE2BB8900BFFE36 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F73FF2A1DE2BB8900BFFE36 /* MainViewController.m */; };
@@ -156,6 +162,13 @@
 		9F0BAADF1DDAB6420096BDD4 /* WCGraintCircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCGraintCircleLayer.m; sourceTree = "<group>"; };
 		9F0BAAE71DDAE5050096BDD4 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		9F0BAAE81DDAE5050096BDD4 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		9F159A8E1DE476FA001CA0CA /* SettingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingModel.h; sourceTree = "<group>"; };
+		9F159A8F1DE476FA001CA0CA /* SettingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingModel.m; sourceTree = "<group>"; };
+		9F159A921DE4833C001CA0CA /* SubItemsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubItemsModel.h; sourceTree = "<group>"; };
+		9F159A931DE4833C001CA0CA /* SubItemsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubItemsModel.m; sourceTree = "<group>"; };
+		9F159A981DE53518001CA0CA /* SettingArrowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingArrowTableViewCell.h; sourceTree = "<group>"; };
+		9F159A991DE53518001CA0CA /* SettingArrowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingArrowTableViewCell.m; sourceTree = "<group>"; };
+		9F159A9A1DE53518001CA0CA /* SettingArrowTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingArrowTableViewCell.xib; sourceTree = "<group>"; };
 		9F23B9A71DD9BBB100BD66A3 /* CFNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNetworkingManager.h; sourceTree = "<group>"; };
 		9F23B9A81DD9BBB100BD66A3 /* CFNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFNetworkingManager.m; sourceTree = "<group>"; };
 		9F288E861DD4CECF00280690 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -299,6 +312,9 @@
 		9F288F681DD59DB700280690 /* BaseTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBar.h; sourceTree = "<group>"; };
 		9F288F691DD59DB700280690 /* BaseTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBar.m; sourceTree = "<group>"; };
 		9F3C28F91DDC5DF100908E2D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9F60896B1DE56F7E00B90CAB /* TestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewCell.h; sourceTree = "<group>"; };
+		9F60896C1DE56F7E00B90CAB /* TestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewCell.m; sourceTree = "<group>"; };
+		9F60896D1DE56F7E00B90CAB /* TestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestTableViewCell.xib; sourceTree = "<group>"; };
 		9F73FF221DE2BA1900BFFE36 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		9F73FF231DE2BA1900BFFE36 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		9F73FF241DE2BA1900BFFE36 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -800,6 +816,10 @@
 		9F73FF391DE2E77400BFFE36 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				9F159A8E1DE476FA001CA0CA /* SettingModel.h */,
+				9F159A8F1DE476FA001CA0CA /* SettingModel.m */,
+				9F159A921DE4833C001CA0CA /* SubItemsModel.h */,
+				9F159A931DE4833C001CA0CA /* SubItemsModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -810,6 +830,12 @@
 				9F73FF3F1DE2FCC700BFFE36 /* SettingTableViewCell.h */,
 				9F73FF401DE2FCC700BFFE36 /* SettingTableViewCell.m */,
 				9F73FF411DE2FCC700BFFE36 /* SettingTableViewCell.xib */,
+				9F159A981DE53518001CA0CA /* SettingArrowTableViewCell.h */,
+				9F159A991DE53518001CA0CA /* SettingArrowTableViewCell.m */,
+				9F159A9A1DE53518001CA0CA /* SettingArrowTableViewCell.xib */,
+				9F60896B1DE56F7E00B90CAB /* TestTableViewCell.h */,
+				9F60896C1DE56F7E00B90CAB /* TestTableViewCell.m */,
+				9F60896D1DE56F7E00B90CAB /* TestTableViewCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1193,8 +1219,10 @@
 			files = (
 				9F288EA91DD55F3300280690 /* Info.plist in Resources */,
 				9FCE48FF1D9D71E000E4BC13 /* LaunchScreen.storyboard in Resources */,
+				9F159A9C1DE53518001CA0CA /* SettingArrowTableViewCell.xib in Resources */,
 				9F288F2D1DD56A2700280690 /* IQKeyboardManager.bundle in Resources */,
 				9FCE48FC1D9D71E000E4BC13 /* Assets.xcassets in Resources */,
+				9F60896F1DE56F7E00B90CAB /* TestTableViewCell.xib in Resources */,
 				9F288EEF1DD5604F00280690 /* MJRefresh.bundle in Resources */,
 				9F73FF431DE2FCC700BFFE36 /* SettingTableViewCell.xib in Resources */,
 				9F73FF281DE2BA1900BFFE36 /* HomeViewController.xib in Resources */,
@@ -1228,6 +1256,7 @@
 				9F288F211DD56A2700280690 /* IQUITextFieldView+Additions.m in Sources */,
 				9F8F49DB1DA9387C006E4E0E /* NSObject+MJClass.m in Sources */,
 				9F73FF2B1DE2BB8900BFFE36 /* MainViewController.m in Sources */,
+				9F159A901DE476FA001CA0CA /* SettingModel.m in Sources */,
 				9F0BAAE91DDAE5050096BDD4 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				9F288EEB1DD5604F00280690 /* MJRefreshBackStateFooter.m in Sources */,
 				9F288F2C1DD56A2700280690 /* IQUIView+IQKeyboardToolbar.m in Sources */,
@@ -1239,6 +1268,7 @@
 				9F288F221DD56A2700280690 /* IQUIView+Hierarchy.m in Sources */,
 				9F288F621DD594C000280690 /* UIImageView+HighlightedWebCache.m in Sources */,
 				9F288F6A1DD59DB700280690 /* BaseTabBar.m in Sources */,
+				9F159A941DE4833C001CA0CA /* SubItemsModel.m in Sources */,
 				9F288EE91DD5604F00280690 /* MJRefreshBackGifFooter.m in Sources */,
 				9F8F49D91DA9387C006E4E0E /* MJPropertyKey.m in Sources */,
 				9F288F561DD594C000280690 /* NSData+ImageContentType.m in Sources */,
@@ -1296,6 +1326,7 @@
 				9F288EB11DD55F3300280690 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				9F288EE11DD5604F00280690 /* MJRefreshAutoFooter.m in Sources */,
 				9F288EB01DD55F3300280690 /* NSArray+MASAdditions.m in Sources */,
+				9F159A9B1DE53518001CA0CA /* SettingArrowTableViewCell.m in Sources */,
 				9F288F231DD56A2700280690 /* IQUIViewController+Additions.m in Sources */,
 				9F288F2B1DD56A2700280690 /* IQToolbar.m in Sources */,
 				9FD9C2161DA8CF4500E50986 /* UIButton+AFNetworking.m in Sources */,
@@ -1313,6 +1344,7 @@
 				9FD9C2191DA8CF4500E50986 /* UIRefreshControl+AFNetworking.m in Sources */,
 				9FD9C21A1DA8CF4500E50986 /* UIWebView+AFNetworking.m in Sources */,
 				9FD9C20F1DA8CF4500E50986 /* AFURLRequestSerialization.m in Sources */,
+				9F60896E1DE56F7E00B90CAB /* TestTableViewCell.m in Sources */,
 				9F288E8D1DD547BA00280690 /* BaseNavigationController.m in Sources */,
 				9F8F49D51DA9387C006E4E0E /* MJDictionaryCache.m in Sources */,
 				9F288F261DD56A2700280690 /* IQKeyboardReturnKeyHandler.m in Sources */,

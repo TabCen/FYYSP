@@ -10,13 +10,25 @@
 
 #import "SettingTableViewCell.h"
 
+#import "SettingArrowTableViewCell.h"
+
 #import "UIViewController+BaseCategory.h"
 
+#import "SettingModel.h"
+
+#import "SubItemsModel.h"
+
+
+
 static NSString * const ID_Setting = @"Setting_Cell_ID";
+static NSString * const ID_SettingArrow = @"Setting_Cell_Arrow_ID";
+
 
 @interface SettingViewController ()<UITableViewDelegate , UITableViewDataSource , CFTableViewCellDelegate>
 
 @property(nonatomic,strong)UITableView  *tableView;
+
+@property(nonatomic,strong)NSMutableArray *array;
 
 @end
 
@@ -24,6 +36,8 @@ static NSString * const ID_Setting = @"Setting_Cell_ID";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self _setViewModel];
     
     //设置回退按钮
     [self setBackButton:YES];
@@ -42,10 +56,15 @@ static NSString * const ID_Setting = @"Setting_Cell_ID";
 -(void)addTableView{
     
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, Screen_Full_Width, Screen_Full_Height) style:UITableViewStyleGrouped];
+//    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;    //  去掉分割线
+    
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
     [self.tableView registerNib:[UINib nibWithNibName:@"SettingTableViewCell" bundle:nil] forCellReuseIdentifier:ID_Setting];
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"SettingArrowTableViewCell" bundle:nil] forCellReuseIdentifier:ID_SettingArrow];
+    
     [self.view addSubview:_tableView];
     
 }
@@ -54,21 +73,35 @@ static NSString * const ID_Setting = @"Setting_Cell_ID";
 #pragma mark - TableView Deleaget &Datasource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
+    return self.array.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    SettingModel *model = (SettingModel *)[self.array objectAtIndex:0];
+    return model.subItems.count + self.array.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 0) {
+        SettingModel *model = (SettingModel *)[self.array objectAtIndex:indexPath.section];
+        if (indexPath.row == 0) {
+            SettingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID_Setting forIndexPath:indexPath];
+            cell.label_tittle.text = [NSString stringWithFormat:@"%@",model.tittle];
+            cell.label_introduce.text = [NSString stringWithFormat:@"%@",model.introduce];
+            cell.delegate = self;
+            cell.indexPath = indexPath;
+            return cell;
+        }else if (indexPath.row ==1){
+            SubItemsModel *subModel = (SubItemsModel*)[model.subItems objectAtIndex:0];
+            SettingArrowTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID_SettingArrow forIndexPath:indexPath];
+            cell.label_tittle.text = [NSString stringWithFormat:@"%@",subModel.tittle];
+            cell.label_introduce.text = [NSString stringWithFormat:@"%@",subModel.value];
+            return cell;
+        }
+    }
     
-    SettingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID_Setting forIndexPath:indexPath];
-    cell.label_tittle.text = @"引导页开启";
-    cell.label_introduce.text = @"开启后，重新进入应用可看到引导页";
-    cell.delegate = self;
-    cell.indexPath = indexPath;
-
+    UITableViewCell *cell = [[UITableViewCell alloc]init];
+    cell.backgroundColor = [UIColor redColor];
     return cell;
 }
 
@@ -78,10 +111,25 @@ static NSString * const ID_Setting = @"Setting_Cell_ID";
 
 #pragma mark - cell中按钮的点击事件
 - (void)tableViewCell:(UITableViewCell *)tableViewCell didSelectSwitchButtonAtIndexPath:(NSIndexPath *)indexPath{
+    NSIndexPath *path = [NSIndexPath indexPathForRow:0 inSection:0];
+    if ([path isEqual:indexPath]) {
+        SettingTableViewCell *cell = (SettingTableViewCell *)tableViewCell;
+        if (cell.switch_btn.on) {
+            NSLog(@"开");
+        }else{
+            NSLog(@"关");
+        }
+    }
     
-    NSLog(@"%ld按钮状态改变了",(long)indexPath.row);
-
 }
+
+#pragma mark - 设置viewMode
+
+-(void)_setViewModel{
+    self.array = [NSMutableArray arrayWithCapacity:20];
+    _array = [SettingModel mj_objectArrayWithKeyValuesArray:[SettingModel settingModelArray]];
+}
+
 
 /*
 #pragma mark - Navigation
