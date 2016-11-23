@@ -105,7 +105,7 @@
 		9F8F49DD1DA9387C006E4E0E /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F49D01DA9387C006E4E0E /* NSObject+MJKeyValue.m */; };
 		9F8F49DE1DA9387C006E4E0E /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F49D21DA9387C006E4E0E /* NSObject+MJProperty.m */; };
 		9F8F49DF1DA9387C006E4E0E /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F49D41DA9387C006E4E0E /* NSString+MJExtension.m */; };
-		9F9113A21DE44915008A93F2 /* PlistFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9113A11DE44915008A93F2 /* PlistFileManager.m */; };
+		9F9113A21DE44915008A93F2 /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9113A11DE44915008A93F2 /* FileManager.m */; };
 		9FCE48EE1D9D71E000E4BC13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE48ED1D9D71E000E4BC13 /* main.m */; };
 		9FCE48F11D9D71E000E4BC13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE48F01D9D71E000E4BC13 /* AppDelegate.m */; };
 		9FCE48F71D9D71E000E4BC13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCE48F51D9D71E000E4BC13 /* Main.storyboard */; };
@@ -351,8 +351,8 @@
 		9F8F49D21DA9387C006E4E0E /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
 		9F8F49D31DA9387C006E4E0E /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
 		9F8F49D41DA9387C006E4E0E /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
-		9F9113A01DE44915008A93F2 /* PlistFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlistFileManager.h; sourceTree = "<group>"; };
-		9F9113A11DE44915008A93F2 /* PlistFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlistFileManager.m; sourceTree = "<group>"; };
+		9F9113A01DE44915008A93F2 /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
+		9F9113A11DE44915008A93F2 /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
 		9FCE48E91D9D71E000E4BC13 /* FYYSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYYSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCE48ED1D9D71E000E4BC13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9FCE48EF1D9D71E000E4BC13 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -873,8 +873,8 @@
 		9F91139F1DE44903008A93F2 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				9F9113A01DE44915008A93F2 /* PlistFileManager.h */,
-				9F9113A11DE44915008A93F2 /* PlistFileManager.m */,
+				9F9113A01DE44915008A93F2 /* FileManager.h */,
+				9F9113A11DE44915008A93F2 /* FileManager.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -1298,7 +1298,7 @@
 				9F288EF01DD5604F00280690 /* MJRefreshConst.m in Sources */,
 				9F288F611DD594C000280690 /* UIImage+WebP.m in Sources */,
 				9F288EF11DD5604F00280690 /* UIScrollView+MJExtension.m in Sources */,
-				9F9113A21DE44915008A93F2 /* PlistFileManager.m in Sources */,
+				9F9113A21DE44915008A93F2 /* FileManager.m in Sources */,
 				9F288F5C1DD594C000280690 /* SDWebImageManager.m in Sources */,
 				9F01A0411DE3E376009518AA /* UIViewController+BaseCategory.m in Sources */,
 				9F23B9A91DD9BBB100BD66A3 /* CFNetworkingManager.m in Sources */,
