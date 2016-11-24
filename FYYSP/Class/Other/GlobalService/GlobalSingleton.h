@@ -15,4 +15,9 @@
 ///获取版本号和build号
 -(NSString *)versionAndBuild;
 
+/**
+    重制存放在NSUserDefaults的方法
+ */
++(void)resetDefaults;
+
 @end

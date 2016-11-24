@@ -28,8 +28,10 @@
     [self.tabBar removeFromSuperview];
     
     //将自己设置的TabBar设置为Controller的tabBar，使用KVC的方法
-    BaseTabBar *tabBar=[[BaseTabBar alloc]initWithCenterButton_andCenterBtnImage:[UIImage imageNamed:@"icon_tabbar_like_active_25x25_"]];
-    tabBar.btnDelegate=self;
+//    BaseTabBar *tabBar=[[BaseTabBar alloc]initWithCenterButton_andCenterBtnImage:[UIImage imageNamed:@"icon_tabbar_like_active_25x25_"]];
+//    tabBar.btnDelegate=self;
+    BaseTabBar *tabBar = [[BaseTabBar alloc]init];
+    
     [self setValue:tabBar forKey:@"tabBar"];                ///****************暴力设置的方法*************/
     
     //设置子控制器，以及控制器tabBarItem
@@ -59,7 +61,7 @@
     self.viewControllers=@[nav1,nav2,nav3,nav4];
     
     //设置每个TabbarItem的属性
-    NSArray * tabMessage    = @[@"首页",@"阅读",@"通告",@"我的"];
+    NSArray * tabMessage    = @[@"首页",@"阅读",@"试验",@"我的"];
     NSArray * tabImages     = @[@"icon_tabbar_home_25x25_",@"icon_tabbar_subscription_25x25_",@"icon_tabbar_notification_25x25_",@"icon_tabbar_me_25x25_"];
     NSArray * tabSelImages  = @[@"icon_tabbar_home_active_25x25_",@"icon_tabbar_subscription_active_25x25_",@"icon_tabbar_notification_active_25x25_",@"icon_tabbar_me_active_25x25_"];
     

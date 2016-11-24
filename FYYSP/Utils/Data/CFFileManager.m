@@ -12,15 +12,31 @@
 
 
 +(void)createFileInPreferences_FileName:(NSString *)fileName{
-    NSString *path = kPathPreferences;
+//    NSString *path = kPathPreferences;
     
-    if (!kStringIsEmpty(fileName)) {
-        NSString *file = [path stringByAppendingPathComponent:fileName];
-    }
+//    if (!kStringIsEmpty(fileName)) {
+//        NSString *file = [path stringByAppendingPathComponent:fileName];
+//    }
     
 //    NSFileManager *manage = [NSFileManager defaultManager];
     
-
 }
+
+
++(void)resetDefaults{
+    
+    NSUserDefaults* defs = [NSUserDefaults standardUserDefaults];
+    
+    NSDictionary* dict = [defs dictionaryRepresentation];
+    
+    for(id key in dict) {
+        
+        [defs removeObjectForKey:key];
+        
+    }
+    
+    [defs synchronize];
+}
+
 
 @end

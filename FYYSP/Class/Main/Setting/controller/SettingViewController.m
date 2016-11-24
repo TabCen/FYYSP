@@ -132,8 +132,7 @@ static NSString * const ID_SettingArrow = @"Setting_Cell_Arrow_ID";
 #pragma mark - 私有方法
 
 -(void)showMessageAlertView{
-    
-    [self _showAlertViewWithTitle:@"提示" message:@"重启应用后生效" insureBtn:nil cancleBtn:nil];
+    [self _showAlertViewWithTitle:@"提示" message:@"重启应用后生效" insureBtn:@"知道了" cancleBtn:nil];
 }
 
 /*

@@ -23,11 +23,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [CFFileManager createFileInPreferences_FileName:@""];
+//    [CFFileManager createFileInPreferences_FileName:@""];
+    
+    NSLog(@"---++++????>>>>%@",kPathDocument);
     
     self.navigationItem.title = @"首页";
     
-    [self setNavRightBarBtnItemWithImage:[UIImage imageNamed:@"button_write_toolbar_more"]
+    [self setNavRightBarBtnItemWithImage:[UIImage imageNamed:@"set"]
                                 function:@selector(rightBarBtnClicked)];
     
     [[NSUserDefaults standardUserDefaults] setObject:@"123" forKey:@"first"];

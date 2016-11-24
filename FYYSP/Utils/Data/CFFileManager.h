@@ -21,6 +21,11 @@
 
 +(void)createFileInPreferences_FileName:(NSString *)fileName;
 
+/**
+    重制NSUserDefaults
+ */
++(void)resetDefaults;
+
 @end
 //获取沙盒 目录
 //#define kPath  NSHomeDirectory()

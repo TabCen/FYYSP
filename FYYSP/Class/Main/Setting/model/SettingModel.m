@@ -34,10 +34,18 @@
                        @"btnType":@"switch",
                        @"value":@NO,
                        @"subItems":@[
-//                               @{@"tittle":@"样式",
-//                                 @"btnType":@"choose",
-//                                 @"value":@"图片轮播",
-//                                 },
+                               ]},
+                     @{@"tittle":@"广告页",
+                       @"introduce":@"开启后闪屏后先进入广告页",
+                       @"btnType":@"switch",
+                       @"value":@NO,
+                       @"subItems":@[
+                               ]},
+                     @{@"tittle":@"左边栏抽屉架构",
+                       @"introduce":@"开启后菜单栏隐藏于左边抽屉，侧滑呼出",
+                       @"btnType":@"switch",
+                       @"value":@NO,
+                       @"subItems":@[
                                ]}
                      ];
     
