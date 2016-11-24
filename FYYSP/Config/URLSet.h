@@ -9,5 +9,10 @@
 #ifndef URLSet_h
 #define URLSet_h
 
+#define BaseURL @"https://app.gomefund.com"
+
+#define Appending_URL(b) [NSString stringWithFormat:@"%@%@",BaseURL,b]
+
+#define WS_URL Appending_URL(@"/fundApp/wandeRequest.json?")
 
 #endif /* URLSet_h */

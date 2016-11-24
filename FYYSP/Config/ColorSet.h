@@ -13,8 +13,7 @@
 
 
 
-#endif 
-/* ColorSet_h */
+#endif
 //15B7B9
 //10DDC2
 //F5F5F5
