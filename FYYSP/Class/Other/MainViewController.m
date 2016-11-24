@@ -28,7 +28,7 @@
     [self.tabBar removeFromSuperview];
     
     //将自己设置的TabBar设置为Controller的tabBar，使用KVC的方法
-    BaseTabBar *tabBar=[[BaseTabBar alloc]init];
+    BaseTabBar *tabBar=[[BaseTabBar alloc]initWithCenterButton_andCenterBtnImage:[UIImage imageNamed:@"icon_tabbar_like_active_25x25_"]];
     tabBar.btnDelegate=self;
     [self setValue:tabBar forKey:@"tabBar"];                ///****************暴力设置的方法*************/
     

@@ -83,4 +83,30 @@
     }
 }
 
+-(void)_showAlertViewWithTitle:(NSString *)tittle message:(NSString *)message insureBtn:(NSString *)insureStr cancleBtn:(NSString *)cancleStr{
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:tittle
+                                                                   message:message
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    if (insureStr) {
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:insureStr style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+        [alert addAction:defaultAction];
+    }
+    
+    if (cancleStr) {
+        UIAlertAction* cancleAction = [UIAlertAction actionWithTitle:cancleStr style:UIAlertActionStyleCancel
+                                                              handler:^(UIAlertAction * action) {}];
+        [alert addAction:cancleAction];
+    }
+    
+    if (!(cancleStr||insureStr)) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self dismissViewControllerAnimated:YES completion:nil];
+        });
+    }
+    
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
 @end

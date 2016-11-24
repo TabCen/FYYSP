@@ -28,6 +28,16 @@
                                  @"btnType":@"choose",
                                  @"value":@"图片轮播",
                                    },
+                               ]},
+                     @{@"tittle":@"TabBar中间按钮",
+                       @"introduce":@"自定义了TabBar",
+                       @"btnType":@"switch",
+                       @"value":@NO,
+                       @"subItems":@[
+//                               @{@"tittle":@"样式",
+//                                 @"btnType":@"choose",
+//                                 @"value":@"图片轮播",
+//                                 },
                                ]}
                      ];
     

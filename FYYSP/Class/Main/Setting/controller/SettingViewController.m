@@ -18,8 +18,6 @@
 
 #import "SubItemsModel.h"
 
-
-
 static NSString * const ID_Setting = @"Setting_Cell_ID";
 static NSString * const ID_SettingArrow = @"Setting_Cell_Arrow_ID";
 
@@ -77,13 +75,13 @@ static NSString * const ID_SettingArrow = @"Setting_Cell_Arrow_ID";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    SettingModel *model = (SettingModel *)[self.array objectAtIndex:0];
-    return model.subItems.count + self.array.count;
+    SettingModel *model = (SettingModel *)[self.array objectAtIndex:section];
+    return model.subItems.count + 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    SettingModel *model = (SettingModel *)[self.array objectAtIndex:indexPath.section];
     if (indexPath.section == 0) {
-        SettingModel *model = (SettingModel *)[self.array objectAtIndex:indexPath.section];
         if (indexPath.row == 0) {
             SettingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID_Setting forIndexPath:indexPath];
             cell.label_tittle.text = [NSString stringWithFormat:@"%@",model.tittle];
@@ -99,9 +97,11 @@ static NSString * const ID_SettingArrow = @"Setting_Cell_Arrow_ID";
             return cell;
         }
     }
-    
-    UITableViewCell *cell = [[UITableViewCell alloc]init];
-    cell.backgroundColor = [UIColor redColor];
+    SettingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID_Setting forIndexPath:indexPath];
+    cell.label_tittle.text = [NSString stringWithFormat:@"%@",model.tittle];
+    cell.label_introduce.text = [NSString stringWithFormat:@"%@",model.introduce];
+    cell.delegate = self;
+    cell.indexPath = indexPath;
     return cell;
 }
 
@@ -115,12 +115,11 @@ static NSString * const ID_SettingArrow = @"Setting_Cell_Arrow_ID";
     if ([path isEqual:indexPath]) {
         SettingTableViewCell *cell = (SettingTableViewCell *)tableViewCell;
         if (cell.switch_btn.on) {
-            NSLog(@"开");
+            [self showMessageAlertView];
         }else{
-            NSLog(@"关");
+            
         }
     }
-    
 }
 
 #pragma mark - 设置viewMode
@@ -130,6 +129,12 @@ static NSString * const ID_SettingArrow = @"Setting_Cell_Arrow_ID";
     _array = [SettingModel mj_objectArrayWithKeyValuesArray:[SettingModel settingModelArray]];
 }
 
+#pragma mark - 私有方法
+
+-(void)showMessageAlertView{
+    
+    [self _showAlertViewWithTitle:@"提示" message:@"重启应用后生效" insureBtn:nil cancleBtn:nil];
+}
 
 /*
 #pragma mark - Navigation
