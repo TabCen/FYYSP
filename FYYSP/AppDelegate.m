@@ -153,6 +153,7 @@
  */
 -(void)enterMainViewController{
     MainViewController *vc=[[MainViewController alloc]init];
+//    LeftViewController *vc = [[LeftViewController alloc]init];
     self.window.rootViewController=vc;
 }
 
