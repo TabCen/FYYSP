@@ -84,7 +84,7 @@
                                                 }
                                      forState:UIControlStateSelected];
         //设置字体的Attributes
-        //        NSFontAttributeName:[UIFont systemFontOfSize:8]
+        //NSFontAttributeName:[UIFont systemFontOfSize:8]
     }
 }
 
