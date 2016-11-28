@@ -11,6 +11,10 @@
 #import "BaseNavigationController.h"
 
 #import "HomeViewController.h"
+#import "ReadingViewController.h"
+#import "TestingViewController.h"
+#import "MineViewController.h"
+
 
 @interface MainViewController ()<BaseTabBarDelegate>
 
@@ -49,9 +53,9 @@
  */
 -(void)setSubViewController{
     HomeViewController      *VC1 = [[HomeViewController alloc] init];
-    UIViewController        *VC2 = [[UIViewController alloc] init];
-    UIViewController        *VC3 = [[UIViewController alloc] init];
-    UIViewController        *VC4 = [[UIViewController alloc] init];
+    ReadingViewController   *VC2 = [[ReadingViewController alloc] init];
+    TestingViewController   *VC3 = [[TestingViewController alloc] init];
+    MineViewController      *VC4 = [[MineViewController alloc] init];
     
     BaseNavigationController *nav1=[[BaseNavigationController alloc]initWithRootViewController:VC1];
     BaseNavigationController *nav2=[[BaseNavigationController alloc]initWithRootViewController:VC2];

@@ -8,6 +8,10 @@
 
 #import "MainDrawerController.h"
 #import "HomeViewController.h"
+#import "ReadingViewController.h"
+#import "TestingViewController.h"
+#import "MineViewController.h"
+
 
 @interface MainDrawerController ()
 
@@ -19,9 +23,9 @@
     [super viewDidLoad];
     
     HomeViewController      *VC1 = [[HomeViewController alloc] init];
-    UIViewController        *VC2 = [[UIViewController alloc] init];
-    UIViewController        *VC3 = [[UIViewController alloc] init];
-    UIViewController        *VC4 = [[UIViewController alloc] init];
+    ReadingViewController   *VC2 = [[ReadingViewController alloc] init];
+    TestingViewController   *VC3 = [[TestingViewController alloc] init];
+    MineViewController      *VC4 = [[MineViewController alloc] init];
     
     self.viewControllers = @[VC1,VC2,VC3,VC4];
     

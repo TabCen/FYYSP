@@ -20,6 +20,8 @@
 
 @property(nonatomic,strong)UITableView     *tableview;
 
+@property(nonatomic,strong)NSIndexPath     *currentIndexPath;
+
 @end
 
 @implementation BaseDrawerController
@@ -100,9 +102,18 @@
 }
 
 -(void)sonControllerTransitionFrom:(NSIndexPath *)oldIndex toControllerIndex:(NSIndexPath *)newIndex{
+    
+    if ([oldIndex isEqual:newIndex]) {
+        return;
+    }
+    
     [self transitionFromViewController:self.viewControllers[oldIndex.row] toViewController:self.viewControllers[newIndex.row] duration:0 options:UIViewAnimationOptionTransitionNone animations:^{
     } completion:^(BOOL finished) {
         self.currentVC = self.viewControllers[newIndex.row];
+        self.currentIndexPath = newIndex;
+        [UIView animateWithDuration:0.4 animations:^{
+            self.currentVC.view.transform = CGAffineTransformIdentity;
+        }];
     }];
 }
 
@@ -172,6 +183,9 @@
 #pragma mark --
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self sonControllerTransitionFrom:self.currentIndexPath toControllerIndex:indexPath];
+    
+//    self.currentVC.view.transform = CGAffineTransformMakeTranslation(self.openWidth, 0);
     
 }
 
@@ -186,17 +200,15 @@
             if ([viewControllers[i] isKindOfClass:[BaseViewController class]]) {
                 BaseViewController *vc = viewControllers[i];
                 vc.haveLeftDrawer = YES;
+                vc.view.frame = [UIScreen mainScreen].bounds;
             }
         }
         self.currentVC = viewControllers[0];
-        
+        self.currentIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
         [self.view addSubview:self.currentVC.view];
     }
 }
 
-//-(void)setOpenWidth:(CGFloat)openWidth{
-//    _openWidth = openWidth;
-//}
 
 -(CGFloat)openWidth{
     if (!_openWidth) {

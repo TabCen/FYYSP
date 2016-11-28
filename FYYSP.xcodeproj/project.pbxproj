@@ -88,6 +88,12 @@
 		9F4B67011DEBCB4C0088E6D0 /* BaseDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B67001DEBCB4C0088E6D0 /* BaseDrawerController.m */; };
 		9F4B67051DEBCB660088E6D0 /* MainDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B67031DEBCB660088E6D0 /* MainDrawerController.m */; };
 		9F4B67061DEBCB660088E6D0 /* MainDrawerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F4B67041DEBCB660088E6D0 /* MainDrawerController.xib */; };
+		9F4B671E1DEC0EF80088E6D0 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B671C1DEC0EF80088E6D0 /* MineViewController.m */; };
+		9F4B671F1DEC0EF80088E6D0 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F4B671D1DEC0EF80088E6D0 /* MineViewController.xib */; };
+		9F4B67231DEC0F1A0088E6D0 /* ReadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B67211DEC0F1A0088E6D0 /* ReadingViewController.m */; };
+		9F4B67241DEC0F1A0088E6D0 /* ReadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F4B67221DEC0F1A0088E6D0 /* ReadingViewController.xib */; };
+		9F4B67281DEC0F2E0088E6D0 /* TestingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B67261DEC0F2E0088E6D0 /* TestingViewController.m */; };
+		9F4B67291DEC0F2E0088E6D0 /* TestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F4B67271DEC0F2E0088E6D0 /* TestingViewController.xib */; };
 		9F60896E1DE56F7E00B90CAB /* TestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F60896C1DE56F7E00B90CAB /* TestTableViewCell.m */; };
 		9F60896F1DE56F7E00B90CAB /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F60896D1DE56F7E00B90CAB /* TestTableViewCell.xib */; };
 		9F73FF271DE2BA1900BFFE36 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F73FF231DE2BA1900BFFE36 /* HomeViewController.m */; };
@@ -320,6 +326,15 @@
 		9F4B67021DEBCB660088E6D0 /* MainDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainDrawerController.h; sourceTree = "<group>"; };
 		9F4B67031DEBCB660088E6D0 /* MainDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainDrawerController.m; sourceTree = "<group>"; };
 		9F4B67041DEBCB660088E6D0 /* MainDrawerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainDrawerController.xib; sourceTree = "<group>"; };
+		9F4B671B1DEC0EF80088E6D0 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		9F4B671C1DEC0EF80088E6D0 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		9F4B671D1DEC0EF80088E6D0 /* MineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
+		9F4B67201DEC0F1A0088E6D0 /* ReadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadingViewController.h; sourceTree = "<group>"; };
+		9F4B67211DEC0F1A0088E6D0 /* ReadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadingViewController.m; sourceTree = "<group>"; };
+		9F4B67221DEC0F1A0088E6D0 /* ReadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadingViewController.xib; sourceTree = "<group>"; };
+		9F4B67251DEC0F2E0088E6D0 /* TestingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestingViewController.h; sourceTree = "<group>"; };
+		9F4B67261DEC0F2E0088E6D0 /* TestingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestingViewController.m; sourceTree = "<group>"; };
+		9F4B67271DEC0F2E0088E6D0 /* TestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestingViewController.xib; sourceTree = "<group>"; };
 		9F60896B1DE56F7E00B90CAB /* TestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewCell.h; sourceTree = "<group>"; };
 		9F60896C1DE56F7E00B90CAB /* TestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewCell.m; sourceTree = "<group>"; };
 		9F60896D1DE56F7E00B90CAB /* TestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestTableViewCell.xib; sourceTree = "<group>"; };
@@ -769,6 +784,9 @@
 		9F4B670E1DEC0D670088E6D0 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				9F4B671B1DEC0EF80088E6D0 /* MineViewController.h */,
+				9F4B671C1DEC0EF80088E6D0 /* MineViewController.m */,
+				9F4B671D1DEC0EF80088E6D0 /* MineViewController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -809,6 +827,9 @@
 		9F4B67131DEC0D670088E6D0 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				9F4B67201DEC0F1A0088E6D0 /* ReadingViewController.h */,
+				9F4B67211DEC0F1A0088E6D0 /* ReadingViewController.m */,
+				9F4B67221DEC0F1A0088E6D0 /* ReadingViewController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -849,6 +870,9 @@
 		9F4B67181DEC0D670088E6D0 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				9F4B67251DEC0F2E0088E6D0 /* TestingViewController.h */,
+				9F4B67261DEC0F2E0088E6D0 /* TestingViewController.m */,
+				9F4B67271DEC0F2E0088E6D0 /* TestingViewController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -1357,6 +1381,7 @@
 				9FCE48FF1D9D71E000E4BC13 /* LaunchScreen.storyboard in Resources */,
 				9F159A9C1DE53518001CA0CA /* SettingArrowTableViewCell.xib in Resources */,
 				9F4B67061DEBCB660088E6D0 /* MainDrawerController.xib in Resources */,
+				9F4B67291DEC0F2E0088E6D0 /* TestingViewController.xib in Resources */,
 				9F288F2D1DD56A2700280690 /* IQKeyboardManager.bundle in Resources */,
 				9FCE48FC1D9D71E000E4BC13 /* Assets.xcassets in Resources */,
 				9F60896F1DE56F7E00B90CAB /* TestTableViewCell.xib in Resources */,
@@ -1364,7 +1389,9 @@
 				9F73FF431DE2FCC700BFFE36 /* SettingTableViewCell.xib in Resources */,
 				9F73FF281DE2BA1900BFFE36 /* HomeViewController.xib in Resources */,
 				9FCE48F71D9D71E000E4BC13 /* Main.storyboard in Resources */,
+				9F4B67241DEC0F1A0088E6D0 /* ReadingViewController.xib in Resources */,
 				9F73FF3C1DE2E77400BFFE36 /* SettingViewController.xib in Resources */,
+				9F4B671F1DEC0EF80088E6D0 /* MineViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1460,6 +1487,7 @@
 				9F288F601DD594C000280690 /* UIImage+MultiFormat.m in Sources */,
 				9FD9C2171DA8CF4500E50986 /* UIImageView+AFNetworking.m in Sources */,
 				9F288EF31DD5604F00280690 /* UIView+MJExtension.m in Sources */,
+				9F4B671E1DEC0EF80088E6D0 /* MineViewController.m in Sources */,
 				9F288EB11DD55F3300280690 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				9F288EE11DD5604F00280690 /* MJRefreshAutoFooter.m in Sources */,
 				9F288EB01DD55F3300280690 /* NSArray+MASAdditions.m in Sources */,
@@ -1475,6 +1503,7 @@
 				9F4B67051DEBCB660088E6D0 /* MainDrawerController.m in Sources */,
 				9F288EAD1DD55F3300280690 /* MASLayoutConstraint.m in Sources */,
 				9F8F49DF1DA9387C006E4E0E /* NSString+MJExtension.m in Sources */,
+				9F4B67281DEC0F2E0088E6D0 /* TestingViewController.m in Sources */,
 				9F0BAAE11DDAB6420096BDD4 /* WCGraintCircleLayer.m in Sources */,
 				9F288EAA1DD55F3300280690 /* MASCompositeConstraint.m in Sources */,
 				9F288F641DD594C000280690 /* UIView+WebCacheOperation.m in Sources */,
@@ -1489,6 +1518,7 @@
 				9F288F261DD56A2700280690 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				9F288F671DD5952900280690 /* BaseModel.m in Sources */,
 				9F288F1F1DD56A2700280690 /* IQNSArray+Sort.m in Sources */,
+				9F4B67231DEC0F1A0088E6D0 /* ReadingViewController.m in Sources */,
 				9F0BAAE01DDAB6420096BDD4 /* CFProgressHUD.m in Sources */,
 				9F288EB31DD55F3300280690 /* ViewController+MASAdditions.m in Sources */,
 				9FD9C2121DA8CF4500E50986 /* AFAutoPurgingImageCache.m in Sources */,
