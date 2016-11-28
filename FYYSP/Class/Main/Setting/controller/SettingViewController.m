@@ -53,7 +53,7 @@ static NSString * const ID_SettingArrow = @"Setting_Cell_Arrow_ID";
 
 -(void)addTableView{
     
-    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, Screen_Full_Width, Screen_Full_Height) style:UITableViewStyleGrouped];
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStyleGrouped];
 //    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;    //  去掉分割线
     
     self.tableView.dataSource = self;
