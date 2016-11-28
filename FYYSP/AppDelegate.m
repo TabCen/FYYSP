@@ -10,6 +10,7 @@
 #import "BaseNavigationController.h"
 #import "ViewController.h"
 #import "MainViewController.h"
+#import "MainDrawerController.h"
 
 @interface AppDelegate ()
 
@@ -152,8 +153,12 @@
     设置主页面
  */
 -(void)enterMainViewController{
-    MainViewController *vc=[[MainViewController alloc]init];
-//    LeftViewController *vc = [[LeftViewController alloc]init];
+    
+//    MainViewController *vc=[[MainViewController alloc]init];
+    MainDrawerController *vc = [[MainDrawerController alloc]init];
+    vc.drawerShowTableView = YES;
+    
+    
     self.window.rootViewController=vc;
 }
 

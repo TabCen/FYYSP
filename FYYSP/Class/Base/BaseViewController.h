@@ -14,6 +14,8 @@
 
 @property(nonatomic,assign)BOOL hideNavigationBar;
 
+@property(nonatomic,assign)BOOL haveLeftDrawer;
+
 #pragma mark - 常用方法
 
 
@@ -33,5 +35,7 @@
  @param cancleStr 取消按钮文字
  */
 -(void)_showAlertViewWithTitle:(NSString *)tittle message:(NSString *)message insureBtn:(NSString *)insureStr cancleBtn:(NSString *)cancleStr;
+
+
 
 @end

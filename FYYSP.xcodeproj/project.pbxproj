@@ -85,6 +85,9 @@
 		9F288F671DD5952900280690 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F288F661DD5952900280690 /* BaseModel.m */; };
 		9F288F6A1DD59DB700280690 /* BaseTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F288F691DD59DB700280690 /* BaseTabBar.m */; };
 		9F3C28FA1DDC5DF100908E2D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C28F91DDC5DF100908E2D /* ViewController.m */; };
+		9F4B67011DEBCB4C0088E6D0 /* BaseDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B67001DEBCB4C0088E6D0 /* BaseDrawerController.m */; };
+		9F4B67051DEBCB660088E6D0 /* MainDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B67031DEBCB660088E6D0 /* MainDrawerController.m */; };
+		9F4B67061DEBCB660088E6D0 /* MainDrawerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F4B67041DEBCB660088E6D0 /* MainDrawerController.xib */; };
 		9F60896E1DE56F7E00B90CAB /* TestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F60896C1DE56F7E00B90CAB /* TestTableViewCell.m */; };
 		9F60896F1DE56F7E00B90CAB /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F60896D1DE56F7E00B90CAB /* TestTableViewCell.xib */; };
 		9F73FF271DE2BA1900BFFE36 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F73FF231DE2BA1900BFFE36 /* HomeViewController.m */; };
@@ -312,6 +315,11 @@
 		9F288F681DD59DB700280690 /* BaseTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBar.h; sourceTree = "<group>"; };
 		9F288F691DD59DB700280690 /* BaseTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBar.m; sourceTree = "<group>"; };
 		9F3C28F91DDC5DF100908E2D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9F4B66FF1DEBCB4C0088E6D0 /* BaseDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDrawerController.h; sourceTree = "<group>"; };
+		9F4B67001DEBCB4C0088E6D0 /* BaseDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDrawerController.m; sourceTree = "<group>"; };
+		9F4B67021DEBCB660088E6D0 /* MainDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainDrawerController.h; sourceTree = "<group>"; };
+		9F4B67031DEBCB660088E6D0 /* MainDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainDrawerController.m; sourceTree = "<group>"; };
+		9F4B67041DEBCB660088E6D0 /* MainDrawerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainDrawerController.xib; sourceTree = "<group>"; };
 		9F60896B1DE56F7E00B90CAB /* TestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewCell.h; sourceTree = "<group>"; };
 		9F60896C1DE56F7E00B90CAB /* TestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewCell.m; sourceTree = "<group>"; };
 		9F60896D1DE56F7E00B90CAB /* TestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestTableViewCell.xib; sourceTree = "<group>"; };
@@ -739,9 +747,132 @@
 			path = LeaderView;
 			sourceTree = "<group>";
 		};
+		9F4B670C1DEC0D670088E6D0 /* Mine我的 */ = {
+			isa = PBXGroup;
+			children = (
+				9F4B670D1DEC0D670088E6D0 /* MinePage */,
+			);
+			name = "Mine我的";
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		9F4B670D1DEC0D670088E6D0 /* MinePage */ = {
+			isa = PBXGroup;
+			children = (
+				9F4B670E1DEC0D670088E6D0 /* controller */,
+				9F4B670F1DEC0D670088E6D0 /* model */,
+				9F4B67101DEC0D670088E6D0 /* view */,
+			);
+			path = MinePage;
+			sourceTree = "<group>";
+		};
+		9F4B670E1DEC0D670088E6D0 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		9F4B670F1DEC0D670088E6D0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		9F4B67101DEC0D670088E6D0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9F4B67111DEC0D670088E6D0 /* Reading阅读 */ = {
+			isa = PBXGroup;
+			children = (
+				9F4B67121DEC0D670088E6D0 /* ReadingPage */,
+			);
+			name = "Reading阅读";
+			path = Reading;
+			sourceTree = "<group>";
+		};
+		9F4B67121DEC0D670088E6D0 /* ReadingPage */ = {
+			isa = PBXGroup;
+			children = (
+				9F4B67131DEC0D670088E6D0 /* controller */,
+				9F4B67141DEC0D670088E6D0 /* model */,
+				9F4B67151DEC0D670088E6D0 /* view */,
+			);
+			path = ReadingPage;
+			sourceTree = "<group>";
+		};
+		9F4B67131DEC0D670088E6D0 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		9F4B67141DEC0D670088E6D0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		9F4B67151DEC0D670088E6D0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9F4B67161DEC0D670088E6D0 /* Testing测试 */ = {
+			isa = PBXGroup;
+			children = (
+				9F4B67171DEC0D670088E6D0 /* TestingPage */,
+			);
+			name = "Testing测试";
+			path = Testing;
+			sourceTree = "<group>";
+		};
+		9F4B67171DEC0D670088E6D0 /* TestingPage */ = {
+			isa = PBXGroup;
+			children = (
+				9F4B67181DEC0D670088E6D0 /* controller */,
+				9F4B67191DEC0D670088E6D0 /* model */,
+				9F4B671A1DEC0D670088E6D0 /* view */,
+			);
+			path = TestingPage;
+			sourceTree = "<group>";
+		};
+		9F4B67181DEC0D670088E6D0 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		9F4B67191DEC0D670088E6D0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		9F4B671A1DEC0D670088E6D0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		9F73FF0E1DE2B90500BFFE36 /* Main(主要) */ = {
 			isa = PBXGroup;
 			children = (
+				9F4B670C1DEC0D670088E6D0 /* Mine我的 */,
+				9F4B67111DEC0D670088E6D0 /* Reading阅读 */,
+				9F4B67161DEC0D670088E6D0 /* Testing测试 */,
 				9F73FF341DE2E77400BFFE36 /* Setting设置 */,
 				9F73FF1A1DE2B9C000BFFE36 /* HOME首页 */,
 			);
@@ -1067,6 +1198,8 @@
 				9F288F661DD5952900280690 /* BaseModel.m */,
 				9F288F681DD59DB700280690 /* BaseTabBar.h */,
 				9F288F691DD59DB700280690 /* BaseTabBar.m */,
+				9F4B66FF1DEBCB4C0088E6D0 /* BaseDrawerController.h */,
+				9F4B67001DEBCB4C0088E6D0 /* BaseDrawerController.m */,
 			);
 			name = "Base(重写)";
 			path = Base;
@@ -1081,6 +1214,9 @@
 				9FCE48F01D9D71E000E4BC13 /* AppDelegate.m */,
 				9F73FF291DE2BB8900BFFE36 /* MainViewController.h */,
 				9F73FF2A1DE2BB8900BFFE36 /* MainViewController.m */,
+				9F4B67021DEBCB660088E6D0 /* MainDrawerController.h */,
+				9F4B67031DEBCB660088E6D0 /* MainDrawerController.m */,
+				9F4B67041DEBCB660088E6D0 /* MainDrawerController.xib */,
 			);
 			name = "Other(其它)";
 			path = Other;
@@ -1220,6 +1356,7 @@
 				9F288EA91DD55F3300280690 /* Info.plist in Resources */,
 				9FCE48FF1D9D71E000E4BC13 /* LaunchScreen.storyboard in Resources */,
 				9F159A9C1DE53518001CA0CA /* SettingArrowTableViewCell.xib in Resources */,
+				9F4B67061DEBCB660088E6D0 /* MainDrawerController.xib in Resources */,
 				9F288F2D1DD56A2700280690 /* IQKeyboardManager.bundle in Resources */,
 				9FCE48FC1D9D71E000E4BC13 /* Assets.xcassets in Resources */,
 				9F60896F1DE56F7E00B90CAB /* TestTableViewCell.xib in Resources */,
@@ -1329,11 +1466,13 @@
 				9F159A9B1DE53518001CA0CA /* SettingArrowTableViewCell.m in Sources */,
 				9F288F231DD56A2700280690 /* IQUIViewController+Additions.m in Sources */,
 				9F288F2B1DD56A2700280690 /* IQToolbar.m in Sources */,
+				9F4B67011DEBCB4C0088E6D0 /* BaseDrawerController.m in Sources */,
 				9FD9C2161DA8CF4500E50986 /* UIButton+AFNetworking.m in Sources */,
 				9F8F49D61DA9387C006E4E0E /* MJExtensionConst.m in Sources */,
 				9F288F201DD56A2700280690 /* IQUIScrollView+Additions.m in Sources */,
 				9F288F251DD56A2700280690 /* IQKeyboardManager.m in Sources */,
 				9F288F5F1DD594C000280690 /* UIImage+GIF.m in Sources */,
+				9F4B67051DEBCB660088E6D0 /* MainDrawerController.m in Sources */,
 				9F288EAD1DD55F3300280690 /* MASLayoutConstraint.m in Sources */,
 				9F8F49DF1DA9387C006E4E0E /* NSString+MJExtension.m in Sources */,
 				9F0BAAE11DDAB6420096BDD4 /* WCGraintCircleLayer.m in Sources */,
