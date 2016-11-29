@@ -8,7 +8,7 @@
 
 #import "BaseNavigationController.h"
 
-@interface BaseNavigationController ()
+@interface BaseNavigationController ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -45,5 +45,21 @@
  
 }
 */
+
+-(void)setHaveLeftDrawer:(BOOL)haveLeftDrawer{
+    _haveLeftDrawer = haveLeftDrawer;
+    
+    if (haveLeftDrawer) {
+        [self setupPanGesture];
+    }
+}
+
+-(void)setupPanGesture{
+    if (self.parentViewController) {
+        UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self.parentViewController action:@selector(handlePan:)];
+        pan.delegate=self;
+        [self.view addGestureRecognizer:pan];
+    }
+}
 
 @end

@@ -11,4 +11,8 @@
 
 @interface BaseNavigationController : UINavigationController
 
+@property(nonatomic,assign)BOOL haveLeftDrawer;
+
+-(void)setupPanGesture;
+
 @end

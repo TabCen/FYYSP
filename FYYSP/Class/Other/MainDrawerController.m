@@ -7,6 +7,8 @@
 //
 
 #import "MainDrawerController.h"
+
+#import "BaseNavigationController.h"
 #import "HomeViewController.h"
 #import "ReadingViewController.h"
 #import "TestingViewController.h"
@@ -27,7 +29,13 @@
     TestingViewController   *VC3 = [[TestingViewController alloc] init];
     MineViewController      *VC4 = [[MineViewController alloc] init];
     
-    self.viewControllers = @[VC1,VC2,VC3,VC4];
+    BaseNavigationController *nav1=[[BaseNavigationController alloc]initWithRootViewController:VC1];
+    BaseNavigationController *nav2=[[BaseNavigationController alloc]initWithRootViewController:VC2];
+    BaseNavigationController *nav3=[[BaseNavigationController alloc]initWithRootViewController:VC3];
+    BaseNavigationController *nav4=[[BaseNavigationController alloc]initWithRootViewController:VC4];
+    
+//    self.viewControllers = @[VC1,VC2,VC3,VC4];
+    self.viewControllers = @[nav1,nav2,nav3,nav4];
     
     self.tittles = @[@"首页",@"阅读",@"试验",@"我的"];
     

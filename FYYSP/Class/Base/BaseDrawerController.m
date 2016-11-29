@@ -10,6 +10,8 @@
 
 #import "BaseViewController.h"
 
+#import "BaseNavigationController.h"
+
 @interface BaseDrawerController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic)CGFloat scalef;
@@ -39,6 +41,7 @@
         _tableview.dataSource = self;
            
         [self.view addSubview:_tableview];
+        
     }
     
 }
@@ -71,12 +74,6 @@
     }
     
     if (canMove) {
-        //        self.currentVC.view.transform = CGAffineTransformTranslate(self.currentVC.view.transform, point.x, 0);
-        //        if (self.currentVC.view.frame.origin.x+self.scalef<0) {
-        //            NSLog(@"%lf +++++ %lf",self.currentVC.view.frame.origin.x,self.scalef);
-        //            self.scalef = self.currentVC.view.frame.origin.x;
-        //            canMove = NO;
-        //        }
         self.currentVC.view.transform = CGAffineTransformTranslate(self.currentVC.view.transform, self.scalef, 0);
         [pan setTranslation:CGPointZero inView:self.currentVC.view];
     }
@@ -197,11 +194,17 @@
     if (viewControllers.count>0) {
         for (int i= 0; i<viewControllers.count; ++i) {
             [self addChildViewController:viewControllers[i]];
+            
             if ([viewControllers[i] isKindOfClass:[BaseViewController class]]) {
                 BaseViewController *vc = viewControllers[i];
                 vc.haveLeftDrawer = YES;
-                vc.view.frame = [UIScreen mainScreen].bounds;
             }
+            
+            if ([viewControllers[i] isKindOfClass:[BaseNavigationController class]]) {
+                BaseNavigationController *nav = viewControllers[i];
+                nav.haveLeftDrawer = YES;
+            }
+            
         }
         self.currentVC = viewControllers[0];
         self.currentIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];

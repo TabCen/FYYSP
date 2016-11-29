@@ -21,7 +21,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //设置引导页的停留时间
-    [NSThread sleepForTimeInterval:3];
+//    [NSThread sleepForTimeInterval:];
     //设置非导航栏状态下的状态栏状态，iOS9以后弃用，并且每一个UIViewController默认的状态栏状态为显示。所以可以不用显示，但安全起见放到rootVIewController里面再设置一下导航栏的状态
 //    [[UIApplication sharedApplication] setStatusBarHidden:YES];
     

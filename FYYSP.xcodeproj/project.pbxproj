@@ -87,7 +87,6 @@
 		9F3C28FA1DDC5DF100908E2D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C28F91DDC5DF100908E2D /* ViewController.m */; };
 		9F4B67011DEBCB4C0088E6D0 /* BaseDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B67001DEBCB4C0088E6D0 /* BaseDrawerController.m */; };
 		9F4B67051DEBCB660088E6D0 /* MainDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B67031DEBCB660088E6D0 /* MainDrawerController.m */; };
-		9F4B67061DEBCB660088E6D0 /* MainDrawerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F4B67041DEBCB660088E6D0 /* MainDrawerController.xib */; };
 		9F4B671E1DEC0EF80088E6D0 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B671C1DEC0EF80088E6D0 /* MineViewController.m */; };
 		9F4B671F1DEC0EF80088E6D0 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F4B671D1DEC0EF80088E6D0 /* MineViewController.xib */; };
 		9F4B67231DEC0F1A0088E6D0 /* ReadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B67211DEC0F1A0088E6D0 /* ReadingViewController.m */; };
@@ -97,7 +96,6 @@
 		9F60896E1DE56F7E00B90CAB /* TestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F60896C1DE56F7E00B90CAB /* TestTableViewCell.m */; };
 		9F60896F1DE56F7E00B90CAB /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F60896D1DE56F7E00B90CAB /* TestTableViewCell.xib */; };
 		9F73FF271DE2BA1900BFFE36 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F73FF231DE2BA1900BFFE36 /* HomeViewController.m */; };
-		9F73FF281DE2BA1900BFFE36 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F73FF241DE2BA1900BFFE36 /* HomeViewController.xib */; };
 		9F73FF2B1DE2BB8900BFFE36 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F73FF2A1DE2BB8900BFFE36 /* MainViewController.m */; };
 		9F73FF3B1DE2E77400BFFE36 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F73FF371DE2E77400BFFE36 /* SettingViewController.m */; };
 		9F73FF3C1DE2E77400BFFE36 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F73FF381DE2E77400BFFE36 /* SettingViewController.xib */; };
@@ -325,7 +323,6 @@
 		9F4B67001DEBCB4C0088E6D0 /* BaseDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDrawerController.m; sourceTree = "<group>"; };
 		9F4B67021DEBCB660088E6D0 /* MainDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainDrawerController.h; sourceTree = "<group>"; };
 		9F4B67031DEBCB660088E6D0 /* MainDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainDrawerController.m; sourceTree = "<group>"; };
-		9F4B67041DEBCB660088E6D0 /* MainDrawerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainDrawerController.xib; sourceTree = "<group>"; };
 		9F4B671B1DEC0EF80088E6D0 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		9F4B671C1DEC0EF80088E6D0 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		9F4B671D1DEC0EF80088E6D0 /* MineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
@@ -340,7 +337,6 @@
 		9F60896D1DE56F7E00B90CAB /* TestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestTableViewCell.xib; sourceTree = "<group>"; };
 		9F73FF221DE2BA1900BFFE36 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		9F73FF231DE2BA1900BFFE36 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		9F73FF241DE2BA1900BFFE36 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		9F73FF291DE2BB8900BFFE36 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		9F73FF2A1DE2BB8900BFFE36 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		9F73FF361DE2E77400BFFE36 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
@@ -928,7 +924,6 @@
 			children = (
 				9F73FF221DE2BA1900BFFE36 /* HomeViewController.h */,
 				9F73FF231DE2BA1900BFFE36 /* HomeViewController.m */,
-				9F73FF241DE2BA1900BFFE36 /* HomeViewController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -1240,7 +1235,6 @@
 				9F73FF2A1DE2BB8900BFFE36 /* MainViewController.m */,
 				9F4B67021DEBCB660088E6D0 /* MainDrawerController.h */,
 				9F4B67031DEBCB660088E6D0 /* MainDrawerController.m */,
-				9F4B67041DEBCB660088E6D0 /* MainDrawerController.xib */,
 			);
 			name = "Other(其它)";
 			path = Other;
@@ -1380,14 +1374,12 @@
 				9F288EA91DD55F3300280690 /* Info.plist in Resources */,
 				9FCE48FF1D9D71E000E4BC13 /* LaunchScreen.storyboard in Resources */,
 				9F159A9C1DE53518001CA0CA /* SettingArrowTableViewCell.xib in Resources */,
-				9F4B67061DEBCB660088E6D0 /* MainDrawerController.xib in Resources */,
 				9F4B67291DEC0F2E0088E6D0 /* TestingViewController.xib in Resources */,
 				9F288F2D1DD56A2700280690 /* IQKeyboardManager.bundle in Resources */,
 				9FCE48FC1D9D71E000E4BC13 /* Assets.xcassets in Resources */,
 				9F60896F1DE56F7E00B90CAB /* TestTableViewCell.xib in Resources */,
 				9F288EEF1DD5604F00280690 /* MJRefresh.bundle in Resources */,
 				9F73FF431DE2FCC700BFFE36 /* SettingTableViewCell.xib in Resources */,
-				9F73FF281DE2BA1900BFFE36 /* HomeViewController.xib in Resources */,
 				9FCE48F71D9D71E000E4BC13 /* Main.storyboard in Resources */,
 				9F4B67241DEC0F1A0088E6D0 /* ReadingViewController.xib in Resources */,
 				9F73FF3C1DE2E77400BFFE36 /* SettingViewController.xib in Resources */,
