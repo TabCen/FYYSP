@@ -13,6 +13,7 @@
 
 @property(nonatomic,assign)BOOL haveLeftDrawer;
 
--(void)setupPanGesture;
+-(void)hideBarWithAnimation:(BOOL)animation;
+-(void)showBarWithAnimation:(BOOL)animation;
 
 @end

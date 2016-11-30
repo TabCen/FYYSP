@@ -18,6 +18,7 @@
 
 @implementation BaseViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -112,6 +113,12 @@
 }
 
 
+
+/**
+ 设置是否是有左边抽屉
+
+ @param haveLeftDrawer YES表示有，NO无
+ */
 -(void)setHaveLeftDrawer:(BOOL)haveLeftDrawer{
     _haveLeftDrawer = haveLeftDrawer;
     

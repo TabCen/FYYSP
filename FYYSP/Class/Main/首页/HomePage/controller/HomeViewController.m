@@ -14,18 +14,19 @@
 
 #import "CFFileManager.h"
 
+#import "BaseNavigationController.h"
+
 @interface HomeViewController ()
 
 @end
 
 @implementation HomeViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor purpleColor];
-    
-//    [CFFileManager createFileInPreferences_FileName:@""];
+//    self.view.backgroundColor = [UIColor purpleColor];
     
     NSLog(@"---++++????>>>>%@",kPathDocument);
     
@@ -41,11 +42,36 @@
 }
 
 -(void)otherThings{
+    UIButton *showBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 100, 100, 40)];
+    showBtn.backgroundColor = [UIColor whiteColor];
+    [showBtn setTitle:@"开" forState:UIControlStateNormal];
+    [showBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [showBtn addTarget:self action:@selector(showNavBar) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:showBtn];
     
-    
+    UIButton *hidBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 200, 100, 40)];
+    [hidBtn setTitle:@"关" forState:UIControlStateNormal];
+    [hidBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    hidBtn.backgroundColor = [UIColor whiteColor];
+    [hidBtn addTarget:self action:@selector(hideNavBar) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:hidBtn];
 }
 
+-(void)hideNavBar{
+    BaseNavigationController *nav = (BaseNavigationController *)self.navigationController;
+    
+    [nav hideBarWithAnimation:YES];
+}
+
+-(void)showNavBar{
+    BaseNavigationController *nav = (BaseNavigationController *)self.navigationController;
+    
+    [nav showBarWithAnimation:YES];
+}
+
+
 -(void)rightBarBtnClicked{
+    
     SettingViewController *setVC=[[SettingViewController alloc]init];
     
     setVC.hidesBottomBarWhenPushed = YES;

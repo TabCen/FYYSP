@@ -36,7 +36,4 @@
  */
 -(void)_showAlertViewWithTitle:(NSString *)tittle message:(NSString *)message insureBtn:(NSString *)insureStr cancleBtn:(NSString *)cancleStr;
 
-
--(void)setupPanGesture;
-
 @end

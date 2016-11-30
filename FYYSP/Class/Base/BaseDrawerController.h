@@ -28,6 +28,9 @@
 
 @property(nonatomic) CGFloat    openWidth;
 
+/**
+ 设置默认的左边视图，默认的左边视图为一个TableView，功能如同UITabBar。当然可以自定义，但最好子类实现
+ */
 @property(nonatomic) BOOL       drawerShowTableView;        //  默认为否，可自定义
 
 @property(nullable,nonatomic,weak) id <drawerControllerDelegate> delegate;

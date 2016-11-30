@@ -31,7 +31,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor yellowColor];
+//    self.view.backgroundColor = [UIColor yellowColor];
+    self.view.backgroundColor = k_TableViewBackgroundColor;
     
     if (_drawerShowTableView) {
         
@@ -43,7 +44,6 @@
         [self.view addSubview:_tableview];
         
     }
-    
 }
 
 - (void)didReceiveMemoryWarning {

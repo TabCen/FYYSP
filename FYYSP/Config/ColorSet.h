@@ -11,7 +11,9 @@
 
 #define k_BaseColor COLOR_RGB(0xDC7646)
 
+#define k_TableViewBackgroundColor COLORf(0.94,0.94,0.96,1)
 
+#define k_whiteColor COLORf(0.98,0.98,0.98,1)
 
 #endif
 //15B7B9

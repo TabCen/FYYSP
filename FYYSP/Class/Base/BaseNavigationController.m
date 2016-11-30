@@ -16,14 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+//    self.navigationBar.barTintColor = k_whiteColor;
+//    self.navigationBar.translucent = NO;
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 /**
  返回状态栏的状态
@@ -46,6 +48,7 @@
 }
 */
 
+#pragma mark - 设置是否有抽屉侧滑栏
 -(void)setHaveLeftDrawer:(BOOL)haveLeftDrawer{
     _haveLeftDrawer = haveLeftDrawer;
     
@@ -61,5 +64,51 @@
         [self.view addGestureRecognizer:pan];
     }
 }
+
+-(BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
+    if (self.viewControllers.count == 1) {
+        return YES;
+    }else return NO;
+}
+
+#pragma mark - 设置是否显示Bar
+
+-(void)hideBarWithAnimation:(BOOL)animation{
+    if (self.navigationBar.isHidden) {
+        return;
+    }
+    
+    if (animation) {
+        [UIView animateWithDuration:0.25f delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+            self.navigationBar.transform = CGAffineTransformTranslate(self.navigationBar.transform, 0, -64);
+            
+        } completion:^(BOOL finished) {
+            self.navigationBar.hidden = YES;
+        }];
+        
+        return;
+    }
+    self.navigationBar.hidden = YES;
+}
+
+
+-(void)showBarWithAnimation:(BOOL)animation{
+    if (!self.navigationBar.isHidden) {
+        return;
+    }
+    
+    self.navigationBar.hidden = NO;
+    if (animation) {
+        [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+            self.navigationBar.transform = CGAffineTransformIdentity;
+        } completion:^(BOOL finished) {
+            
+        }];
+        return;
+    }
+    self.navigationBar.transform = CGAffineTransformIdentity;
+}
+
+
 
 @end
