@@ -25,19 +25,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-//    self.view.backgroundColor = [UIColor purpleColor];
-    
-    NSLog(@"---++++????>>>>%@",kPathDocument);
+    self.view.backgroundColor = [UIColor whiteColor];
     
     self.navigationItem.title = @"首页";
     
     [self setNavRightBarBtnItemWithImage:[UIImage imageNamed:@"set"]
                                 function:@selector(rightBarBtnClicked)];
     
-    [[NSUserDefaults standardUserDefaults] setObject:@"123" forKey:@"first"];
+//    [CFFileManager resetDefaults];
     
-    [self otherThings];
+    
     
 }
 

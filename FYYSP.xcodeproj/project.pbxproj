@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F0058531DF00C3E007C4B41 /* CFKeyChainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0058521DF00C3E007C4B41 /* CFKeyChainWrapper.m */; };
+		9F0058581DF0167F007C4B41 /* UFO.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0058571DF0167F007C4B41 /* UFO.m */; };
+		9F00585C1DF01BAC007C4B41 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F00585B1DF01BAC007C4B41 /* NSString+Hash.m */; };
 		9F01A0411DE3E376009518AA /* UIViewController+BaseCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F01A0401DE3E376009518AA /* UIViewController+BaseCategory.m */; };
 		9F01A0491DE40C3A009518AA /* GlobalSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F01A0481DE40C3A009518AA /* GlobalSingleton.m */; };
 		9F0BAAE01DDAB6420096BDD4 /* CFProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BAADD1DDAB6420096BDD4 /* CFProgressHUD.m */; };
@@ -158,6 +161,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F0058511DF00C3E007C4B41 /* CFKeyChainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKeyChainWrapper.h; sourceTree = "<group>"; };
+		9F0058521DF00C3E007C4B41 /* CFKeyChainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKeyChainWrapper.m; sourceTree = "<group>"; };
+		9F0058561DF0167F007C4B41 /* UFO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UFO.h; sourceTree = "<group>"; };
+		9F0058571DF0167F007C4B41 /* UFO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UFO.m; sourceTree = "<group>"; };
+		9F00585A1DF01BAC007C4B41 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		9F00585B1DF01BAC007C4B41 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 		9F01A03F1DE3E376009518AA /* UIViewController+BaseCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BaseCategory.h"; sourceTree = "<group>"; };
 		9F01A0401DE3E376009518AA /* UIViewController+BaseCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BaseCategory.m"; sourceTree = "<group>"; };
 		9F01A0431DE3FDEE009518AA /* CFTableViewCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFTableViewCellDelegate.h; sourceTree = "<group>"; };
@@ -454,6 +463,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F0058501DF0091C007C4B41 /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				9F0058511DF00C3E007C4B41 /* CFKeyChainWrapper.h */,
+				9F0058521DF00C3E007C4B41 /* CFKeyChainWrapper.m */,
+			);
+			path = KeyChain;
+			sourceTree = "<group>";
+		};
+		9F0058551DF0167F007C4B41 /* UFO */ = {
+			isa = PBXGroup;
+			children = (
+				9F0058561DF0167F007C4B41 /* UFO.h */,
+				9F0058571DF0167F007C4B41 /* UFO.m */,
+			);
+			path = UFO;
+			sourceTree = "<group>";
+		};
+		9F0058591DF01BAC007C4B41 /* DataSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				9F00585A1DF01BAC007C4B41 /* NSString+Hash.h */,
+				9F00585B1DF01BAC007C4B41 /* NSString+Hash.m */,
+			);
+			path = DataSecurity;
+			sourceTree = "<group>";
+		};
 		9F01A03D1DE3E353009518AA /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -1128,6 +1164,9 @@
 		9FD9C1E41DA89C1800E50986 /* Utils(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				9F0058591DF01BAC007C4B41 /* DataSecurity */,
+				9F0058551DF0167F007C4B41 /* UFO */,
+				9F0058501DF0091C007C4B41 /* KeyChain */,
 				9F91139F1DE44903008A93F2 /* Data */,
 				9F01A03D1DE3E353009518AA /* Category */,
 				9F01A03E1DE3E353009518AA /* Protocol */,
@@ -1432,6 +1471,7 @@
 				9F288EE61DD5604F00280690 /* MJRefreshAutoGifFooter.m in Sources */,
 				9F288EE81DD5604F00280690 /* MJRefreshAutoStateFooter.m in Sources */,
 				9F288F5B1DD594C000280690 /* SDWebImageDownloaderOperation.m in Sources */,
+				9F0058531DF00C3E007C4B41 /* CFKeyChainWrapper.m in Sources */,
 				9F8F49DA1DA9387C006E4E0E /* MJPropertyType.m in Sources */,
 				9F288EF91DD5633000280690 /* MBProgressHUD.m in Sources */,
 				9FCE48FA1D9D71E000E4BC13 /* FYYSP.xcdatamodeld in Sources */,
@@ -1492,6 +1532,7 @@
 				9F288F201DD56A2700280690 /* IQUIScrollView+Additions.m in Sources */,
 				9F288F251DD56A2700280690 /* IQKeyboardManager.m in Sources */,
 				9F288F5F1DD594C000280690 /* UIImage+GIF.m in Sources */,
+				9F00585C1DF01BAC007C4B41 /* NSString+Hash.m in Sources */,
 				9F4B67051DEBCB660088E6D0 /* MainDrawerController.m in Sources */,
 				9F288EAD1DD55F3300280690 /* MASLayoutConstraint.m in Sources */,
 				9F8F49DF1DA9387C006E4E0E /* NSString+MJExtension.m in Sources */,
@@ -1505,6 +1546,7 @@
 				9FD9C21A1DA8CF4500E50986 /* UIWebView+AFNetworking.m in Sources */,
 				9FD9C20F1DA8CF4500E50986 /* AFURLRequestSerialization.m in Sources */,
 				9F60896E1DE56F7E00B90CAB /* TestTableViewCell.m in Sources */,
+				9F0058581DF0167F007C4B41 /* UFO.m in Sources */,
 				9F288E8D1DD547BA00280690 /* BaseNavigationController.m in Sources */,
 				9F8F49D51DA9387C006E4E0E /* MJDictionaryCache.m in Sources */,
 				9F288F261DD56A2700280690 /* IQKeyboardReturnKeyHandler.m in Sources */,

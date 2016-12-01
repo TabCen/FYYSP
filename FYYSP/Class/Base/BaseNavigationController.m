@@ -17,8 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    self.navigationBar.barTintColor = k_whiteColor;
-//    self.navigationBar.translucent = NO;
+//    self.navigationBar.barTintColor = k_whiteColor;   //设置颜色
+//    self.navigationBar.translucent = NO;              //毛玻璃效果
     
 }
 

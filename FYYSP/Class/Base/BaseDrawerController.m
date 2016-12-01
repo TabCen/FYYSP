@@ -20,6 +20,8 @@
 
 @property(nonatomic,weak)UIViewController *currentVC;
 
+@property(nonatomic,strong)UIView          *headView;
+
 @property(nonatomic,strong)UITableView     *tableview;
 
 @property(nonatomic,strong)NSIndexPath     *currentIndexPath;
@@ -36,7 +38,13 @@
     
     if (_drawerShowTableView) {
         
-        self.tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, DefineOpenWidth, kScreenHeight) style:UITableViewStyleGrouped];
+        self.headView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, DefineOpenWidth, 64)];
+        self.headView.backgroundColor = k_whiteColor;
+        [self.view addSubview:_headView];
+        
+        self.tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, DefineOpenWidth, kScreenHeight - 64) style:UITableViewStyleGrouped];
+        
+        self.tableview.contentInset = UIEdgeInsetsMake( 0, 0, 0, 0);
         
         _tableview.delegate = self;
         _tableview.dataSource = self;

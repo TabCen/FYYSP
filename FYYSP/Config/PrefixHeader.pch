@@ -60,7 +60,7 @@
 #define kPathDocument [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
 ///Library/Cache        iTunes不会同步此文件夹，适合存储体积大，不需要备份的非重要数据
 #define kPathCache [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
-///Library/Preferences  iTunes会同步此文件夹，适合存储应用的设置信息
+///Library/Preferences  iTunes会同步此文件夹，适合存储应用的设置信息／用户设置
 #define kPathPreferences  [NSString stringWithFormat:@"%@/Library/Preference",NSHomeDirectory()]
 ///tmp                  临时文件，用完就删除
 #define kPathTmp NSTemporaryDirectory()
