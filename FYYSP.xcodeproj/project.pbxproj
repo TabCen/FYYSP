@@ -167,6 +167,7 @@
 		9F0058571DF0167F007C4B41 /* UFO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UFO.m; sourceTree = "<group>"; };
 		9F00585A1DF01BAC007C4B41 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
 		9F00585B1DF01BAC007C4B41 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		9F00585D1DF0282F007C4B41 /* FYYSP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FYYSP.entitlements; sourceTree = "<group>"; };
 		9F01A03F1DE3E376009518AA /* UIViewController+BaseCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BaseCategory.h"; sourceTree = "<group>"; };
 		9F01A0401DE3E376009518AA /* UIViewController+BaseCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BaseCategory.m"; sourceTree = "<group>"; };
 		9F01A0431DE3FDEE009518AA /* CFTableViewCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFTableViewCellDelegate.h; sourceTree = "<group>"; };
@@ -1089,6 +1090,7 @@
 		9FCE48EB1D9D71E000E4BC13 /* FYYSP */ = {
 			isa = PBXGroup;
 			children = (
+				9F00585D1DF0282F007C4B41 /* FYYSP.entitlements */,
 				9FD9C1E11DA89C1800E50986 /* Class(主要类) */,
 				9FD9C1E41DA89C1800E50986 /* Utils(工具) */,
 				9FD9C1E61DA89CD900E50986 /* Config(配置) */,
@@ -1374,6 +1376,11 @@
 					9FCE48E81D9D71E000E4BC13 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 2JX92W966H;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					9FCE49041D9D71E000E4BC13 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1710,6 +1717,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FYYSP/FYYSP.entitlements;
 				DEVELOPMENT_TEAM = 2JX92W966H;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FYYSP/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = FYYSP/Info.plist;
@@ -1723,6 +1731,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FYYSP/FYYSP.entitlements;
 				DEVELOPMENT_TEAM = 2JX92W966H;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FYYSP/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = FYYSP/Info.plist;

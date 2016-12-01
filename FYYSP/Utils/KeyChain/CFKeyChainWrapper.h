@@ -15,6 +15,13 @@
 @property (nonatomic, strong) NSMutableDictionary *keychainData;
 @property (nonatomic, strong) NSMutableDictionary *genericPasswordQuery;
 
+/**
+ 1、创建方法需要携带ID
+ 
+ */
+
+- (id)initWithIdentify:(NSString *)identify;
+
 - (void)mySetObject:(id)inObject forKey:(id)key;
 
 - (id)myObjectForKey:(id)key;
