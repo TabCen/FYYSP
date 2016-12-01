@@ -25,6 +25,10 @@
  */
 +(NSString *)dataString:(NSString *)dataStr FromFormater:(NSString *)fromFor toFor:(NSString *)toFor;
 
+
++(NSString *)timeStamp;
+
+
 @end
 
 /**
@@ -45,6 +49,8 @@
 -(NSString *)dateFormatterFromFor:(NSString *)fromFor toFor:(NSString *)toFor;
 
 @end
+
+
 
 
 

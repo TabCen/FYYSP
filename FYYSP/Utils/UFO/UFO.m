@@ -19,6 +19,12 @@
     return [dataStr dateFormatterFromFor:fromFor toFor:toFor];
 }
 
++(NSString *)timeStamp{
+    UInt64 recordTime = [[NSDate date] timeIntervalSince1970]*1000;
+    
+    return [NSString stringWithFormat:@"%llu",recordTime];
+}
+
 
 @end
 
@@ -124,9 +130,6 @@
                 [M appendString:MyScale1[i-1]];
             }
         }
-    
-    
-    
     
     return M;
 }
