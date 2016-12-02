@@ -26,6 +26,8 @@
 
 @property(nonatomic,strong)NSIndexPath     *currentIndexPath;
 
+@property(nonatomic,strong)UITapGestureRecognizer   *slideTapGesture;
+
 @end
 
 @implementation BaseDrawerController
@@ -114,6 +116,13 @@
     
     [self transitionFromViewController:self.viewControllers[oldIndex.row] toViewController:self.viewControllers[newIndex.row] duration:0 options:UIViewAnimationOptionTransitionNone animations:^{
     } completion:^(BOOL finished) {
+        
+        //打开后先将开始设置的tap手势去除
+        if (self.slideTapGesture) {
+            [self.currentVC.view removeGestureRecognizer:self.slideTapGesture];
+            self.slideTapGesture = nil;
+        }
+        
         self.currentVC = self.viewControllers[newIndex.row];
         self.currentIndexPath = newIndex;
         [UIView animateWithDuration:0.4 animations:^{
@@ -127,7 +136,7 @@
     [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         self.currentVC.view.transform = CGAffineTransformMakeTranslation(self.openWidth, 0);
     } completion:^(BOOL finished) {
-        
+        [self endOpeningDo];
     }];
 }
 
@@ -138,7 +147,7 @@
         [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
             self.currentVC.view.transform = CGAffineTransformIdentity;
         } completion:^(BOOL finished) {
-            
+            [self endCloseingDo];
         }];
     }
 }
@@ -147,14 +156,46 @@
     [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:0.1 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.currentVC.view.transform = CGAffineTransformMakeTranslation(self.openWidth, 0);
     } completion:^(BOOL finished) {
-        
+        [self endOpeningDo];
     }];
 }
 
 -(void)closeDrawer{
     [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.currentVC.view.transform = CGAffineTransformIdentity;
-    } completion:nil];
+    } completion:^(BOOL finished) {
+        [self endCloseingDo];
+    }];
+}
+
+-(void)endCloseingDo{
+    [self.currentVC.view.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        ///当关闭后需要将所有的行为打开
+        [obj setUserInteractionEnabled:YES];
+    }];
+    
+    if (self.slideTapGesture) {
+        [self.currentVC.view removeGestureRecognizer:self.slideTapGesture];
+        self.slideTapGesture = nil;
+    }
+    
+}
+
+-(void)endOpeningDo{
+    [self.currentVC.view.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        ///当打开后需要将所有的交互关闭
+        [obj setUserInteractionEnabled:NO];
+    }];
+    
+    //如果不存在手势则添加手势
+    if (!self.slideTapGesture) {
+        self.slideTapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(closeDrawer)];
+        
+        [self.slideTapGesture setNumberOfTapsRequired:1];
+        [self.slideTapGesture setNumberOfTouchesRequired:1];
+        
+        [self.currentVC.view addGestureRecognizer:self.slideTapGesture];
+    }
 }
 
 #pragma mark - tableview代理方法

@@ -140,6 +140,7 @@
 		9FD9C2191DA8CF4500E50986 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9C2091DA8CF4500E50986 /* UIRefreshControl+AFNetworking.m */; };
 		9FD9C21A1DA8CF4500E50986 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9C20B1DA8CF4500E50986 /* UIWebView+AFNetworking.m */; };
 		9FD9C2211DA8D70200E50986 /* ModelOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9C2201DA8D70200E50986 /* ModelOne.m */; };
+		9FDF5C941DF1114E00CF8DF5 /* UIImage+CommonFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDF5C931DF1114E00CF8DF5 /* UIImage+CommonFunction.m */; };
 		9FFAE2E81DD46E3900D46DEC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FFAE2E71DD46E3900D46DEC /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -434,6 +435,8 @@
 		9FD9C20B1DA8CF4500E50986 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		9FD9C21F1DA8D70200E50986 /* ModelOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelOne.h; sourceTree = "<group>"; };
 		9FD9C2201DA8D70200E50986 /* ModelOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelOne.m; sourceTree = "<group>"; };
+		9FDF5C921DF1114E00CF8DF5 /* UIImage+CommonFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CommonFunction.h"; sourceTree = "<group>"; };
+		9FDF5C931DF1114E00CF8DF5 /* UIImage+CommonFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CommonFunction.m"; sourceTree = "<group>"; };
 		9FFAE2E71DD46E3900D46DEC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -496,6 +499,8 @@
 			children = (
 				9F01A03F1DE3E376009518AA /* UIViewController+BaseCategory.h */,
 				9F01A0401DE3E376009518AA /* UIViewController+BaseCategory.m */,
+				9FDF5C921DF1114E00CF8DF5 /* UIImage+CommonFunction.h */,
+				9FDF5C931DF1114E00CF8DF5 /* UIImage+CommonFunction.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1478,6 +1483,7 @@
 				9F288EE61DD5604F00280690 /* MJRefreshAutoGifFooter.m in Sources */,
 				9F288EE81DD5604F00280690 /* MJRefreshAutoStateFooter.m in Sources */,
 				9F288F5B1DD594C000280690 /* SDWebImageDownloaderOperation.m in Sources */,
+				9FDF5C941DF1114E00CF8DF5 /* UIImage+CommonFunction.m in Sources */,
 				9F0058531DF00C3E007C4B41 /* CFKeyChainWrapper.m in Sources */,
 				9F8F49DA1DA9387C006E4E0E /* MJPropertyType.m in Sources */,
 				9F288EF91DD5633000280690 /* MBProgressHUD.m in Sources */,

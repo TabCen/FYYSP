@@ -16,6 +16,8 @@
 
 #import "BaseNavigationController.h"
 
+#import "UIImage+CommonFunction.h"
+
 @interface HomeViewController ()
 
 @end
@@ -29,12 +31,12 @@
     
     self.navigationItem.title = @"首页";
     
+    self.view.backgroundColor = [UIColor grayColor];
+    
     [self setNavRightBarBtnItemWithImage:[UIImage imageNamed:@"set"]
                                 function:@selector(rightBarBtnClicked)];
     
-//    [CFFileManager resetDefaults];
-    
-    
+    [self otherThings];
     
 }
 
@@ -47,6 +49,7 @@
     [self.view addSubview:showBtn];
     
     UIButton *hidBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 200, 100, 40)];
+    hidBtn.tag = 100;
     [hidBtn setTitle:@"关" forState:UIControlStateNormal];
     [hidBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     hidBtn.backgroundColor = [UIColor whiteColor];
