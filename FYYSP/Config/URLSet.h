@@ -15,4 +15,6 @@
 
 #define WS_URL Appending_URL(@"/fundApp/wandeRequest.json?")
 
+#define FCL_URL Appending_URL(@"/fundApp/wandeRequest.json")
+
 #endif /* URLSet_h */

@@ -87,6 +87,11 @@
 		9F288F641DD594C000280690 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F288F541DD594C000280690 /* UIView+WebCacheOperation.m */; };
 		9F288F671DD5952900280690 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F288F661DD5952900280690 /* BaseModel.m */; };
 		9F288F6A1DD59DB700280690 /* BaseTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F288F691DD59DB700280690 /* BaseTabBar.m */; };
+		9F3BDB031DF50CE6008F1CC9 /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3BDAFC1DF50CE6008F1CC9 /* YYCache.m */; };
+		9F3BDB041DF50CE6008F1CC9 /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3BDAFE1DF50CE6008F1CC9 /* YYDiskCache.m */; };
+		9F3BDB051DF50CE6008F1CC9 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3BDB001DF50CE6008F1CC9 /* YYKVStorage.m */; };
+		9F3BDB061DF50CE6008F1CC9 /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3BDB021DF50CE6008F1CC9 /* YYMemoryCache.m */; };
+		9F3BDB081DF50D46008F1CC9 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3BDB071DF50D46008F1CC9 /* libsqlite3.tbd */; };
 		9F3C28FA1DDC5DF100908E2D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C28F91DDC5DF100908E2D /* ViewController.m */; };
 		9F4B67011DEBCB4C0088E6D0 /* BaseDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B67001DEBCB4C0088E6D0 /* BaseDrawerController.m */; };
 		9F4B67051DEBCB660088E6D0 /* MainDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B67031DEBCB660088E6D0 /* MainDrawerController.m */; };
@@ -116,6 +121,7 @@
 		9F8F49DE1DA9387C006E4E0E /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F49D21DA9387C006E4E0E /* NSObject+MJProperty.m */; };
 		9F8F49DF1DA9387C006E4E0E /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F49D41DA9387C006E4E0E /* NSString+MJExtension.m */; };
 		9F9113A21DE44915008A93F2 /* CFFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9113A11DE44915008A93F2 /* CFFileManager.m */; };
+		9FBA811F1DF1595500904061 /* LoginingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBA811E1DF1595500904061 /* LoginingWindow.m */; };
 		9FCE48EE1D9D71E000E4BC13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE48ED1D9D71E000E4BC13 /* main.m */; };
 		9FCE48F11D9D71E000E4BC13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE48F01D9D71E000E4BC13 /* AppDelegate.m */; };
 		9FCE48F71D9D71E000E4BC13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCE48F51D9D71E000E4BC13 /* Main.storyboard */; };
@@ -329,6 +335,15 @@
 		9F288F661DD5952900280690 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		9F288F681DD59DB700280690 /* BaseTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBar.h; sourceTree = "<group>"; };
 		9F288F691DD59DB700280690 /* BaseTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBar.m; sourceTree = "<group>"; };
+		9F3BDAFB1DF50CE6008F1CC9 /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCache.h; sourceTree = "<group>"; };
+		9F3BDAFC1DF50CE6008F1CC9 /* YYCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCache.m; sourceTree = "<group>"; };
+		9F3BDAFD1DF50CE6008F1CC9 /* YYDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDiskCache.h; sourceTree = "<group>"; };
+		9F3BDAFE1DF50CE6008F1CC9 /* YYDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYDiskCache.m; sourceTree = "<group>"; };
+		9F3BDAFF1DF50CE6008F1CC9 /* YYKVStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKVStorage.h; sourceTree = "<group>"; };
+		9F3BDB001DF50CE6008F1CC9 /* YYKVStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKVStorage.m; sourceTree = "<group>"; };
+		9F3BDB011DF50CE6008F1CC9 /* YYMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMemoryCache.h; sourceTree = "<group>"; };
+		9F3BDB021DF50CE6008F1CC9 /* YYMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMemoryCache.m; sourceTree = "<group>"; };
+		9F3BDB071DF50D46008F1CC9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		9F3C28F91DDC5DF100908E2D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9F4B66FF1DEBCB4C0088E6D0 /* BaseDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDrawerController.h; sourceTree = "<group>"; };
 		9F4B67001DEBCB4C0088E6D0 /* BaseDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDrawerController.m; sourceTree = "<group>"; };
@@ -383,6 +398,8 @@
 		9F8F49D41DA9387C006E4E0E /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
 		9F9113A01DE44915008A93F2 /* CFFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFFileManager.h; sourceTree = "<group>"; };
 		9F9113A11DE44915008A93F2 /* CFFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFFileManager.m; sourceTree = "<group>"; };
+		9FBA811D1DF1595500904061 /* LoginingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginingWindow.h; sourceTree = "<group>"; };
+		9FBA811E1DF1595500904061 /* LoginingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginingWindow.m; sourceTree = "<group>"; };
 		9FCE48E91D9D71E000E4BC13 /* FYYSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYYSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCE48ED1D9D71E000E4BC13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9FCE48EF1D9D71E000E4BC13 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -445,6 +462,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F3BDB081DF50D46008F1CC9 /* libsqlite3.tbd in Frameworks */,
 				9F288EF51DD5624D00280690 /* CoreGraphics.framework in Frameworks */,
 				9FFAE2E81DD46E3900D46DEC /* AVFoundation.framework in Frameworks */,
 			);
@@ -793,6 +811,21 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		9F3BDAFA1DF50CE6008F1CC9 /* YYCache */ = {
+			isa = PBXGroup;
+			children = (
+				9F3BDAFB1DF50CE6008F1CC9 /* YYCache.h */,
+				9F3BDAFC1DF50CE6008F1CC9 /* YYCache.m */,
+				9F3BDAFD1DF50CE6008F1CC9 /* YYDiskCache.h */,
+				9F3BDAFE1DF50CE6008F1CC9 /* YYDiskCache.m */,
+				9F3BDAFF1DF50CE6008F1CC9 /* YYKVStorage.h */,
+				9F3BDB001DF50CE6008F1CC9 /* YYKVStorage.m */,
+				9F3BDB011DF50CE6008F1CC9 /* YYMemoryCache.h */,
+				9F3BDB021DF50CE6008F1CC9 /* YYMemoryCache.m */,
+			);
+			path = YYCache;
+			sourceTree = "<group>";
+		};
 		9F40FDE61DE428E100B1D44E /* LeaderView */ = {
 			isa = PBXGroup;
 			children = (
@@ -932,6 +965,7 @@
 		9F73FF0E1DE2B90500BFFE36 /* Main(主要) */ = {
 			isa = PBXGroup;
 			children = (
+				9FBA811C1DF1592900904061 /* Logining */,
 				9F4B670C1DEC0D670088E6D0 /* Mine我的 */,
 				9F4B67111DEC0D670088E6D0 /* Reading阅读 */,
 				9F4B67161DEC0D670088E6D0 /* Testing测试 */,
@@ -1071,6 +1105,15 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		9FBA811C1DF1592900904061 /* Logining */ = {
+			isa = PBXGroup;
+			children = (
+				9FBA811D1DF1595500904061 /* LoginingWindow.h */,
+				9FBA811E1DF1595500904061 /* LoginingWindow.m */,
+			);
+			path = Logining;
+			sourceTree = "<group>";
+		};
 		9FCE48E01D9D71E000E4BC13 = {
 			isa = PBXGroup;
 			children = (
@@ -1143,6 +1186,7 @@
 		9FD9C1E01DA89C1800E50986 /* 3Tools(第三方) */ = {
 			isa = PBXGroup;
 			children = (
+				9F3BDAFA1DF50CE6008F1CC9 /* YYCache */,
 				9F0BAAE61DDAE5050096BDD4 /* FDFullscreenPopGesture */,
 				9F0BAADB1DDAB6420096BDD4 /* CFProgressHub */,
 				9F288F331DD594C000280690 /* SDWebImage */,
@@ -1289,6 +1333,7 @@
 		9FFAE2E61DD46E3900D46DEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F3BDB071DF50D46008F1CC9 /* libsqlite3.tbd */,
 				9F288EF41DD5624D00280690 /* CoreGraphics.framework */,
 				9FFAE2E71DD46E3900D46DEC /* AVFoundation.framework */,
 			);
@@ -1502,6 +1547,7 @@
 				9FCE48F11D9D71E000E4BC13 /* AppDelegate.m in Sources */,
 				9F288F5D1DD594C000280690 /* SDWebImagePrefetcher.m in Sources */,
 				9F288F271DD56A2700280690 /* IQTextView.m in Sources */,
+				9FBA811F1DF1595500904061 /* LoginingWindow.m in Sources */,
 				9F288EB21DD55F3300280690 /* View+MASAdditions.m in Sources */,
 				9F01A0491DE40C3A009518AA /* GlobalSingleton.m in Sources */,
 				9F288EF01DD5604F00280690 /* MJRefreshConst.m in Sources */,
@@ -1514,6 +1560,7 @@
 				9F288E881DD4CECF00280690 /* BaseViewController.m in Sources */,
 				9F288EE41DD5604F00280690 /* MJRefreshFooter.m in Sources */,
 				9FD9C2181DA8CF4500E50986 /* UIProgressView+AFNetworking.m in Sources */,
+				9F3BDB051DF50CE6008F1CC9 /* YYKVStorage.m in Sources */,
 				9F288EAF1DD55F3300280690 /* MASViewConstraint.m in Sources */,
 				9F8F49DE1DA9387C006E4E0E /* NSObject+MJProperty.m in Sources */,
 				9F288EF21DD5604F00280690 /* UIScrollView+MJRefresh.m in Sources */,
@@ -1532,6 +1579,7 @@
 				9F288F601DD594C000280690 /* UIImage+MultiFormat.m in Sources */,
 				9FD9C2171DA8CF4500E50986 /* UIImageView+AFNetworking.m in Sources */,
 				9F288EF31DD5604F00280690 /* UIView+MJExtension.m in Sources */,
+				9F3BDB031DF50CE6008F1CC9 /* YYCache.m in Sources */,
 				9F4B671E1DEC0EF80088E6D0 /* MineViewController.m in Sources */,
 				9F288EB11DD55F3300280690 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				9F288EE11DD5604F00280690 /* MJRefreshAutoFooter.m in Sources */,
@@ -1546,6 +1594,7 @@
 				9F288F251DD56A2700280690 /* IQKeyboardManager.m in Sources */,
 				9F288F5F1DD594C000280690 /* UIImage+GIF.m in Sources */,
 				9F00585C1DF01BAC007C4B41 /* NSString+Hash.m in Sources */,
+				9F3BDB041DF50CE6008F1CC9 /* YYDiskCache.m in Sources */,
 				9F4B67051DEBCB660088E6D0 /* MainDrawerController.m in Sources */,
 				9F288EAD1DD55F3300280690 /* MASLayoutConstraint.m in Sources */,
 				9F8F49DF1DA9387C006E4E0E /* NSString+MJExtension.m in Sources */,
@@ -1576,6 +1625,7 @@
 				9FD9C2131DA8CF4500E50986 /* AFImageDownloader.m in Sources */,
 				9F288F5E1DD594C000280690 /* UIButton+WebCache.m in Sources */,
 				9F288F631DD594C000280690 /* UIImageView+WebCache.m in Sources */,
+				9F3BDB061DF50CE6008F1CC9 /* YYMemoryCache.m in Sources */,
 				9F288EAE1DD55F3300280690 /* MASViewAttribute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

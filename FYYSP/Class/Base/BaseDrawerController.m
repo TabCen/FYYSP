@@ -115,6 +115,7 @@
     }
     
     [self transitionFromViewController:self.viewControllers[oldIndex.row] toViewController:self.viewControllers[newIndex.row] duration:0 options:UIViewAnimationOptionTransitionNone animations:^{
+        
     } completion:^(BOOL finished) {
         
         //打开后先将开始设置的tap手势去除
@@ -125,9 +126,13 @@
         
         self.currentVC = self.viewControllers[newIndex.row];
         self.currentIndexPath = newIndex;
+        
         [UIView animateWithDuration:0.4 animations:^{
             self.currentVC.view.transform = CGAffineTransformIdentity;
+        } completion:^(BOOL finished) {
+            [self endCloseingDo];
         }];
+        
     }];
 }
 
@@ -253,8 +258,9 @@
                 BaseNavigationController *nav = viewControllers[i];
                 nav.haveLeftDrawer = YES;
             }
-            
+
         }
+        
         self.currentVC = viewControllers[0];
         self.currentIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
         [self.view addSubview:self.currentVC.view];

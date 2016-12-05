@@ -9,9 +9,10 @@
 #ifndef Header_h
 #define Header_h
 
-#import "AFNetworking.h"
+//#import "AFNetworking.h"
 #import "MJExtension.h"
 #import "Masonry.h"
 #import "GlobalSingleton.h"
+#import "CFNetworkingManager.h"
 
 #endif /* Header_h */

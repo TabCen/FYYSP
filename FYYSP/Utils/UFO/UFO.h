@@ -26,6 +26,12 @@
 +(NSString *)dataString:(NSString *)dataStr FromFormater:(NSString *)fromFor toFor:(NSString *)toFor;
 
 
+
+/**
+ 获取当前时刻的时间戳
+
+ @return 时间戳字符串
+ */
 +(NSString *)timeStamp;
 
 
