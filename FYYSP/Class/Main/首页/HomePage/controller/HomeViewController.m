@@ -29,6 +29,8 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
+    NSLog(@"沙盒目录%@",kPathCache);
+    
     self.navigationItem.title = @"首页";
     
     self.view.backgroundColor = [UIColor grayColor];

@@ -75,6 +75,21 @@
 
 @end
 
+@interface NSString (common)
+
+/**
+ 去除字符串中的空格
+
+ @param str 字符串带空格
+ @return 不带空格
+ */
++ (NSString *)trimSpacesOfString:(NSString *)str;
+
+//字典转为Json字符串
++(NSString *)dictionaryToJson:(NSDictionary *)dic;
+
+@end
+
 
 /**
  *  ///////////////////////////////  UILabel高度获取、行距设置  ///////////////////////////////

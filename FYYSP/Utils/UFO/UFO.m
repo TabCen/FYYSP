@@ -136,6 +136,23 @@
 
 @end
 
+@implementation NSString (common)
+
++ (NSString *)trimSpacesOfString:(NSString *)str
+{
+    return [str stringByReplacingOccurrencesOfString:@" " withString:@""];
+}
+
+//字典转为Json字符串
++(NSString *)dictionaryToJson:(NSDictionary *)dic
+{
+    NSError *error = nil;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:&error];
+    return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+}
+
+@end
+
 
 @implementation UILabel (utils)
 

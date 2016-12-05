@@ -27,6 +27,19 @@
     
     self.navigationItem.title = @"我的";
     
+    id dict = @{@"111":@"abc",
+                           @"222":@"bbb"};
+    
+    id dict2 =@{@"111":@"abc",
+                           @"222":@"bbb"};
+    
+    if ([dict isEqual:dict2]) {
+        NSLog(@"两个字典相同");
+    }else{
+        NSLog(@"两个字典不同");
+    }
+    
+    
     UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 100, 100, 40)];
     [btn setTitle:@"点击" forState:UIControlStateNormal];
     btn.backgroundColor = [UIColor redColor];
@@ -37,7 +50,6 @@
 
 -(void)btnClicked{
     
-    
     NSString *timeStamp = [UFO timeStamp];
     
     NSDictionary *dict=@{
@@ -46,18 +58,20 @@
                          @"fund['newstype']":@"1",
                          @"fund['function']":@"N003",
                          @"fund['fundchannel']":@"ios",
-                         @"fund['timestamp']":[NSString stringWithFormat:@"%@|%@",timeStamp,[[NSString stringWithFormat:@"%@%@%@",@"@newtouch!",timeStamp,@"@newtouch!"] md5String]] //时间戳(N)
+//                         @"fund['timestamp']":[NSString stringWithFormat:@"%@|%@",timeStamp,[[NSString stringWithFormat:@"%@%@%@",@"@newtouch!",timeStamp,@"@newtouch!"] md5String]] //时间戳(N)
                          };
     
-    [[CFNetworkingManager manager] GET:FCL_URL parameters:dict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"%@",responseObject);
-        
-        YYCache *cache = [YYCache cacheWithName:@"firstName"];
-        
+    [[CFNetworkingManager manager] GET_cache:FCL_URL parameters:dict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        if (task) {
+            NSLog(@"请求得来的：%@",responseObject);
+        }else{
+            NSLog(@"缓存得来的：%@",responseObject);
+        }
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-    } showHUD:YES];
+
+    } showHUD:YES cacheFile:@"MYCFITEM.FYYSP.MineFile"];
+    
 }
 
 

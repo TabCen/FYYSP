@@ -48,8 +48,35 @@ typedef enum : NSUInteger {
                                 failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure
                                 showHUD:(BOOL)showHUD;
 
+- (nullable NSURLSessionDataTask *)GET_cache:(NSString *)URLString
+                                  parameters:(nullable id)parameters
+                                    progress:(nullable void (^)(NSProgress *downloadProgress))downloadProgress
+                                     success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
+                                     failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure
+                                     showHUD:(BOOL)showHUD
+                                   cacheFile:(nonnull NSString *)cacheName;
+
+- (nullable NSURLSessionDataTask *)POST_cache:(NSString *)URLString
+                                   parameters:(nullable id)parameters
+                                     progress:(nullable void (^)(NSProgress *uploadProgress))uploadProgress
+                                      success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
+                                      failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure
+                                      showHUD:(BOOL)showHUD
+                                    cacheFile:(nonnull NSString *)cacheName;
+
 - (void)cancelRequest;
 
 @end
+
+
+
+@interface NSString (CFNetworkingManager)
+
+- (NSString *)md5String;
+
++(NSString *)stringFromJsonDict:(NSDictionary *)dic;
+
+@end
+
 
 NS_ASSUME_NONNULL_END
