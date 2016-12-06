@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "NSObject+MJKeyValue.h"
+
 @interface SettingModel : NSObject
 
 @property(nonatomic,copy)NSString *tittle;

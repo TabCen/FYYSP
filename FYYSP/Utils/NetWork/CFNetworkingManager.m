@@ -173,6 +173,7 @@
                  //成功后要将缓存数据保存
                  //当objectFromCache不为空，并且，objectFromCache和网络请求的相同时，不需要缓存，否则替换缓存
                  if (!(objectFromCache && [objectFromCache isEqual:responseObject])) {
+                     [cache removeObjectForKey:keyStr];
                      [cache setObject:responseObject forKey:keyStr];
                  }
                  
@@ -225,6 +226,7 @@
                   //成功后要将缓存数据保存
                   //当objectFromCache不为空，并且，objectFromCache和网络请求的相同时，不需要缓存，否则替换缓存
                   if (!(objectFromCache && [objectFromCache isEqual:responseObject])) {
+                      [cache removeObjectForKey:keyStr];
                       [cache setObject:responseObject forKey:keyStr];
                   }
                   

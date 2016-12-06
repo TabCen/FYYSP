@@ -20,6 +20,7 @@
 		9F159A9B1DE53518001CA0CA /* SettingArrowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F159A991DE53518001CA0CA /* SettingArrowTableViewCell.m */; };
 		9F159A9C1DE53518001CA0CA /* SettingArrowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F159A9A1DE53518001CA0CA /* SettingArrowTableViewCell.xib */; };
 		9F23B9A91DD9BBB100BD66A3 /* CFNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F23B9A81DD9BBB100BD66A3 /* CFNetworkingManager.m */; };
+		9F27786D1DF661970017EAC5 /* Model_Fund.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27786C1DF661970017EAC5 /* Model_Fund.m */; };
 		9F288E881DD4CECF00280690 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F288E871DD4CECF00280690 /* BaseViewController.m */; };
 		9F288E8D1DD547BA00280690 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F288E8C1DD547BA00280690 /* BaseNavigationController.m */; };
 		9F288EA91DD55F3300280690 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F288E8F1DD55F3300280690 /* Info.plist */; };
@@ -195,6 +196,8 @@
 		9F159A9A1DE53518001CA0CA /* SettingArrowTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingArrowTableViewCell.xib; sourceTree = "<group>"; };
 		9F23B9A71DD9BBB100BD66A3 /* CFNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNetworkingManager.h; sourceTree = "<group>"; };
 		9F23B9A81DD9BBB100BD66A3 /* CFNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFNetworkingManager.m; sourceTree = "<group>"; };
+		9F27786B1DF661970017EAC5 /* Model_Fund.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model_Fund.h; sourceTree = "<group>"; };
+		9F27786C1DF661970017EAC5 /* Model_Fund.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model_Fund.m; sourceTree = "<group>"; };
 		9F288E861DD4CECF00280690 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		9F288E871DD4CECF00280690 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		9F288E8A1DD4DC8000280690 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
@@ -908,6 +911,8 @@
 		9F4B67141DEC0D670088E6D0 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				9F27786B1DF661970017EAC5 /* Model_Fund.h */,
+				9F27786C1DF661970017EAC5 /* Model_Fund.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -1620,6 +1625,7 @@
 				9FD9C2121DA8CF4500E50986 /* AFAutoPurgingImageCache.m in Sources */,
 				9F288F241DD56A2700280690 /* IQUIWindow+Hierarchy.m in Sources */,
 				9FD9C2211DA8D70200E50986 /* ModelOne.m in Sources */,
+				9F27786D1DF661970017EAC5 /* Model_Fund.m in Sources */,
 				9F288EEC1DD5604F00280690 /* MJRefreshGifHeader.m in Sources */,
 				9F8F49D71DA9387C006E4E0E /* MJFoundation.m in Sources */,
 				9FD9C2131DA8CF4500E50986 /* AFImageDownloader.m in Sources */,

@@ -19,13 +19,15 @@
 
 @interface CFFileManager : NSObject
 
-
-+(void)createFileInPreferences_FileName:(NSString *)fileName;
-
+//+(void)createFileInPreferences_FileName:(NSString *)fileName;
 /**
     重制NSUserDefaults
  */
 +(void)resetDefaults;
+
+-(long long)fileSizeAtPath:(NSString*)filePath;
+
+-(CGFloat)folderSizeAtPath:(NSString*)folderPath;
 
 @end
 //获取沙盒 目录

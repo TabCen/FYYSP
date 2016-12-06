@@ -18,6 +18,8 @@
 
 #import "UIImage+CommonFunction.h"
 
+#import "CFFileManager.h"
+
 @interface HomeViewController ()
 
 @end
@@ -39,6 +41,13 @@
                                 function:@selector(rightBarBtnClicked)];
     
     [self otherThings];
+    
+    CFFileManager *manage = [CFFileManager new];
+    
+    NSString *path = [NSString stringWithFormat:@"%@/MYCFITEM.FYYSP.MineFile",kPathCache];
+    
+    NSLog(@"%f",[manage folderSizeAtPath:path]);
+    
     
 }
 

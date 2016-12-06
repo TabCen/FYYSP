@@ -8,6 +8,7 @@
 
 #import "SettingModel.h"
 
+
 @implementation SettingModel
 
 + (NSDictionary *)mj_objectClassInArray
@@ -47,9 +48,16 @@
                        @"value":@NO,
                        @"subItems":@[
                                ]}
+//                     @{@"tittle":@"清空缓存",
+//                       @"introduce":@"",
+//                       @"btnType":@"",
+//                       @"value":@NO,
+//                       @"subItems":@[
+//                               ]}
                      ];
     
     return [NSMutableArray arrayWithArray:arr];
 }
+
 
 @end
