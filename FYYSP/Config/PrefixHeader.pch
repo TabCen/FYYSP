@@ -24,21 +24,29 @@
 
 ///系统版本号
 #define DEVICE_SYSTEM_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
-///App版本号
-#define appMPVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+///App  版本号
+#define appVersion [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]
+///App build
+#define appBuild [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]
+///App  名
+#define appName [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"]
+///App  支持的最低系统版本
+#define appMinmumOSVersion [[NSBundle mainBundle] objectForInfoDictionaryKey:@"MinimumOSVersion"]
 
 ///屏幕宽度和高度///屏幕适配比例 、自适应比例
-#define Screen_Full_Height [UIScreen mainScreen].bounds.size.height
-#define Screen_Full_Width [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
 
-#define Screen_Scale_Heigth_6 Screen_Full_Height/667.0
-#define Screen_Scale_Width_6 Screen_Full_Width/375.0
-#define Screen_Scale_Heigth_5 Screen_Full_Height/568.0
-#define Screen_Scale_Width_5 Screen_Full_Width/320.0
-#define Screen_Scale_Heigth_6P Screen_Full_Height/736.0
-#define Screen_Scale_Width_6P Screen_Full_Width/414.0
+#define Screen_Scale_Heigth_6 kScreenHeight/667.0
+#define Screen_Scale_Width_6 kScreenWidth/375.0
+#define Screen_Scale_Heigth_5 kScreenHeight/568.0
+#define Screen_Scale_Width_5 kScreenWidth/320.0
+#define Screen_Scale_Heigth_6P kScreenHeight/736.0
+#define Screen_Scale_Width_6P kScreenWidth/414.0
 ///颜色
 #define COLOR(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+#define COLORf(r,g,b,a) [UIColor colorWithRed:r green:g blue:b alpha:a]
 #define COLOR_RGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #define COLOR_RGBA(rgbValue,a) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
 ///weakSelf
@@ -46,10 +54,17 @@
 ///获取图片资源
 #define GetImage(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
 
-///获取沙盒 Document
+///获取沙盒 目录
+#define kPath  NSHomeDirectory()
+///Document             iTunes会同步此文件夹，适合存储重要数据
 #define kPathDocument [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
-///获取沙盒 Cache
+///Library/Cache        iTunes不会同步此文件夹，适合存储体积大，不需要备份的非重要数据
 #define kPathCache [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+///Library/Preferences  iTunes会同步此文件夹，适合存储应用的设置信息／用户设置
+#define kPathPreferences  [NSString stringWithFormat:@"%@/Library/Preference",NSHomeDirectory()]
+///tmp                  临时文件，用完就删除
+#define kPathTmp NSTemporaryDirectory()
+
 
 ///GCD相关
 //在Global Queue上运行
@@ -72,9 +87,22 @@
 #define AppLog(...)
 #endif
 
+#define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
+
 /**
     设置编译头文件
  */
 #import "Header.h"
+
+/**
+    设置  颜色
+ */
+#import "ColorSet.h"
+
+/**
+    设置  URL
+ */
+#import "URLSet.h"
+
 
 #endif /* PrefixHeader_pch */

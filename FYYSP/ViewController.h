@@ -6,10 +6,10 @@
 //  Copyright © 2016年 chenfei. All rights reserved.
 //
 
-//#import "BaseViewController.h"
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
+//#import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : BaseViewController
 
 
 

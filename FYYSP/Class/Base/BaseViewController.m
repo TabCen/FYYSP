@@ -14,7 +14,10 @@
 
 @end
 
+@class BaseDrawerController;
+
 @implementation BaseViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -74,10 +77,62 @@
         UIButton *backBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 10, 18)];
         [backBtn setImage:[UIImage imageNamed:@"cancel-left"] forState:UIControlStateNormal];
         [backBtn addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
+        [backBtn setTintColor:k_BaseColor];
+        
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
     } else
     {
         self.navigationItem.leftBarButtonItem = nil;
+    }
+}
+
+-(void)_showAlertViewWithTitle:(NSString *)tittle message:(NSString *)message insureBtn:(NSString *)insureStr cancleBtn:(NSString *)cancleStr{
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:tittle
+                                                                   message:message
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    if (insureStr) {
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:insureStr style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+        [alert addAction:defaultAction];
+    }
+    
+    if (cancleStr) {
+        UIAlertAction* cancleAction = [UIAlertAction actionWithTitle:cancleStr style:UIAlertActionStyleCancel
+                                                              handler:^(UIAlertAction * action) {}];
+        [alert addAction:cancleAction];
+    }
+    
+    if (!(cancleStr||insureStr)) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self dismissViewControllerAnimated:YES completion:nil];
+        });
+    }
+    
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+
+
+/**
+ 设置是否是有左边抽屉
+
+ @param haveLeftDrawer YES表示有，NO无
+ */
+-(void)setHaveLeftDrawer:(BOOL)haveLeftDrawer{
+    _haveLeftDrawer = haveLeftDrawer;
+    
+    if (haveLeftDrawer) {
+        [self setupPanGesture];
+    }
+}
+
+
+-(void)setupPanGesture{
+    if (self.parentViewController) {
+        UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self.parentViewController action:@selector(handlePan:)];
+        pan.delegate=self;
+        [self.view addGestureRecognizer:pan];
     }
 }
 

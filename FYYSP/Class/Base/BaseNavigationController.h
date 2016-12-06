@@ -11,4 +11,9 @@
 
 @interface BaseNavigationController : UINavigationController
 
+@property(nonatomic,assign)BOOL haveLeftDrawer;
+
+-(void)hideBarWithAnimation:(BOOL)animation;
+-(void)showBarWithAnimation:(BOOL)animation;
+
 @end

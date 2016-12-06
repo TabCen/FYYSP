@@ -9,7 +9,8 @@
 #import "AppDelegate.h"
 #import "BaseNavigationController.h"
 #import "ViewController.h"
-#import "BaseNavigationController.h"
+#import "MainViewController.h"
+#import "MainDrawerController.h"
 
 @interface AppDelegate ()
 
@@ -19,17 +20,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //设置引导页的停留时间
+//    [NSThread sleepForTimeInterval:];
+    //设置非导航栏状态下的状态栏状态，iOS9以后弃用，并且每一个UIViewController默认的状态栏状态为显示。所以可以不用显示，但安全起见放到rootVIewController里面再设置一下导航栏的状态
+//    [[UIApplication sharedApplication] setStatusBarHidden:YES];
     
-    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.backgroundColor=[UIColor whiteColor];
-    ViewController *vc=[[ViewController alloc]init];
-//    UIViewController *vc=[[UIViewController alloc]init];
+    [self setRootViewController];
     
-    BaseNavigationController *nv=[[BaseNavigationController alloc]initWithRootViewController:vc];
-    self.window.rootViewController=nv;
-    [self.window makeKeyAndVisible];
-    
-    
+    //联网状态改变时调用的方法
     [self judgeTheReachAbility];
     
     return YES;
@@ -141,6 +139,31 @@
 
 #pragma mark - 功能模块
 
+-(void)setRootViewController{
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor=[UIColor whiteColor];
+    
+    //设置主界面
+    [self enterMainViewController];
+    
+    [self.window makeKeyAndVisible];
+}
+
+/**
+    设置主页面
+ */
+-(void)enterMainViewController{
+    
+//    MainViewController *vc=[[MainViewController alloc]init];
+    MainDrawerController *vc = [[MainDrawerController alloc]init];
+    vc.drawerShowTableView = YES;
+    
+    self.window.rootViewController=vc;
+}
+
+/**
+    判断网络状态
+ */
 -(void)judgeTheReachAbility{
     AFNetworkReachabilityManager *manager=[AFNetworkReachabilityManager sharedManager];
     [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
@@ -165,5 +188,8 @@
 
     [manager startMonitoring];
 }
+
+
+
 
 @end

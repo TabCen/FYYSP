@@ -8,9 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol BaseTabBarDelegate <NSObject>
+@optional
+
+-(void)moreButtonClicked;
+
+@end
+
 @interface BaseTabBar : UITabBar
 
+@property(nonatomic,weak) id <BaseTabBarDelegate> btnDelegate;
 
-
+-(instancetype)initWithCenterButton_andCenterBtnImage:(UIImage *)image;
 
 @end

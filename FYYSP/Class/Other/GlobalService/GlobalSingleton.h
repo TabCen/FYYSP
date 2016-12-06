@@ -1,48 +1,23 @@
 //
 //  GlobalSingleton.h
-//  FundSale
-//
-//  Created by zsf on 16/8/20.
-//  Copyright © 2016年 zsf. All rights reserved.
+//  FYYSP
+//  单例，存储重要的数据
+//  Created by  chenfei on 2016/11/22.
+//  Copyright © 2016年 chenfei. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-//#import "UserModel.h"
+
 @interface GlobalSingleton : NSObject
-@property(readonly, copy, nonatomic) NSString *clientVersion;//APP版本号
 
-@property(nonatomic, getter=is_RegistNotification) BOOL registNotification;//是否初始化注册通知
++(instancetype)instence;
 
-+ (GlobalSingleton *)Instance;
-
-/**
- *  当前登录的用户
- */
-//@property(nonatomic, strong) UserModel *currentUser;
+///获取版本号和build号
+-(NSString *)versionAndBuild;
 
 /**
- *  客户端是否是第一次运行
+    重制存放在NSUserDefaults的方法
  */
-- (BOOL)isFirstRun;
-
-/**
- *  用户是否已经登录
- */
-- (BOOL)hasLogin;
-
-#pragma -mark
-/**
- *  清空所有数据
- */
--(void)removeAll;
-
-/**
- *  md5签名
- */
-- (NSString *)md5:(NSString *)str;
-/**
- *  随机生成24位key
- */
--(NSString *)ret24bitString;
++(void)resetDefaults;
 
 @end
