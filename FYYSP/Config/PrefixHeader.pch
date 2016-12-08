@@ -44,6 +44,10 @@
 #define Screen_Scale_Width_5 kScreenWidth/320.0
 #define Screen_Scale_Heigth_6P kScreenHeight/736.0
 #define Screen_Scale_Width_6P kScreenWidth/414.0
+
+///系统键盘高度
+#define kKeyBoardHight 216
+
 ///颜色
 #define COLOR(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
 #define COLORf(r,g,b,a) [UIColor colorWithRed:r green:g blue:b alpha:a]

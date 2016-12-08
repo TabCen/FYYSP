@@ -25,6 +25,13 @@
     return [NSString stringWithFormat:@"%llu",recordTime];
 }
 
+//判断NSString字符串是否包含emoji表情
+-(BOOL)isContainEmoji:(NSString *)email {
+    NSString *emailRegex =@"/^[\\x{4e00}-\\x{9fa5}A-Za-z0-9_]+$/u";
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    return [emailTest evaluateWithObject:email];
+}
+
 
 @end
 

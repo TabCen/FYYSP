@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+#import "EnumHeaderFile.h"
+
 @interface SubItemsModel : NSObject
 
 @property(nonatomic,copy)NSString *tittle;
 
-@property(nonatomic,copy)NSString *btnType;
+@property(nonatomic)SettingCellType btnType;
 
 @property(nonatomic,copy)NSString *value;
 

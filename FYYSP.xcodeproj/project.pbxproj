@@ -94,6 +94,7 @@
 		9F3BDB061DF50CE6008F1CC9 /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3BDB021DF50CE6008F1CC9 /* YYMemoryCache.m */; };
 		9F3BDB081DF50D46008F1CC9 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3BDB071DF50D46008F1CC9 /* libsqlite3.tbd */; };
 		9F3C28FA1DDC5DF100908E2D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C28F91DDC5DF100908E2D /* ViewController.m */; };
+		9F3CCA0B1DF7F7A2005833BF /* SettingViewController+tableViewProtocal.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3CCA0A1DF7F7A2005833BF /* SettingViewController+tableViewProtocal.m */; };
 		9F4B67011DEBCB4C0088E6D0 /* BaseDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B67001DEBCB4C0088E6D0 /* BaseDrawerController.m */; };
 		9F4B67051DEBCB660088E6D0 /* MainDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B67031DEBCB660088E6D0 /* MainDrawerController.m */; };
 		9F4B671E1DEC0EF80088E6D0 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B671C1DEC0EF80088E6D0 /* MineViewController.m */; };
@@ -148,6 +149,7 @@
 		9FD9C21A1DA8CF4500E50986 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9C20B1DA8CF4500E50986 /* UIWebView+AFNetworking.m */; };
 		9FD9C2211DA8D70200E50986 /* ModelOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9C2201DA8D70200E50986 /* ModelOne.m */; };
 		9FDF5C941DF1114E00CF8DF5 /* UIImage+CommonFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDF5C931DF1114E00CF8DF5 /* UIImage+CommonFunction.m */; };
+		9FE3B2661DF6AE7D00D04978 /* UITableView+CommonFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE3B2651DF6AE7D00D04978 /* UITableView+CommonFunction.m */; };
 		9FFAE2E81DD46E3900D46DEC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FFAE2E71DD46E3900D46DEC /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -348,6 +350,9 @@
 		9F3BDB021DF50CE6008F1CC9 /* YYMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMemoryCache.m; sourceTree = "<group>"; };
 		9F3BDB071DF50D46008F1CC9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		9F3C28F91DDC5DF100908E2D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9F3CCA061DF7D507005833BF /* EnumHeaderFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnumHeaderFile.h; sourceTree = "<group>"; };
+		9F3CCA091DF7F7A2005833BF /* SettingViewController+tableViewProtocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SettingViewController+tableViewProtocal.h"; sourceTree = "<group>"; };
+		9F3CCA0A1DF7F7A2005833BF /* SettingViewController+tableViewProtocal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SettingViewController+tableViewProtocal.m"; sourceTree = "<group>"; };
 		9F4B66FF1DEBCB4C0088E6D0 /* BaseDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDrawerController.h; sourceTree = "<group>"; };
 		9F4B67001DEBCB4C0088E6D0 /* BaseDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDrawerController.m; sourceTree = "<group>"; };
 		9F4B67021DEBCB660088E6D0 /* MainDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainDrawerController.h; sourceTree = "<group>"; };
@@ -457,6 +462,8 @@
 		9FD9C2201DA8D70200E50986 /* ModelOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelOne.m; sourceTree = "<group>"; };
 		9FDF5C921DF1114E00CF8DF5 /* UIImage+CommonFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CommonFunction.h"; sourceTree = "<group>"; };
 		9FDF5C931DF1114E00CF8DF5 /* UIImage+CommonFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CommonFunction.m"; sourceTree = "<group>"; };
+		9FE3B2641DF6AE7D00D04978 /* UITableView+CommonFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+CommonFunction.h"; sourceTree = "<group>"; };
+		9FE3B2651DF6AE7D00D04978 /* UITableView+CommonFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CommonFunction.m"; sourceTree = "<group>"; };
 		9FFAE2E71DD46E3900D46DEC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -522,6 +529,8 @@
 				9F01A0401DE3E376009518AA /* UIViewController+BaseCategory.m */,
 				9FDF5C921DF1114E00CF8DF5 /* UIImage+CommonFunction.h */,
 				9FDF5C931DF1114E00CF8DF5 /* UIImage+CommonFunction.m */,
+				9FE3B2641DF6AE7D00D04978 /* UITableView+CommonFunction.h */,
+				9FE3B2651DF6AE7D00D04978 /* UITableView+CommonFunction.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -814,6 +823,13 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		9F2F9BD71DF9026200DCB8D5 /* CFKeyboardView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CFKeyboardView;
+			sourceTree = "<group>";
+		};
 		9F3BDAFA1DF50CE6008F1CC9 /* YYCache */ = {
 			isa = PBXGroup;
 			children = (
@@ -1040,6 +1056,8 @@
 				9F73FF361DE2E77400BFFE36 /* SettingViewController.h */,
 				9F73FF371DE2E77400BFFE36 /* SettingViewController.m */,
 				9F73FF381DE2E77400BFFE36 /* SettingViewController.xib */,
+				9F3CCA091DF7F7A2005833BF /* SettingViewController+tableViewProtocal.h */,
+				9F3CCA0A1DF7F7A2005833BF /* SettingViewController+tableViewProtocal.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -1191,6 +1209,7 @@
 		9FD9C1E01DA89C1800E50986 /* 3Tools(第三方) */ = {
 			isa = PBXGroup;
 			children = (
+				9F2F9BD71DF9026200DCB8D5 /* CFKeyboardView */,
 				9F3BDAFA1DF50CE6008F1CC9 /* YYCache */,
 				9F0BAAE61DDAE5050096BDD4 /* FDFullscreenPopGesture */,
 				9F0BAADB1DDAB6420096BDD4 /* CFProgressHub */,
@@ -1240,6 +1259,7 @@
 				9FD9C1E71DA89D9E00E50986 /* PrefixHeader.pch */,
 				9F73FF3D1DE2E8E100BFFE36 /* ColorSet.h */,
 				9F73FF3E1DE2E8F600BFFE36 /* URLSet.h */,
+				9F3CCA061DF7D507005833BF /* EnumHeaderFile.h */,
 			);
 			name = "Config(配置)";
 			path = Config;
@@ -1568,6 +1588,7 @@
 				9F3BDB051DF50CE6008F1CC9 /* YYKVStorage.m in Sources */,
 				9F288EAF1DD55F3300280690 /* MASViewConstraint.m in Sources */,
 				9F8F49DE1DA9387C006E4E0E /* NSObject+MJProperty.m in Sources */,
+				9F3CCA0B1DF7F7A2005833BF /* SettingViewController+tableViewProtocal.m in Sources */,
 				9F288EF21DD5604F00280690 /* UIScrollView+MJRefresh.m in Sources */,
 				9F288F571DD594C000280690 /* SDImageCache.m in Sources */,
 				9F73FF271DE2BA1900BFFE36 /* HomeViewController.m in Sources */,
@@ -1614,6 +1635,7 @@
 				9FD9C20F1DA8CF4500E50986 /* AFURLRequestSerialization.m in Sources */,
 				9F60896E1DE56F7E00B90CAB /* TestTableViewCell.m in Sources */,
 				9F0058581DF0167F007C4B41 /* UFO.m in Sources */,
+				9FE3B2661DF6AE7D00D04978 /* UITableView+CommonFunction.m in Sources */,
 				9F288E8D1DD547BA00280690 /* BaseNavigationController.m in Sources */,
 				9F8F49D51DA9387C006E4E0E /* MJDictionaryCache.m in Sources */,
 				9F288F261DD56A2700280690 /* IQKeyboardReturnKeyHandler.m in Sources */,

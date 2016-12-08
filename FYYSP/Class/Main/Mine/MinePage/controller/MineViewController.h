@@ -10,4 +10,6 @@
 
 @interface MineViewController : BaseViewController
 
+@property (weak, nonatomic) IBOutlet UIPickerView *pickView;
+
 @end

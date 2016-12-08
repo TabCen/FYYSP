@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-#import "NSObject+MJKeyValue.h"
+//#import "NSObject+MJKeyValue.h"
+
+#import "EnumHeaderFile.h"
 
 @interface SettingModel : NSObject
 
@@ -16,7 +18,7 @@
 
 @property(nonatomic,copy)NSString *introduce;
 
-@property(nonatomic,copy)NSString *btnType;
+@property(nonatomic)SettingCellType btnType;
 
 @property(nonatomic,copy)NSString *value;
 
@@ -25,6 +27,10 @@
 +(NSMutableArray *)settingModelArray;
 
 @end
+
+
+//FOUNDATION_EXPORT CFSetingCellType const SettingCellType_Choose;
+//FOUNDATION_EXPORT CFSetingCellType const SettingCellType_Choose;
 
 
 //@"tittle":@"引导页开启",

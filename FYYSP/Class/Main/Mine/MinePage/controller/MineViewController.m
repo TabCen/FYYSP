@@ -8,7 +8,9 @@
 
 #import "MineViewController.h"
 
-@interface MineViewController ()
+@interface MineViewController ()<UIPickerViewDataSource,UIPickerViewDelegate>
+
+@property(nonatomic,strong)NSArray  *tittleArray;
 
 @end
 
@@ -17,19 +19,47 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+//    self.automaticallyAdjustsScrollViewInsets = YES;
+//    self.extendedLayoutIncludesOpaqueBars = NO;
+    
+    self.tittleArray = @[@"111",@"222",@"333",@"444",@"555"];
+    
     self.navigationItem.title = @"我的";
     
-//    NSFileManager *manager = [NSFileManager defaultManager];
-//    NSString *path = [NSString stringWithFormat:@"%@/MYCFITEM.FYYSP.MineFile",kPathCache];
-//    if ([manager removeItemAtPath:path error:nil]) {
-//        NSLog(@"清空");
-//    }
+    self.pickView.delegate = self;
+    self.pickView.dataSource = self;
+    
+    UIDatePicker *datapicker = [[UIDatePicker alloc]initWithFrame:CGRectMake(0, 300, kScreenWidth, 216)];
+    
+    datapicker.datePickerMode = UIDatePickerModeDate;
+    
+    [self.view addSubview:datapicker];
     
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - pickerView代理
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    return 1;
+}
+
+// returns the # of rows in each component..
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    return self.tittleArray.count;
+}
+
+- (nullable NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component __TVOS_PROHIBITED{
+    return [NSString stringWithFormat:@"%@",self.tittleArray[row]];
+}
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+//    NSLog(@"选择了%@",[NSString stringWithFormat:@"%@",self.tittleArray[row]);
+    NSLog(@"选择了：%@",[NSString stringWithFormat:@"%@",self.tittleArray[row]]);
+    
 }
 
 /*
@@ -41,5 +71,22 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+//UITextField *textfield1 = [[UITextField alloc]initWithFrame:CGRectMake(0, kScreenHeight -150, kScreenWidth, 40)];
+//
+//textfield1.backgroundColor = [UIColor grayColor];
+//
+//[self.view addSubview:textfield1];
+//
+//UITextField *textfield = [[UITextField alloc]initWithFrame:CGRectMake(0, kScreenHeight -100, kScreenWidth, 40)];
+//
+//textfield.backgroundColor = [UIColor grayColor];
+//
+//UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kKeyBoardHight)];
+//view.backgroundColor = [UIColor redColor];
+//
+//textfield.inputView = view;
+//
+//[self.view addSubview:textfield];
 
 @end
