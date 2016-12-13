@@ -36,8 +36,9 @@
     
     self.navigationItem.title = @"设置";
     
-//    [self addTableView];
+    NSLog(@"%@",kPath);
     
+//    [self addTableView];
 }
 
 - (void)didReceiveMemoryWarning {

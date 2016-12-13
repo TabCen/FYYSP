@@ -8,7 +8,9 @@
 
 #import "MineViewController.h"
 
-@interface MineViewController ()<UIPickerViewDataSource,UIPickerViewDelegate>
+#import "UITextField+CustomKeyBoardType.h"
+
+@interface MineViewController ()<UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate>
 
 @property(nonatomic,strong)NSArray  *tittleArray;
 
@@ -23,17 +25,36 @@
 //    self.extendedLayoutIncludesOpaqueBars = NO;
     
     self.tittleArray = @[@"111",@"222",@"333",@"444",@"555"];
+    self.pickView.delegate = self;
+    self.pickView.dataSource = self;
+    self.pickView.showsSelectionIndicator = NO;
     
     self.navigationItem.title = @"我的";
     
-    self.pickView.delegate = self;
-    self.pickView.dataSource = self;
+
+
     
-    UIDatePicker *datapicker = [[UIDatePicker alloc]initWithFrame:CGRectMake(0, 300, kScreenWidth, 216)];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(taptheView:)];
     
-    datapicker.datePickerMode = UIDatePickerModeDate;
+    [self.view addGestureRecognizer:tap];
     
-    [self.view addSubview:datapicker];
+    UITextField *textfield1 = [[UITextField alloc]initWithFrame:CGRectMake(0, kScreenHeight -300, kScreenWidth, 40)];
+
+    textfield1.cf_keyboardType = keyBoardType_PickData;
+    
+    textfield1.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:textfield1];
+    
+    
+    UITextField *textfield = [[UITextField alloc]initWithFrame:CGRectMake(0, kScreenHeight -200, kScreenWidth, 40)];
+    
+    textfield.backgroundColor = [UIColor grayColor];
+    
+    textfield.cf_keyboardType = keyBoardType_DatePicker;
+    
+    textfield.delegate = self;
+    
+    [self.view addSubview:textfield];
     
 }
 
@@ -59,34 +80,15 @@
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
 //    NSLog(@"选择了%@",[NSString stringWithFormat:@"%@",self.tittleArray[row]);
     NSLog(@"选择了：%@",[NSString stringWithFormat:@"%@",self.tittleArray[row]]);
+}
+
+- (BOOL)textFieldShouldEndEditing:(UITextField *)textField{
+    return YES;
+}
+
+-(void)taptheView:(id)sender{
     
+    [self.view endEditing:YES];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-//UITextField *textfield1 = [[UITextField alloc]initWithFrame:CGRectMake(0, kScreenHeight -150, kScreenWidth, 40)];
-//
-//textfield1.backgroundColor = [UIColor grayColor];
-//
-//[self.view addSubview:textfield1];
-//
-//UITextField *textfield = [[UITextField alloc]initWithFrame:CGRectMake(0, kScreenHeight -100, kScreenWidth, 40)];
-//
-//textfield.backgroundColor = [UIColor grayColor];
-//
-//UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kKeyBoardHight)];
-//view.backgroundColor = [UIColor redColor];
-//
-//textfield.inputView = view;
-//
-//[self.view addSubview:textfield];
 
 @end

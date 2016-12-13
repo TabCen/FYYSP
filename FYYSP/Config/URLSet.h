@@ -17,4 +17,6 @@
 
 #define FCL_URL Appending_URL(@"/fundApp/wandeRequest.json")
 
+#define ImageURL @"http://112.124.22.238:8081/course_api/wares/hot"
+
 #endif /* URLSet_h */

@@ -30,6 +30,7 @@
 -(CGFloat)folderSizeAtPath:(NSString*)folderPath;
 
 @end
+
 //获取沙盒 目录
 //#define kPath  NSHomeDirectory()
 //Document             iTunes会同步此文件夹，适合存储重要数据

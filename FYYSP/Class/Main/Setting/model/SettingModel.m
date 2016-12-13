@@ -19,6 +19,7 @@
 }
 
 
+//应该讲这个数据放到数据库中，每次修改都修改数据库，刷新数据时根据数据库的来修改，初次修改时根据这里来设置数据库内容
 +(NSMutableArray *)settingModelArray{
     NSArray *arr = @[@{@"tittle":@"引导页开启",
                        @"introduce":@"开启后，重新进入应用可看到引导页",
