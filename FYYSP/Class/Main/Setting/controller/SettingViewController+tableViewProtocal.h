@@ -8,10 +8,8 @@
 
 #import "SettingViewController.h"
 
-#import "SettingModel.h"
 
-#import "SubItemsModel.h"
 
-@interface SettingViewController (tableViewProtocal)<UITableViewDelegate,UITableViewDataSource>
+@interface SettingViewController (tableViewProtocal)
 
 @end

@@ -92,6 +92,9 @@
 		9F2F9C6C1DFA778D00DCB8D5 /* ImageURLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F9C6B1DFA778D00DCB8D5 /* ImageURLModel.m */; };
 		9F2F9C701DFA80F400DCB8D5 /* ImageTestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F9C6E1DFA80F400DCB8D5 /* ImageTestCollectionViewCell.m */; };
 		9F2F9C711DFA80F400DCB8D5 /* ImageTestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F2F9C6F1DFA80F400DCB8D5 /* ImageTestCollectionViewCell.xib */; };
+		9F385A2B1E0023C300EC577E /* LeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F385A291E0023C300EC577E /* LeaderViewController.m */; };
+		9F385A2C1E0023C300EC577E /* LeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F385A2A1E0023C300EC577E /* LeaderViewController.xib */; };
+		9F385A341E00346400EC577E /* UserSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F385A331E00346400EC577E /* UserSetting.m */; };
 		9F3BDB031DF50CE6008F1CC9 /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3BDAFC1DF50CE6008F1CC9 /* YYCache.m */; };
 		9F3BDB041DF50CE6008F1CC9 /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3BDAFE1DF50CE6008F1CC9 /* YYDiskCache.m */; };
 		9F3BDB051DF50CE6008F1CC9 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3BDB001DF50CE6008F1CC9 /* YYKVStorage.m */; };
@@ -351,6 +354,11 @@
 		9F2F9C6D1DFA80F400DCB8D5 /* ImageTestCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTestCollectionViewCell.h; sourceTree = "<group>"; };
 		9F2F9C6E1DFA80F400DCB8D5 /* ImageTestCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTestCollectionViewCell.m; sourceTree = "<group>"; };
 		9F2F9C6F1DFA80F400DCB8D5 /* ImageTestCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageTestCollectionViewCell.xib; sourceTree = "<group>"; };
+		9F385A281E0023C300EC577E /* LeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaderViewController.h; sourceTree = "<group>"; };
+		9F385A291E0023C300EC577E /* LeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaderViewController.m; sourceTree = "<group>"; };
+		9F385A2A1E0023C300EC577E /* LeaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeaderViewController.xib; sourceTree = "<group>"; };
+		9F385A321E00346400EC577E /* UserSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSetting.h; sourceTree = "<group>"; };
+		9F385A331E00346400EC577E /* UserSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSetting.m; sourceTree = "<group>"; };
 		9F3BDAFB1DF50CE6008F1CC9 /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCache.h; sourceTree = "<group>"; };
 		9F3BDAFC1DF50CE6008F1CC9 /* YYCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCache.m; sourceTree = "<group>"; };
 		9F3BDAFD1DF50CE6008F1CC9 /* YYDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDiskCache.h; sourceTree = "<group>"; };
@@ -861,6 +869,9 @@
 		9F40FDE61DE428E100B1D44E /* LeaderView */ = {
 			isa = PBXGroup;
 			children = (
+				9F385A281E0023C300EC577E /* LeaderViewController.h */,
+				9F385A291E0023C300EC577E /* LeaderViewController.m */,
+				9F385A2A1E0023C300EC577E /* LeaderViewController.xib */,
 			);
 			path = LeaderView;
 			sourceTree = "<group>";
@@ -1087,6 +1098,8 @@
 				9F159A8F1DE476FA001CA0CA /* SettingModel.m */,
 				9F159A921DE4833C001CA0CA /* SubItemsModel.h */,
 				9F159A931DE4833C001CA0CA /* SubItemsModel.m */,
+				9F385A321E00346400EC577E /* UserSetting.h */,
+				9F385A331E00346400EC577E /* UserSetting.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -1515,6 +1528,7 @@
 				9F159A9C1DE53518001CA0CA /* SettingArrowTableViewCell.xib in Resources */,
 				9F4B67291DEC0F2E0088E6D0 /* TestingViewController.xib in Resources */,
 				9FCE48FC1D9D71E000E4BC13 /* Assets.xcassets in Resources */,
+				9F385A2C1E0023C300EC577E /* LeaderViewController.xib in Resources */,
 				9F60896F1DE56F7E00B90CAB /* TestTableViewCell.xib in Resources */,
 				9F288EEF1DD5604F00280690 /* MJRefresh.bundle in Resources */,
 				9F73FF431DE2FCC700BFFE36 /* SettingTableViewCell.xib in Resources */,
@@ -1615,6 +1629,8 @@
 				9F3BDB051DF50CE6008F1CC9 /* YYKVStorage.m in Sources */,
 				9F2F9C5D1DF9A33300DCB8D5 /* IQUIWindow+Hierarchy.m in Sources */,
 				9F288EAF1DD55F3300280690 /* MASViewConstraint.m in Sources */,
+				9F385A341E00346400EC577E /* UserSetting.m in Sources */,
+				9F385A2B1E0023C300EC577E /* LeaderViewController.m in Sources */,
 				9F2F9C5E1DF9A33300DCB8D5 /* IQKeyboardManager.m in Sources */,
 				9F8F49DE1DA9387C006E4E0E /* NSObject+MJProperty.m in Sources */,
 				9F3CCA0B1DF7F7A2005833BF /* SettingViewController+tableViewProtocal.m in Sources */,

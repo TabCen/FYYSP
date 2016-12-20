@@ -11,6 +11,7 @@
 #import "ViewController.h"
 #import "MainViewController.h"
 #import "MainDrawerController.h"
+#import "LeaderViewController.h"
 
 @interface AppDelegate ()
 
@@ -143,10 +144,33 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor=[UIColor whiteColor];
     
-    //设置主界面
-    [self enterMainViewController];
+    ///删除所有的NSUserDefault保存的数据
+//    [GlobalSingleton resetDefaults];
+    //这样做的目的是将判断是否是第一次加载的逻辑放到GlobalSingleTon中，减少APPDelegate的代码
+    [GlobalSingleton setUserInformationOnceAfterDo:^(bool isFirstLoad) {
+        if (isFirstLoad) {
+            //设置引导页
+            [self showLeaderView];
+        }else{
+            //设置主界面
+            [self enterMainViewController];
+        }
+    }];
     
     [self.window makeKeyAndVisible];
+}
+
+
+
+
+/**
+    设置引导页
+ */
+-(void)showLeaderView{
+    
+    LeaderViewController *leaderVC = [[LeaderViewController alloc]init];
+    
+    self.window.rootViewController = leaderVC;
 }
 
 /**
@@ -154,9 +178,9 @@
  */
 -(void)enterMainViewController{
     
-    MainViewController *vc=[[MainViewController alloc]init];
-//    MainDrawerController *vc = [[MainDrawerController alloc]init];
-//    vc.drawerShowTableView = YES;
+//    MainViewController *vc=[[MainViewController alloc]init];
+    MainDrawerController *vc = [[MainDrawerController alloc]init];
+    vc.drawerShowTableView = YES;
     
     self.window.rootViewController=vc;
 }

@@ -19,7 +19,7 @@
 
 @interface CFFileManager : NSObject
 
-//+(void)createFileInPreferences_FileName:(NSString *)fileName;
++(void)createFileInPreferences_FileName:( NSString * _Nonnull )fileName;
 /**
     重制NSUserDefaults
  */

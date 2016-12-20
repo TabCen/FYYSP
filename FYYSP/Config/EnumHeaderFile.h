@@ -13,6 +13,7 @@ typedef enum : NSUInteger {
     SettingCellType_Default = 0,
     SettingCellType_Choose,
     SettingCellType_Switch,
+    SettingCellType_Btn,
 } SettingCellType;
 
 #endif /* EnumHeaderFile_h */

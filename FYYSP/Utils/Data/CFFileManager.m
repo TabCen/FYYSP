@@ -10,12 +10,23 @@
 
 @implementation CFFileManager
 
-+(void)createFileInPreferences_FileName:(NSString *)fileName{
-//    NSString *path = kPathPreferences;
-//    if (!kStringIsEmpty(fileName)) {
-//        NSString *file = [path stringByAppendingPathComponent:fileName];
-//    }
-//    NSFileManager *manage = [NSFileManager defaultManager];
+
+
++(void)createFileInPreferences_FileName:(NSString * _Nonnull )fileName{
+    //如果fileName为空或者为nil直接返回，并且提示不能为空
+    NSAssert(!kStringIsEmpty(fileName), @"创建的文件名不能为空 !!--> [CFFileManager createFileInPreferences_FileName:]");
+    
+    NSString *path = kPathPreferences;
+    NSString *file = [path stringByAppendingPathComponent:@"text.txt"];
+    NSFileManager *manage = [NSFileManager defaultManager];
+    
+    NSLog(@"filepath : %@",file);
+    
+    if ([manage createFileAtPath:file contents:nil attributes:nil]) {
+        NSLog(@"创建成功 >file");
+    }else{
+        NSLog(@"创建失败");
+    }
 }
 
 +(void)resetDefaults{

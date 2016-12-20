@@ -23,7 +23,7 @@
     [super viewDidLoad];
     
     //导航栏遮挡住了控制器的视图
-    [self setupNavCoverView];
+//    [self setupNavCoverView];
     
     [self allow_Nav_InteractivePopGesture];
 }

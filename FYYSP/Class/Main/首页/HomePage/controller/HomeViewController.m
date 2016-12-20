@@ -20,6 +20,8 @@
 
 #import "CFFileManager.h"
 
+#import "UFO.h"
+
 @interface HomeViewController ()
 
 @end
@@ -30,6 +32,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    NSString *date = @"1986-05-04";
+    date = [date dateFormatterFromFor:@"yyyy-MM-dd" toFor:@"yyyy-MM-dd"];
+    NSLog(@"%@",date);
+    
     
     NSLog(@"沙盒目录%@",kPathCache);
     
@@ -46,7 +53,7 @@
     
     NSString *path = [NSString stringWithFormat:@"%@/MYCFITEM.FYYSP.MineFile",kPathCache];
     
-    NSLog(@"%f",[manage folderSizeAtPath:path]);
+    NSLog(@"沙盒文件大小 %f",[manage folderSizeAtPath:path]);
     
     
 }

@@ -20,7 +20,7 @@
 
 @property(nonatomic)SettingCellType btnType;
 
-@property(nonatomic,copy)NSString *value;
+@property(nonatomic)BOOL value;
 
 @property(nonatomic,strong)NSMutableArray *subItems;
 
