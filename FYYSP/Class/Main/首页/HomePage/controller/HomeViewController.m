@@ -22,6 +22,8 @@
 
 #import "UFO.h"
 
+#import "SegmentViewController.h"
+
 @interface HomeViewController ()
 
 @end
@@ -32,11 +34,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    NSString *date = @"1986-05-04";
-    date = [date dateFormatterFromFor:@"yyyy-MM-dd" toFor:@"yyyy-MM-dd"];
-    NSLog(@"%@",date);
-    
     
     NSLog(@"沙盒目录%@",kPathCache);
     
@@ -73,6 +70,12 @@
     hidBtn.backgroundColor = [UIColor whiteColor];
     [hidBtn addTarget:self action:@selector(hideNavBar) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:hidBtn];
+    
+    UIButton *showSegVC = [[UIButton alloc]initWithFrame:CGRectMake(0, 300, 100, 40)];
+    showSegVC.backgroundColor = [UIColor blueColor];
+    [showSegVC addTarget:self action:@selector(toSegmentViewController) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:showSegVC];
+    
 }
 
 -(void)hideNavBar{
@@ -87,7 +90,6 @@
     [nav showBarWithAnimation:YES];
 }
 
-
 -(void)rightBarBtnClicked{
     
     SettingViewController *setVC=[[SettingViewController alloc]init];
@@ -100,5 +102,18 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
+#pragma mark - 测试专用
+
+-(void)toSegmentViewController{
+    //跳转到测试cegment控制器中
+    SegmentViewController *vc = [[SegmentViewController alloc]init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+
+
+
 
 @end

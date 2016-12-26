@@ -110,6 +110,8 @@
 		9F4B67241DEC0F1A0088E6D0 /* ReadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F4B67221DEC0F1A0088E6D0 /* ReadingViewController.xib */; };
 		9F4B67281DEC0F2E0088E6D0 /* TestingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B67261DEC0F2E0088E6D0 /* TestingViewController.m */; };
 		9F4B67291DEC0F2E0088E6D0 /* TestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F4B67271DEC0F2E0088E6D0 /* TestingViewController.xib */; };
+		9F4EE68C1E0BC830002610C9 /* SegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4EE68A1E0BC830002610C9 /* SegmentViewController.m */; };
+		9F4EE68D1E0BC830002610C9 /* SegmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F4EE68B1E0BC830002610C9 /* SegmentViewController.xib */; };
 		9F60896E1DE56F7E00B90CAB /* TestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F60896C1DE56F7E00B90CAB /* TestTableViewCell.m */; };
 		9F60896F1DE56F7E00B90CAB /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F60896D1DE56F7E00B90CAB /* TestTableViewCell.xib */; };
 		9F73FF271DE2BA1900BFFE36 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F73FF231DE2BA1900BFFE36 /* HomeViewController.m */; };
@@ -131,6 +133,7 @@
 		9F8F49DF1DA9387C006E4E0E /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F49D41DA9387C006E4E0E /* NSString+MJExtension.m */; };
 		9F9113A21DE44915008A93F2 /* CFFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9113A11DE44915008A93F2 /* CFFileManager.m */; };
 		9FBA811F1DF1595500904061 /* LoginingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBA811E1DF1595500904061 /* LoginingWindow.m */; };
+		9FC482EA1E10BAAA00979AB4 /* UIScrollView+CommonFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC482E91E10BAAA00979AB4 /* UIScrollView+CommonFunction.m */; };
 		9FCE48EE1D9D71E000E4BC13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE48ED1D9D71E000E4BC13 /* main.m */; };
 		9FCE48F11D9D71E000E4BC13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE48F01D9D71E000E4BC13 /* AppDelegate.m */; };
 		9FCE48F71D9D71E000E4BC13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCE48F51D9D71E000E4BC13 /* Main.storyboard */; };
@@ -385,6 +388,9 @@
 		9F4B67251DEC0F2E0088E6D0 /* TestingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestingViewController.h; sourceTree = "<group>"; };
 		9F4B67261DEC0F2E0088E6D0 /* TestingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestingViewController.m; sourceTree = "<group>"; };
 		9F4B67271DEC0F2E0088E6D0 /* TestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestingViewController.xib; sourceTree = "<group>"; };
+		9F4EE6891E0BC830002610C9 /* SegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentViewController.h; sourceTree = "<group>"; };
+		9F4EE68A1E0BC830002610C9 /* SegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentViewController.m; sourceTree = "<group>"; };
+		9F4EE68B1E0BC830002610C9 /* SegmentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentViewController.xib; sourceTree = "<group>"; };
 		9F60896B1DE56F7E00B90CAB /* TestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewCell.h; sourceTree = "<group>"; };
 		9F60896C1DE56F7E00B90CAB /* TestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewCell.m; sourceTree = "<group>"; };
 		9F60896D1DE56F7E00B90CAB /* TestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestTableViewCell.xib; sourceTree = "<group>"; };
@@ -427,6 +433,8 @@
 		9F9113A11DE44915008A93F2 /* CFFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFFileManager.m; sourceTree = "<group>"; };
 		9FBA811D1DF1595500904061 /* LoginingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginingWindow.h; sourceTree = "<group>"; };
 		9FBA811E1DF1595500904061 /* LoginingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginingWindow.m; sourceTree = "<group>"; };
+		9FC482E81E10BAAA00979AB4 /* UIScrollView+CommonFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+CommonFunction.h"; sourceTree = "<group>"; };
+		9FC482E91E10BAAA00979AB4 /* UIScrollView+CommonFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+CommonFunction.m"; sourceTree = "<group>"; };
 		9FCE48E91D9D71E000E4BC13 /* FYYSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYYSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCE48ED1D9D71E000E4BC13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9FCE48EF1D9D71E000E4BC13 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -552,6 +560,8 @@
 				9FE3B2651DF6AE7D00D04978 /* UITableView+CommonFunction.m */,
 				9F2F9BD81DF92EFF00DCB8D5 /* UITextField+CustomKeyBoardType.h */,
 				9F2F9BD91DF92EFF00DCB8D5 /* UITextField+CustomKeyBoardType.m */,
+				9FC482E81E10BAAA00979AB4 /* UIScrollView+CommonFunction.h */,
+				9FC482E91E10BAAA00979AB4 /* UIScrollView+CommonFunction.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -967,6 +977,7 @@
 		9F4B67161DEC0D670088E6D0 /* Testing测试 */ = {
 			isa = PBXGroup;
 			children = (
+				9F4EE6851E0BC80D002610C9 /* Segment */,
 				9F4B67171DEC0D670088E6D0 /* TestingPage */,
 			);
 			name = "Testing测试";
@@ -1008,6 +1019,40 @@
 				9F2F9C6D1DFA80F400DCB8D5 /* ImageTestCollectionViewCell.h */,
 				9F2F9C6E1DFA80F400DCB8D5 /* ImageTestCollectionViewCell.m */,
 				9F2F9C6F1DFA80F400DCB8D5 /* ImageTestCollectionViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9F4EE6851E0BC80D002610C9 /* Segment */ = {
+			isa = PBXGroup;
+			children = (
+				9F4EE6861E0BC80D002610C9 /* controller */,
+				9F4EE6871E0BC80D002610C9 /* model */,
+				9F4EE6881E0BC80D002610C9 /* view */,
+			);
+			path = Segment;
+			sourceTree = "<group>";
+		};
+		9F4EE6861E0BC80D002610C9 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				9F4EE6891E0BC830002610C9 /* SegmentViewController.h */,
+				9F4EE68A1E0BC830002610C9 /* SegmentViewController.m */,
+				9F4EE68B1E0BC830002610C9 /* SegmentViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		9F4EE6871E0BC80D002610C9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		9F4EE6881E0BC80D002610C9 /* view */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1535,6 +1580,7 @@
 				9FCE48F71D9D71E000E4BC13 /* Main.storyboard in Resources */,
 				9F2F9C661DF9A33300DCB8D5 /* IQKeyboardManager.bundle in Resources */,
 				9F2F9C711DFA80F400DCB8D5 /* ImageTestCollectionViewCell.xib in Resources */,
+				9F4EE68D1E0BC830002610C9 /* SegmentViewController.xib in Resources */,
 				9F4B67241DEC0F1A0088E6D0 /* ReadingViewController.xib in Resources */,
 				9F73FF3C1DE2E77400BFFE36 /* SettingViewController.xib in Resources */,
 				9F4B671F1DEC0EF80088E6D0 /* MineViewController.xib in Resources */,
@@ -1574,6 +1620,7 @@
 				9F288F581DD594C000280690 /* SDWebImageCompat.m in Sources */,
 				9FD9C20E1DA8CF4500E50986 /* AFSecurityPolicy.m in Sources */,
 				9F288EE51DD5604F00280690 /* MJRefreshHeader.m in Sources */,
+				9F4EE68C1E0BC830002610C9 /* SegmentViewController.m in Sources */,
 				9FD9C2101DA8CF4500E50986 /* AFURLResponseSerialization.m in Sources */,
 				9F288F621DD594C000280690 /* UIImageView+HighlightedWebCache.m in Sources */,
 				9F288F6A1DD59DB700280690 /* BaseTabBar.m in Sources */,
@@ -1671,6 +1718,7 @@
 				9F8F49D81DA9387C006E4E0E /* MJProperty.m in Sources */,
 				9F288EAC1DD55F3300280690 /* MASConstraintMaker.m in Sources */,
 				9FD9C2191DA8CF4500E50986 /* UIRefreshControl+AFNetworking.m in Sources */,
+				9FC482EA1E10BAAA00979AB4 /* UIScrollView+CommonFunction.m in Sources */,
 				9FD9C21A1DA8CF4500E50986 /* UIWebView+AFNetworking.m in Sources */,
 				9FD9C20F1DA8CF4500E50986 /* AFURLRequestSerialization.m in Sources */,
 				9F60896E1DE56F7E00B90CAB /* TestTableViewCell.m in Sources */,
