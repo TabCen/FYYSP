@@ -35,6 +35,7 @@ static NSString * const ID_SettingArrow = @"Setting_Cell_Arrow_ID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     [self _setViewModel];
     
     //设置回退按钮

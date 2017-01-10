@@ -53,6 +53,17 @@
     NSLog(@"沙盒文件大小 %f",[manage folderSizeAtPath:path]);
     
     
+//    NSMutableAttributedString *mut = [[NSMutableAttributedString alloc]initWithString:@"http:www.cctv.com"];
+//    
+//    [mut addAttributes:{} range:NSMakeRange(0, mut.length)];
+//    
+//    UIButton *btnt = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 200, 40)];
+//    
+//    [btnt setAttributedTitle:mut forState:UIControlStateNormal];
+    
+    
+    
+    
 }
 
 -(void)otherThings{

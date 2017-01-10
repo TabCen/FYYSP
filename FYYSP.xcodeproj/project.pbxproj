@@ -134,6 +134,7 @@
 		9F9113A21DE44915008A93F2 /* CFFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9113A11DE44915008A93F2 /* CFFileManager.m */; };
 		9FBA811F1DF1595500904061 /* LoginingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBA811E1DF1595500904061 /* LoginingWindow.m */; };
 		9FC482EA1E10BAAA00979AB4 /* UIScrollView+CommonFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC482E91E10BAAA00979AB4 /* UIScrollView+CommonFunction.m */; };
+		9FC482EC1E10C01900979AB4 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC482EB1E10C01900979AB4 /* Photos.framework */; };
 		9FCE48EE1D9D71E000E4BC13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE48ED1D9D71E000E4BC13 /* main.m */; };
 		9FCE48F11D9D71E000E4BC13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE48F01D9D71E000E4BC13 /* AppDelegate.m */; };
 		9FCE48F71D9D71E000E4BC13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCE48F51D9D71E000E4BC13 /* Main.storyboard */; };
@@ -160,6 +161,9 @@
 		9FD9C2211DA8D70200E50986 /* ModelOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9C2201DA8D70200E50986 /* ModelOne.m */; };
 		9FDF5C941DF1114E00CF8DF5 /* UIImage+CommonFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDF5C931DF1114E00CF8DF5 /* UIImage+CommonFunction.m */; };
 		9FE3B2661DF6AE7D00D04978 /* UITableView+CommonFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE3B2651DF6AE7D00D04978 /* UITableView+CommonFunction.m */; };
+		9FF8494E1E1243D6004A5A9F /* UIButton+CommonFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF8494D1E1243D6004A5A9F /* UIButton+CommonFunction.m */; };
+		9FF849541E1246CA004A5A9F /* SelfButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF849531E1246CA004A5A9F /* SelfButton.m */; };
+		9FF8495A1E124AD7004A5A9F /* SelfButton+heheTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF849591E124AD7004A5A9F /* SelfButton+heheTest.m */; };
 		9FFAE2E81DD46E3900D46DEC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FFAE2E71DD46E3900D46DEC /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -435,6 +439,7 @@
 		9FBA811E1DF1595500904061 /* LoginingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginingWindow.m; sourceTree = "<group>"; };
 		9FC482E81E10BAAA00979AB4 /* UIScrollView+CommonFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+CommonFunction.h"; sourceTree = "<group>"; };
 		9FC482E91E10BAAA00979AB4 /* UIScrollView+CommonFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+CommonFunction.m"; sourceTree = "<group>"; };
+		9FC482EB1E10C01900979AB4 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		9FCE48E91D9D71E000E4BC13 /* FYYSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYYSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCE48ED1D9D71E000E4BC13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9FCE48EF1D9D71E000E4BC13 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -491,6 +496,12 @@
 		9FDF5C931DF1114E00CF8DF5 /* UIImage+CommonFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CommonFunction.m"; sourceTree = "<group>"; };
 		9FE3B2641DF6AE7D00D04978 /* UITableView+CommonFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+CommonFunction.h"; sourceTree = "<group>"; };
 		9FE3B2651DF6AE7D00D04978 /* UITableView+CommonFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CommonFunction.m"; sourceTree = "<group>"; };
+		9FF8494C1E1243D6004A5A9F /* UIButton+CommonFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CommonFunction.h"; sourceTree = "<group>"; };
+		9FF8494D1E1243D6004A5A9F /* UIButton+CommonFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CommonFunction.m"; sourceTree = "<group>"; };
+		9FF849521E1246CA004A5A9F /* SelfButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfButton.h; sourceTree = "<group>"; };
+		9FF849531E1246CA004A5A9F /* SelfButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfButton.m; sourceTree = "<group>"; };
+		9FF849581E124AD7004A5A9F /* SelfButton+heheTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SelfButton+heheTest.h"; sourceTree = "<group>"; };
+		9FF849591E124AD7004A5A9F /* SelfButton+heheTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SelfButton+heheTest.m"; sourceTree = "<group>"; };
 		9FFAE2E71DD46E3900D46DEC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -499,6 +510,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FC482EC1E10C01900979AB4 /* Photos.framework in Frameworks */,
 				9F3BDB081DF50D46008F1CC9 /* libsqlite3.tbd in Frameworks */,
 				9F288EF51DD5624D00280690 /* CoreGraphics.framework in Frameworks */,
 				9FFAE2E81DD46E3900D46DEC /* AVFoundation.framework in Frameworks */,
@@ -562,6 +574,8 @@
 				9F2F9BD91DF92EFF00DCB8D5 /* UITextField+CustomKeyBoardType.m */,
 				9FC482E81E10BAAA00979AB4 /* UIScrollView+CommonFunction.h */,
 				9FC482E91E10BAAA00979AB4 /* UIScrollView+CommonFunction.m */,
+				9FF8494C1E1243D6004A5A9F /* UIButton+CommonFunction.h */,
+				9FF8494D1E1243D6004A5A9F /* UIButton+CommonFunction.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -925,6 +939,10 @@
 		9F4B67101DEC0D670088E6D0 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				9FF849521E1246CA004A5A9F /* SelfButton.h */,
+				9FF849531E1246CA004A5A9F /* SelfButton.m */,
+				9FF849581E124AD7004A5A9F /* SelfButton+heheTest.h */,
+				9FF849591E124AD7004A5A9F /* SelfButton+heheTest.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1434,6 +1452,7 @@
 		9FFAE2E61DD46E3900D46DEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9FC482EB1E10C01900979AB4 /* Photos.framework */,
 				9F3BDB071DF50D46008F1CC9 /* libsqlite3.tbd */,
 				9F288EF41DD5624D00280690 /* CoreGraphics.framework */,
 				9FFAE2E71DD46E3900D46DEC /* AVFoundation.framework */,
@@ -1663,9 +1682,11 @@
 				9F2F9C5B1DF9A33300DCB8D5 /* IQUIView+Hierarchy.m in Sources */,
 				9F288EF01DD5604F00280690 /* MJRefreshConst.m in Sources */,
 				9F288F611DD594C000280690 /* UIImage+WebP.m in Sources */,
+				9FF849541E1246CA004A5A9F /* SelfButton.m in Sources */,
 				9F2F9BDA1DF92EFF00DCB8D5 /* UITextField+CustomKeyBoardType.m in Sources */,
 				9F288EF11DD5604F00280690 /* UIScrollView+MJExtension.m in Sources */,
 				9F2F9C591DF9A33300DCB8D5 /* IQUIScrollView+Additions.m in Sources */,
+				9FF8494E1E1243D6004A5A9F /* UIButton+CommonFunction.m in Sources */,
 				9F9113A21DE44915008A93F2 /* CFFileManager.m in Sources */,
 				9F288F5C1DD594C000280690 /* SDWebImageManager.m in Sources */,
 				9F01A0411DE3E376009518AA /* UIViewController+BaseCategory.m in Sources */,
@@ -1713,6 +1734,7 @@
 				9F8F49DF1DA9387C006E4E0E /* NSString+MJExtension.m in Sources */,
 				9F4B67281DEC0F2E0088E6D0 /* TestingViewController.m in Sources */,
 				9F0BAAE11DDAB6420096BDD4 /* WCGraintCircleLayer.m in Sources */,
+				9FF8495A1E124AD7004A5A9F /* SelfButton+heheTest.m in Sources */,
 				9F288EAA1DD55F3300280690 /* MASCompositeConstraint.m in Sources */,
 				9F288F641DD594C000280690 /* UIView+WebCacheOperation.m in Sources */,
 				9F8F49D81DA9387C006E4E0E /* MJProperty.m in Sources */,

@@ -82,7 +82,6 @@ static NSString * const ID_SettingArrow = @"Setting_Cell_Arrow_ID";
     cell.label_tittle.text = [NSString stringWithFormat:@"%@",subModel.tittle];
     cell.textField_introduce.text = [NSString stringWithFormat:@"%@",subModel.value];
     return cell;
-    
 }
 
 
