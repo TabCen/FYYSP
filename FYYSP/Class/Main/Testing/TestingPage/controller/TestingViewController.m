@@ -35,9 +35,9 @@ static NSString * const identify = @"IDentify_collectionCell";
     
     self.dataArray = [NSMutableArray arrayWithCapacity:20];
     
-    [self setupCollectionView];
+//    [self setupCollectionView];
     
-    [self.collectionView.mj_header beginRefreshing];
+//    [self.collectionView.mj_header beginRefreshing];
 }
 
 -(void)modelRequest{
