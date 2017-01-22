@@ -149,6 +149,7 @@
 		9FD9C2211DA8D70200E50986 /* ModelOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9C2201DA8D70200E50986 /* ModelOne.m */; };
 		9FDF5C941DF1114E00CF8DF5 /* UIImage+CommonFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDF5C931DF1114E00CF8DF5 /* UIImage+CommonFunction.m */; };
 		9FFAE2E81DD46E3900D46DEC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FFAE2E71DD46E3900D46DEC /* AVFoundation.framework */; };
+		B9FD7A751E344C5A00455C64 /* AppDelegate+notification_ios10.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FD7A741E344C5A00455C64 /* AppDelegate+notification_ios10.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -458,6 +459,8 @@
 		9FDF5C921DF1114E00CF8DF5 /* UIImage+CommonFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CommonFunction.h"; sourceTree = "<group>"; };
 		9FDF5C931DF1114E00CF8DF5 /* UIImage+CommonFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CommonFunction.m"; sourceTree = "<group>"; };
 		9FFAE2E71DD46E3900D46DEC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B9FD7A731E344C5A00455C64 /* AppDelegate+notification_ios10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+notification_ios10.h"; sourceTree = "<group>"; };
+		B9FD7A741E344C5A00455C64 /* AppDelegate+notification_ios10.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+notification_ios10.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -518,6 +521,8 @@
 		9F01A03D1DE3E353009518AA /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				B9FD7A731E344C5A00455C64 /* AppDelegate+notification_ios10.h */,
+				B9FD7A741E344C5A00455C64 /* AppDelegate+notification_ios10.m */,
 				9F01A03F1DE3E376009518AA /* UIViewController+BaseCategory.h */,
 				9F01A0401DE3E376009518AA /* UIViewController+BaseCategory.m */,
 				9FDF5C921DF1114E00CF8DF5 /* UIImage+CommonFunction.h */,
@@ -1430,7 +1435,6 @@
 				TargetAttributes = {
 					9FCE48E81D9D71E000E4BC13 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 2JX92W966H;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 1;
@@ -1627,6 +1631,7 @@
 				9FD9C2211DA8D70200E50986 /* ModelOne.m in Sources */,
 				9F27786D1DF661970017EAC5 /* Model_Fund.m in Sources */,
 				9F288EEC1DD5604F00280690 /* MJRefreshGifHeader.m in Sources */,
+				B9FD7A751E344C5A00455C64 /* AppDelegate+notification_ios10.m in Sources */,
 				9F8F49D71DA9387C006E4E0E /* MJFoundation.m in Sources */,
 				9FD9C2131DA8CF4500E50986 /* AFImageDownloader.m in Sources */,
 				9F288F5E1DD594C000280690 /* UIButton+WebCache.m in Sources */,
@@ -1780,7 +1785,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FYYSP/FYYSP.entitlements;
-				DEVELOPMENT_TEAM = 2JX92W966H;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FYYSP/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = FYYSP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1794,7 +1799,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FYYSP/FYYSP.entitlements;
-				DEVELOPMENT_TEAM = 2JX92W966H;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FYYSP/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = FYYSP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
