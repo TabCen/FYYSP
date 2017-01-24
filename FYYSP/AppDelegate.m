@@ -154,10 +154,10 @@
  */
 -(void)enterMainViewController{
     
-//    MainViewController *vc=[[MainViewController alloc]init];
-    MainDrawerController *vc = [[MainDrawerController alloc]init];
-    vc.drawerShowTableView = YES;
-    
+    MainViewController *vc=[[MainViewController alloc]init];
+//    MainDrawerController *vc = [[MainDrawerController alloc]init];
+//    vc.drawerShowTableView = YES;
+
     self.window.rootViewController=vc;
 }
 

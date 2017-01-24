@@ -42,12 +42,12 @@
     
     [self otherThings];
     
-    CFFileManager *manage = [CFFileManager new];
-    
-    NSString *path = [NSString stringWithFormat:@"%@/MYCFITEM.FYYSP.MineFile",kPathCache];
-    
-    NSLog(@"%f",[manage folderSizeAtPath:path]);
-    
+//    CFFileManager *manage = [CFFileManager new];
+
+//    NSString *path = [NSString stringWithFormat:@"%@/MYCFITEM.FYYSP.MineFile",kPathCache];
+
+//    NSLog(@"%f",[manage folderSizeAtPath:path]);
+
     
 }
 

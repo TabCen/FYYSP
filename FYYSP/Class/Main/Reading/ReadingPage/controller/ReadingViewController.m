@@ -29,7 +29,7 @@
     [super viewDidLoad];
     self.navigationItem.title = @"阅读";
     
-    [self setupTableView];
+//    [self setupTableView];
     
 //    [self ModelRequest];
 }

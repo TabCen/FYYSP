@@ -8,6 +8,11 @@
 
 #import "BaseViewController.h"
 
+typedef void(^TestBlock)(NSString * str);
+
 @interface TestingViewController : BaseViewController
+
+
+@property(nonatomic,copy)TestBlock block;
 
 @end

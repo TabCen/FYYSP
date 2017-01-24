@@ -149,6 +149,7 @@
 		9FD9C2211DA8D70200E50986 /* ModelOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9C2201DA8D70200E50986 /* ModelOne.m */; };
 		9FDF5C941DF1114E00CF8DF5 /* UIImage+CommonFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDF5C931DF1114E00CF8DF5 /* UIImage+CommonFunction.m */; };
 		9FFAE2E81DD46E3900D46DEC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FFAE2E71DD46E3900D46DEC /* AVFoundation.framework */; };
+		B9D74B5B1E35A3C900FE5E87 /* UIView+CommonFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D74B5A1E35A3C900FE5E87 /* UIView+CommonFunction.m */; };
 		B9FD7A751E344C5A00455C64 /* AppDelegate+notification_ios10.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FD7A741E344C5A00455C64 /* AppDelegate+notification_ios10.m */; };
 /* End PBXBuildFile section */
 
@@ -459,6 +460,8 @@
 		9FDF5C921DF1114E00CF8DF5 /* UIImage+CommonFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CommonFunction.h"; sourceTree = "<group>"; };
 		9FDF5C931DF1114E00CF8DF5 /* UIImage+CommonFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CommonFunction.m"; sourceTree = "<group>"; };
 		9FFAE2E71DD46E3900D46DEC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B9D74B591E35A3C900FE5E87 /* UIView+CommonFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CommonFunction.h"; sourceTree = "<group>"; };
+		B9D74B5A1E35A3C900FE5E87 /* UIView+CommonFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CommonFunction.m"; sourceTree = "<group>"; };
 		B9FD7A731E344C5A00455C64 /* AppDelegate+notification_ios10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+notification_ios10.h"; sourceTree = "<group>"; };
 		B9FD7A741E344C5A00455C64 /* AppDelegate+notification_ios10.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+notification_ios10.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -527,6 +530,8 @@
 				9F01A0401DE3E376009518AA /* UIViewController+BaseCategory.m */,
 				9FDF5C921DF1114E00CF8DF5 /* UIImage+CommonFunction.h */,
 				9FDF5C931DF1114E00CF8DF5 /* UIImage+CommonFunction.m */,
+				B9D74B591E35A3C900FE5E87 /* UIView+CommonFunction.h */,
+				B9D74B5A1E35A3C900FE5E87 /* UIView+CommonFunction.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1520,6 +1525,7 @@
 				9F159A901DE476FA001CA0CA /* SettingModel.m in Sources */,
 				9F0BAAE91DDAE5050096BDD4 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				9F288EEB1DD5604F00280690 /* MJRefreshBackStateFooter.m in Sources */,
+				B9D74B5B1E35A3C900FE5E87 /* UIView+CommonFunction.m in Sources */,
 				9F288F2C1DD56A2700280690 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				9F288F581DD594C000280690 /* SDWebImageCompat.m in Sources */,
 				9FD9C20E1DA8CF4500E50986 /* AFSecurityPolicy.m in Sources */,
