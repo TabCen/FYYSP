@@ -165,6 +165,8 @@
 		9FF849541E1246CA004A5A9F /* SelfButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF849531E1246CA004A5A9F /* SelfButton.m */; };
 		9FF8495A1E124AD7004A5A9F /* SelfButton+heheTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF849591E124AD7004A5A9F /* SelfButton+heheTest.m */; };
 		9FFAE2E81DD46E3900D46DEC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FFAE2E71DD46E3900D46DEC /* AVFoundation.framework */; };
+		B9D74B5B1E35A3C900FE5E87 /* UIView+CommonFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D74B5A1E35A3C900FE5E87 /* UIView+CommonFunction.m */; };
+		B9FD7A751E344C5A00455C64 /* AppDelegate+notification_ios10.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FD7A741E344C5A00455C64 /* AppDelegate+notification_ios10.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -503,6 +505,10 @@
 		9FF849581E124AD7004A5A9F /* SelfButton+heheTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SelfButton+heheTest.h"; sourceTree = "<group>"; };
 		9FF849591E124AD7004A5A9F /* SelfButton+heheTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SelfButton+heheTest.m"; sourceTree = "<group>"; };
 		9FFAE2E71DD46E3900D46DEC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B9D74B591E35A3C900FE5E87 /* UIView+CommonFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CommonFunction.h"; sourceTree = "<group>"; };
+		B9D74B5A1E35A3C900FE5E87 /* UIView+CommonFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CommonFunction.m"; sourceTree = "<group>"; };
+		B9FD7A731E344C5A00455C64 /* AppDelegate+notification_ios10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+notification_ios10.h"; sourceTree = "<group>"; };
+		B9FD7A741E344C5A00455C64 /* AppDelegate+notification_ios10.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+notification_ios10.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -564,6 +570,8 @@
 		9F01A03D1DE3E353009518AA /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				B9FD7A731E344C5A00455C64 /* AppDelegate+notification_ios10.h */,
+				B9FD7A741E344C5A00455C64 /* AppDelegate+notification_ios10.m */,
 				9F01A03F1DE3E376009518AA /* UIViewController+BaseCategory.h */,
 				9F01A0401DE3E376009518AA /* UIViewController+BaseCategory.m */,
 				9FDF5C921DF1114E00CF8DF5 /* UIImage+CommonFunction.h */,
@@ -576,6 +584,8 @@
 				9FC482E91E10BAAA00979AB4 /* UIScrollView+CommonFunction.m */,
 				9FF8494C1E1243D6004A5A9F /* UIButton+CommonFunction.h */,
 				9FF8494D1E1243D6004A5A9F /* UIButton+CommonFunction.m */,
+				B9D74B591E35A3C900FE5E87 /* UIView+CommonFunction.h */,
+				B9D74B5A1E35A3C900FE5E87 /* UIView+CommonFunction.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1545,7 +1555,6 @@
 				TargetAttributes = {
 					9FCE48E81D9D71E000E4BC13 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 2JX92W966H;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 1;
@@ -1636,6 +1645,8 @@
 				9F159A901DE476FA001CA0CA /* SettingModel.m in Sources */,
 				9F0BAAE91DDAE5050096BDD4 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				9F288EEB1DD5604F00280690 /* MJRefreshBackStateFooter.m in Sources */,
+				B9D74B5B1E35A3C900FE5E87 /* UIView+CommonFunction.m in Sources */,
+				9F288F2C1DD56A2700280690 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				9F288F581DD594C000280690 /* SDWebImageCompat.m in Sources */,
 				9FD9C20E1DA8CF4500E50986 /* AFSecurityPolicy.m in Sources */,
 				9F288EE51DD5604F00280690 /* MJRefreshHeader.m in Sources */,
@@ -1757,6 +1768,7 @@
 				9FD9C2211DA8D70200E50986 /* ModelOne.m in Sources */,
 				9F27786D1DF661970017EAC5 /* Model_Fund.m in Sources */,
 				9F288EEC1DD5604F00280690 /* MJRefreshGifHeader.m in Sources */,
+				B9FD7A751E344C5A00455C64 /* AppDelegate+notification_ios10.m in Sources */,
 				9F8F49D71DA9387C006E4E0E /* MJFoundation.m in Sources */,
 				9FD9C2131DA8CF4500E50986 /* AFImageDownloader.m in Sources */,
 				9F288F5E1DD594C000280690 /* UIButton+WebCache.m in Sources */,
@@ -1910,7 +1922,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FYYSP/FYYSP.entitlements;
-				DEVELOPMENT_TEAM = 2JX92W966H;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FYYSP/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = FYYSP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1925,7 +1937,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FYYSP/FYYSP.entitlements;
-				DEVELOPMENT_TEAM = 2JX92W966H;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FYYSP/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = FYYSP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
