@@ -30,8 +30,8 @@
     self.navigationItem.title = @"阅读";
     
 //    [self setupTableView];
-    
-    [self ModelRequest];
+
+//    [self ModelRequest];
 }
 
 -(void)setupTableView{
@@ -78,11 +78,6 @@
     cell.textLabel.text = [NSString stringWithFormat:@"%@",mode.TITLE];
     
     return cell;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - 懒加载

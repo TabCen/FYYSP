@@ -11,9 +11,4 @@
 @interface SegmentViewController : BaseViewController
 
 
-
-
-
-
-
 @end

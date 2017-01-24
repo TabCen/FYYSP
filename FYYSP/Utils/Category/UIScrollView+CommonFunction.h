@@ -11,7 +11,7 @@
 @interface UIScrollView (CommonFunction)
 
 /**
- 截图
+ 截图、截屏
  
  @return 图片
  */
