@@ -12,10 +12,6 @@
 
 #import "UIViewController+BaseCategory.h"
 
-#import "UIImage+CommonFunction.h"
-
-#import "CFFileManager.h"
-
 @interface HomeViewController ()
 
 @end
