@@ -31,7 +31,7 @@
     
 //    [self setupTableView];
     
-//    [self ModelRequest];
+    [self ModelRequest];
 }
 
 -(void)setupTableView{

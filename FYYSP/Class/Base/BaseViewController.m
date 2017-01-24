@@ -22,6 +22,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //导航栏遮挡住了控制器的视图
+//    [self setupNavCoverView];
+    
     [self allow_Nav_InteractivePopGesture];
 }
 
@@ -40,6 +43,23 @@
     [super didReceiveMemoryWarning];
 }
 
+
+/**
+ 设置导航栏遮挡问题
+ */
+-(void)setupNavCoverView{
+    if( DEVICE_SYSTEM_VERSION >= 7.0)
+    {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+        self.extendedLayoutIncludesOpaqueBars = NO;
+        self.modalPresentationCapturesStatusBarAppearance = NO;
+    }
+}
+
+
+/**
+ 侧滑返回
+ */
 -(void)allow_Nav_InteractivePopGesture{
     if (!self.allowPanBackGesture_system) {
         return;

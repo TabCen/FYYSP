@@ -10,4 +10,8 @@
 
 @interface SettingViewController : BaseViewController
 
+@property(nonatomic,strong)UITableView  *tableView;
+
+@property(nonatomic,strong)NSMutableArray *array;
+
 @end

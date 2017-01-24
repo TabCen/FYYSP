@@ -19,7 +19,7 @@
 
 @interface CFFileManager : NSObject
 
-//+(void)createFileInPreferences_FileName:(NSString *)fileName;
++(void)createFileInPreferences_FileName:( NSString * _Nonnull )fileName;
 /**
     重制NSUserDefaults
  */
@@ -30,6 +30,7 @@
 -(CGFloat)folderSizeAtPath:(NSString*)folderPath;
 
 @end
+
 //获取沙盒 目录
 //#define kPath  NSHomeDirectory()
 //Document             iTunes会同步此文件夹，适合存储重要数据

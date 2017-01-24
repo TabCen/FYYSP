@@ -75,6 +75,10 @@
 
 @end
 
+
+/**
+ *  ///////////////////////////////  常用转换  ///////////////////////////////
+ */
 @interface NSString (common)
 
 /**
@@ -87,6 +91,9 @@
 
 //字典转为Json字符串
 +(NSString *)dictionaryToJson:(NSDictionary *)dic;
+
+//判断NSString字符串是否包含emoji表情
+-(BOOL)isContainEmoji:(NSString *)emojiStr;
 
 @end
 

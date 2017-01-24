@@ -24,34 +24,34 @@
                          };
     
     //不带缓存的网络请求
-//    return [[CFNetworkingManager manager]GET:FCL_URL parameters:dict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id     _Nullable responseObject) {
-//        if (block) {
-//            block(responseObject,nil);
-//        }
-//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//        if (block) {
-//            block(nil,error);
-//        }
-//    } showHUD:YES];
-    
-    //带缓存的网络请求
-    return [[CFNetworkingManager manager] GET_cache:FCL_URL parameters:dict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        if (task) {
-            //网络请求得来的数据
-            if (block) {
-                block(responseObject,nil);
-            }
-        }else{
-            //缓存的来的数据
-            if (block) {
-                block(responseObject,nil);
-            }
+    return [[CFNetworkingManager manager]GET:FCL_URL parameters:dict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id     _Nullable responseObject) {
+        if (block) {
+            block(responseObject,nil);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         if (block) {
             block(nil,error);
         }
-    } showHUD:YES cacheFile:@"MYCFITEM.FYYSP.MineFile"];
+    } showHUD:YES];
+    
+    //带缓存的网络请求
+//    return [[CFNetworkingManager manager] GET_cache:FCL_URL parameters:dict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        if (task) {
+//            //网络请求得来的数据
+//            if (block) {
+//                block(responseObject,nil);
+//            }
+//        }else{
+//            //缓存的来的数据
+//            if (block) {
+//                block(responseObject,nil);
+//            }
+//        }
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        if (block) {
+//            block(nil,error);
+//        }
+//    } showHUD:YES cacheFile:@"MYCFITEM.FYYSP.MineFile"];
 }
 
 @end

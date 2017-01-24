@@ -14,6 +14,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *label_introduce;
 
+@property (weak, nonatomic) IBOutlet UITextField *textField_introduce;
+
 @end
 //label_tittle
 //label_introduce

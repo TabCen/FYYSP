@@ -7,7 +7,6 @@
 //
 
 #import "TestingViewController.h"
-
 #import "UIView+CommonFunction.h"
 
 @interface TestingViewController ()
@@ -22,7 +21,6 @@
     self.navigationItem.title = @"测试";
 
 }
-
 
 
 @end

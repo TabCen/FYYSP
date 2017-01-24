@@ -26,6 +26,47 @@
 }
 
 
+
+#pragma mark - 版本及初始化设置
+
++(NSString *)versionAndBuild{
+    return [NSString stringWithFormat:@"%@(%@)",appVersion,appBuild];
+}
+
++(void)resetDefaults{
+    NSUserDefaults* defs = [NSUserDefaults standardUserDefaults];
+    
+    NSDictionary* dict = [defs dictionaryRepresentation];
+    
+    for(id key in dict) {
+        
+        [defs removeObjectForKey:key];
+        
+    }
+    
+    [defs synchronize];
+}
+
++(void)setUserInformationOnceAfterDo:(void (^)(bool isFirstLoad))block{
+    NSString * fistKey = [NSString stringWithFormat:@"FirstLoadVersion_%@",[GlobalSingleton versionAndBuild]];
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    if (![[userDefaults objectForKey:fistKey] boolValue]) { //如果是第一次加载
+        //将默认删除
+        [GlobalSingleton resetDefaults];
+        [userDefaults setBool:YES forKey:fistKey];
+        [userDefaults synchronize];
+        
+        //block调用前要先判断block是否存在，存在时调用
+        if (block) {
+            block(YES);
+        }
+    }else{
+        block(NO);
+    }
+    
+}
+
+
 @end
 
 @implementation NSString (DateFormatter)
@@ -35,6 +76,11 @@
     NSDateFormatter *dataFormatter=[[NSDateFormatter alloc]init];
     [dataFormatter setDateFormat:fromFor];
     NSDate *data=[dataFormatter dateFromString:self];
+    
+    if (!data) {
+        [dataFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:3600*8]];
+        data = [dataFormatter dateFromString:self];
+    }
     
     NSDateFormatter *toDataFormatter=[[NSDateFormatter alloc]init];
     [toDataFormatter setDateFormat:toFor];
@@ -151,6 +197,13 @@
     return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
 }
 
+//判断NSString字符串是否包含emoji表情
+-(BOOL)isContainEmoji:(NSString *)emojiStr {
+    NSString *emojiRegex =@"^[\u4e00-\u9fa5A-Za-z0-9_]{1,6}$";
+    NSPredicate *emojiTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emojiRegex];
+    return [emojiTest evaluateWithObject:emojiStr];
+}
+
 @end
 
 
@@ -184,5 +237,8 @@
     
     return label.frame.size.height;
 }
+
+
+
 
 @end

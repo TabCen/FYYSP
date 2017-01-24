@@ -44,6 +44,10 @@
 #define Screen_Scale_Width_5 kScreenWidth/320.0
 #define Screen_Scale_Heigth_6P kScreenHeight/736.0
 #define Screen_Scale_Width_6P kScreenWidth/414.0
+
+///系统键盘高度
+#define kKeyBoardHight 216
+
 ///颜色
 #define COLOR(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
 #define COLORf(r,g,b,a) [UIColor colorWithRed:r green:g blue:b alpha:a]
@@ -79,6 +83,22 @@
 #define kDISPATCH_MAIN_THREAD(mainQueueBlock) dispatch_async(dispatch_get_main_queue(), mainQueueBlock);
 //GCD - 开启异步线程
 #define kDISPATCH_GLOBAL_QUEUE_DEFAULT(globalQueueBlock) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), globalQueueBlocl);
+
+
+//只在主线程中操作／线程安全考虑
+#define dispatch_main_sync_safe(block)\
+if ([NSThread isMainThread]) {\
+block();\
+} else {\
+dispatch_sync(dispatch_get_main_queue(), block);\
+}
+
+#define dispatch_main_async_safe(block)\
+if ([NSThread isMainThread]) {\
+block();\
+} else {\
+dispatch_async(dispatch_get_main_queue(), block);\
+}
 
 ///APPLog
 #ifdef DEBUG
