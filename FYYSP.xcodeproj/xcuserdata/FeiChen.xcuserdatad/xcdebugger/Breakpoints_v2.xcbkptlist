@@ -25,22 +25,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "FYYSP/Class/Other/GlobalService/GlobalSingleton.m"
-            timestampString = "503389354.094549"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "+setUserInformationOnceAfterDo:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "FYYSP/Class/Main/Setting/controller/SettingViewController.m"
             timestampString = "505711570.501835"
             startingColumnNumber = "9223372036854775807"
@@ -65,6 +49,69 @@
             endingLineNumber = "81"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FYYSP/Class/Base/BaseDrawerController.m"
+            timestampString = "511627999.802879"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "-sonControllerTransitionFrom:toControllerIndex:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__70-[BaseDrawerController sonControllerTransitionFrom:toControllerIndex:]_block_invoke_2"
+                  moduleName = "FYYSP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///CodeTools/%E9%A3%9E%E4%BA%91%E4%BA%91/FYYSP/FYYSP/Class/Base/BaseDrawerController.m"
+                  timestampString = "511628035.106898"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "497">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__70-[BaseDrawerController sonControllerTransitionFrom:toControllerIndex:]_block_invoke_3"
+                  moduleName = "FYYSP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///CodeTools/%E9%A3%9E%E4%BA%91%E4%BA%91/FYYSP/FYYSP/Class/Base/BaseDrawerController.m"
+                  timestampString = "511628035.108995"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__70-[BaseDrawerController sonControllerTransitionFrom:toControllerIndex:]_block_invoke_4"
+                  moduleName = "FYYSP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///CodeTools/%E9%A3%9E%E4%BA%91%E4%BA%91/FYYSP/FYYSP/Class/Base/BaseDrawerController.m"
+                  timestampString = "511628035.111138"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

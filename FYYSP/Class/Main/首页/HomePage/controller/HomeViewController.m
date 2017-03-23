@@ -33,6 +33,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self requireVersionMessage];
+    
     self.view.backgroundColor = [UIColor whiteColor];
     
     NSLog(@"沙盒目录%@",kPathCache);
@@ -46,6 +49,7 @@
     
     [self otherThings];
     
+<<<<<<< Updated upstream
 //    CFFileManager *manage = [CFFileManager new];
 
 //    NSString *path = [NSString stringWithFormat:@"%@/MYCFITEM.FYYSP.MineFile",kPathCache];
@@ -53,6 +57,13 @@
 //    NSLog(@"%f",[manage folderSizeAtPath:path]);
 
 
+=======
+    CFFileManager *manage = [CFFileManager new];
+    
+    NSString *path = [NSString stringWithFormat:@"%@/MYCFITEM.FYYSP.MineFile",kPathCache];
+    
+    NSLog(@"沙盒文件大小 %f",[manage folderSizeAtPath:path]);
+>>>>>>> Stashed changes
     
 }
 
@@ -76,6 +87,26 @@
     showSegVC.backgroundColor = [UIColor blueColor];
     [showSegVC addTarget:self action:@selector(toSegmentViewController) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:showSegVC];
+    
+}
+-(void)requireVersionMessage{
+    NSDictionary *dict=@{
+                         @"fund['currentpage']":@"1",
+                         @"fund['pagesize']":@"30",
+                         @"fund['newstype']":@"1",
+                         @"fund['function']":@"N003",
+                         @"fund['fundchannel']":@"ios",
+                         //                         @"fund['timestamp']":[NSString stringWithFormat:@"%@|%@",timeStamp,[[NSString stringWithFormat:@"%@%@%@",@"@newtouch!",timeStamp,@"@newtouch!"] md5String]] //时间戳(N)
+                         };
+    //    @"http://itunes.apple.com/cn/lookup?id=852156195"
+    [[CFNetworkingManager manager] GET:FCL_URL parameters:dict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"%@",responseObject);
+
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+
+    } showHUD:YES];
+    
+    
     
 }
 
@@ -112,9 +143,5 @@
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
-
-
-
-
 
 @end

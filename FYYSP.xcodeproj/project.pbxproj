@@ -134,7 +134,6 @@
 		9F9113A21DE44915008A93F2 /* CFFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9113A11DE44915008A93F2 /* CFFileManager.m */; };
 		9FBA811F1DF1595500904061 /* LoginingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBA811E1DF1595500904061 /* LoginingWindow.m */; };
 		9FC482EA1E10BAAA00979AB4 /* UIScrollView+CommonFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC482E91E10BAAA00979AB4 /* UIScrollView+CommonFunction.m */; };
-		9FC482EC1E10C01900979AB4 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC482EB1E10C01900979AB4 /* Photos.framework */; };
 		9FCE48EE1D9D71E000E4BC13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE48ED1D9D71E000E4BC13 /* main.m */; };
 		9FCE48F11D9D71E000E4BC13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE48F01D9D71E000E4BC13 /* AppDelegate.m */; };
 		9FCE48F71D9D71E000E4BC13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCE48F51D9D71E000E4BC13 /* Main.storyboard */; };
@@ -516,7 +515,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FC482EC1E10C01900979AB4 /* Photos.framework in Frameworks */,
 				9F3BDB081DF50D46008F1CC9 /* libsqlite3.tbd in Frameworks */,
 				9F288EF51DD5624D00280690 /* CoreGraphics.framework in Frameworks */,
 				9FFAE2E81DD46E3900D46DEC /* AVFoundation.framework in Frameworks */,

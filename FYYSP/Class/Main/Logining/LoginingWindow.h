@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSString *const LoginSuccess;
+
+
 @interface LoginingWindow : UIWindow
 
 @end

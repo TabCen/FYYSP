@@ -9,16 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "UserSetting.h"
 
+extern NSString *const OlderVersionBulid;
 
 @interface GlobalSingleton : NSObject
 
 @property(nonatomic,strong)UserSetting *setting;
 
-
 +(instancetype)instence;
-
-
-
 
 ///获取版本号和build号
 +(NSString *)versionAndBuild;

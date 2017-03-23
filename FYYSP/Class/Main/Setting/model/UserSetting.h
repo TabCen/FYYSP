@@ -23,6 +23,12 @@ static NSString * const SETTING_drawerViewOpen = @"setting_drawerViewOpen";
 
 @property(nonatomic,assign)BOOL drawerViewOpen;
 
+
+/**
+ 初始化
+
+ @return 返回事例的属性被赋予初始化值后返回
+ */
 -(instancetype)initWithDefaultValue;
 
 -(void)setprimaryDefaultValues;

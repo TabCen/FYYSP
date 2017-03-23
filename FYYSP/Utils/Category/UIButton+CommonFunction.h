@@ -10,6 +10,6 @@
 
 @interface UIButton (CommonFunction)
 
-@property(nonatomic)CGFloat cf_expand_width;   //会左右都扩大的距离
+//@property(nonatomic)CGFloat cf_expand_width;   //会左右都扩大的距离
 
 @end

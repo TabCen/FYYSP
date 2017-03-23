@@ -32,10 +32,18 @@
 
 @implementation BaseDrawerController
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.drawerShowTableView = YES;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    self.view.backgroundColor = [UIColor yellowColor];
     self.view.backgroundColor = k_TableViewBackgroundColor;
     
     if (_drawerShowTableView) {
@@ -74,8 +82,6 @@
         _isOpen = NO;
     }
     
-//    NSLog(@"%lf",self.scalef);
-    
     BOOL canMove = YES;
     
     if ((self.currentVC.view.frame.origin.x<=0&&_scalef <=0)||((self.currentVC.view.frame.origin.x>= (self.openWidth))&&_scalef>=0)) {
@@ -91,14 +97,12 @@
     if (pan.state ==UIGestureRecognizerStateEnded) {
         
         if (_isOpen) {
-//            NSLog(@"%lf<<<%lf",kScreenWidth/3.0f,self.currentVC.view.frame.origin.x);
             if (self.currentVC.view.frame.origin.x>=(kScreenWidth/3.0f-50)) {
                 [self open];
             }else{
                 [self close];
             }
         }else{
-//            NSLog(@"%lf>>>%lf",kScreenWidth*2/3.0f,self.currentVC.view.frame.origin.x);
             if ((self.currentVC.view.frame.origin.x<=kScreenWidth*2/3.0f)){
                 [self close];
             }else{

@@ -25,7 +25,13 @@
 //    [NSThread sleepForTimeInterval:];
     //设置非导航栏状态下的状态栏状态，iOS9以后弃用，并且每一个UIViewController默认的状态栏状态为显示。所以可以不用显示，但安全起见放到rootVIewController里面再设置一下导航栏的状态
 //    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+//    852156195
+//    http://itunes.apple.com/cn/lookup?id=852156195
     
+    //获取版本号
+    [self requireVersionMessage];
+    
+    //设置根视图
     [self setRootViewController];
     
     //联网状态改变时调用的方法
@@ -139,35 +145,66 @@
 }
 
 #pragma mark - 功能模块
+-(void)requireVersionMessage{
+    
+    [[CFNetworkingManager manager] GET:@"http://itunes.apple.com/cn/lookup?id=852156195" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"%@",responseObject);
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    } showHUD:YES];
+    
+    
+}
 
 -(void)setRootViewController{
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor=[UIColor whiteColor];
     
-    ///删除所有的NSUserDefault保存的数据
-//    [GlobalSingleton resetDefaults];
-    //这样做的目的是将判断是否是第一次加载的逻辑放到GlobalSingleTon中，减少APPDelegate的代码
-    [GlobalSingleton setUserInformationOnceAfterDo:^(bool isFirstLoad) {
-        if (isFirstLoad) {
-            //设置引导页
-            [self showLeaderView];
-        }else{
-            //设置主界面
-            [self enterMainViewController];
-        }
-    }];
+    if ([self appIsFirstLoading]) {
+        //设置引导页
+        [self showLeaderView];
+    }else{
+        //设置主界面
+        [self enterMainViewController];
+    }
     
     [self.window makeKeyAndVisible];
 }
 
 
+/**
+ 判断app版本是否是第一次登陆，并且做一些处理
 
+ @return YES表示是第一次登陆，NO表示不是第一次登陆
+ */
+-(BOOL)appIsFirstLoading{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    //获取版本唯一版本号
+    NSString * versionAndBulid = [NSString stringWithFormat:@"Version&Bulid_%@_%@",appVersion,appBuild];
+    NSLog(@"%@",versionAndBulid);
+    if (![[userDefaults objectForKey:versionAndBulid] boolValue]) { //如果是第一次加载
+        //删除老版本的信息存储，保存新版本的存储
+        NSString *temVB = [userDefaults objectForKey:OlderVersionBulid];
+        if (!kStringIsEmpty(temVB)) {
+            [userDefaults removeObjectForKey:temVB];
+            [userDefaults synchronize];
+        }
+        //版本更新后需要将新版本改成YES表示已经第一次加载过，并且设置oldVersion
+        [userDefaults setBool:YES forKey:versionAndBulid];
+        [userDefaults setObject:versionAndBulid forKey:OlderVersionBulid];
+        [userDefaults synchronize];
+        
+        return YES;
+    }else{
+        return NO;
+    }
+}
 
 /**
     设置引导页
  */
 -(void)showLeaderView{
-    
     LeaderViewController *leaderVC = [[LeaderViewController alloc]init];
     
     self.window.rootViewController = leaderVC;
@@ -178,10 +215,16 @@
  */
 -(void)enterMainViewController{
     
+<<<<<<< Updated upstream
     MainViewController *vc=[[MainViewController alloc]init];
 //    MainDrawerController *vc = [[MainDrawerController alloc]init];
 //    vc.drawerShowTableView = YES;
 
+=======
+//    MainViewController *vc=[[MainViewController alloc]init];
+    MainDrawerController *vc = [[MainDrawerController alloc]init];
+//    vc.drawerShowTableView = YES;
+>>>>>>> Stashed changes
     self.window.rootViewController=vc;
 }
 
