@@ -16,11 +16,24 @@
 
 
 /**
- 申请推送权限
+ 本地申请推送权限
+ */
+- (void)replyLocalNotificationAuthorization;
+
+
+
+/**
+ 删除本地推送
+ */
+-(void)cancleLocalNotification;
+
+
+/**
+ 远程申请推送权限
     注册推送通知第一步，在appdelegate didFinishLaunchingWithOptions：方法中调用，同时传入application
  @param application 传入application
  */
-- (void)replyPushNotificationAuthorization:(UIApplication *)application;
+- (void)replyPushNotificationAuthorization;
 
 
 /**
@@ -60,7 +73,7 @@
  */
 + (void)createLocalizedUserNotification;
 
-
++ (void)showAlertView;
 
 
 @end

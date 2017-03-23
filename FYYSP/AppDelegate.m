@@ -13,6 +13,8 @@
 #import "MainDrawerController.h"
 #import "LeaderViewController.h"
 
+#import "AppDelegate+notification_ios10.h"
+
 @interface AppDelegate ()
 
 @end
@@ -30,6 +32,8 @@
     
     //联网状态改变时调用的方法
     [self judgeTheReachAbility];
+    
+    [self setUpNotification];
     
     return YES;
 }
@@ -213,7 +217,17 @@
     [manager startMonitoring];
 }
 
+-(void)setUpNotification{
 
+//    [self replyPushNotificationAuthorization];
+    
+    [self replyLocalNotificationAuthorization];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.class createLocalizedUserNotification];
+    });
+    
+}
 
 
 @end

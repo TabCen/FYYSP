@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63C53A921E83627B006A3B83 /* 5603.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63C53A911E83627B006A3B83 /* 5603.mp3 */; };
 		9F0058531DF00C3E007C4B41 /* CFKeyChainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0058521DF00C3E007C4B41 /* CFKeyChainWrapper.m */; };
 		9F0058581DF0167F007C4B41 /* UFO.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0058571DF0167F007C4B41 /* UFO.m */; };
 		9F00585C1DF01BAC007C4B41 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F00585B1DF01BAC007C4B41 /* NSString+Hash.m */; };
@@ -187,6 +188,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63C53A911E83627B006A3B83 /* 5603.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 5603.mp3; sourceTree = "<group>"; };
 		9F0058511DF00C3E007C4B41 /* CFKeyChainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKeyChainWrapper.h; sourceTree = "<group>"; };
 		9F0058521DF00C3E007C4B41 /* CFKeyChainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKeyChainWrapper.m; sourceTree = "<group>"; };
 		9F0058561DF0167F007C4B41 /* UFO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UFO.h; sourceTree = "<group>"; };
@@ -1265,6 +1267,7 @@
 		9FCE48EB1D9D71E000E4BC13 /* FYYSP */ = {
 			isa = PBXGroup;
 			children = (
+				63C53A911E83627B006A3B83 /* 5603.mp3 */,
 				9F00585D1DF0282F007C4B41 /* FYYSP.entitlements */,
 				9FD9C1E11DA89C1800E50986 /* Class(主要类) */,
 				9FD9C1E41DA89C1800E50986 /* Utils(工具) */,
@@ -1555,6 +1558,7 @@
 				TargetAttributes = {
 					9FCE48E81D9D71E000E4BC13 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2JX92W966H;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 1;
@@ -1604,6 +1608,7 @@
 				9F385A2C1E0023C300EC577E /* LeaderViewController.xib in Resources */,
 				9F60896F1DE56F7E00B90CAB /* TestTableViewCell.xib in Resources */,
 				9F288EEF1DD5604F00280690 /* MJRefresh.bundle in Resources */,
+				63C53A921E83627B006A3B83 /* 5603.mp3 in Resources */,
 				9F73FF431DE2FCC700BFFE36 /* SettingTableViewCell.xib in Resources */,
 				9FCE48F71D9D71E000E4BC13 /* Main.storyboard in Resources */,
 				9F2F9C661DF9A33300DCB8D5 /* IQKeyboardManager.bundle in Resources */,
@@ -1646,7 +1651,6 @@
 				9F0BAAE91DDAE5050096BDD4 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				9F288EEB1DD5604F00280690 /* MJRefreshBackStateFooter.m in Sources */,
 				B9D74B5B1E35A3C900FE5E87 /* UIView+CommonFunction.m in Sources */,
-				9F288F2C1DD56A2700280690 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				9F288F581DD594C000280690 /* SDWebImageCompat.m in Sources */,
 				9FD9C20E1DA8CF4500E50986 /* AFSecurityPolicy.m in Sources */,
 				9F288EE51DD5604F00280690 /* MJRefreshHeader.m in Sources */,
@@ -1922,7 +1926,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FYYSP/FYYSP.entitlements;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2JX92W966H;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FYYSP/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = FYYSP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1937,7 +1941,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FYYSP/FYYSP.entitlements;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2JX92W966H;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FYYSP/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = FYYSP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

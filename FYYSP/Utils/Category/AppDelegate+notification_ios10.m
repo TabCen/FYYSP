@@ -15,8 +15,21 @@
 @implementation AppDelegate (notification_ios10)
 
 #pragma mark - 申请通知权限
-    // 申请通知权限
-- (void)replyPushNotificationAuthorization:(UIApplication *)application{
+
+//申请本地推送权限
+- (void)replyLocalNotificationAuthorization{
+    UILocalNotification *localNotifi = [UILocalNotification new];
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotifi];
+}
+
+//删除本地推送
+-(void)cancleLocalNotification{
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+}
+
+
+// 申请远程通知权限
+- (void)replyPushNotificationAuthorization{
 
     if (IOS10_OR_LATER) {
             //iOS 10 later
@@ -36,20 +49,20 @@
 
             //获取用户对通知的设置
         [center getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
-                //            NSLog(@"用户对应用通知的设置>>>>>>>>>>>>%@",settings);
+//            NSLog(@"用户对应用通知的设置>>>>>>>>>>>>%@",settings);
         }];
 
     }else if (IOS8_OR_LATER){
             //iOS 8 - iOS 10系统
         UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound categories:nil];
-        [application registerUserNotificationSettings:settings];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
     }else{
             //iOS 8.0系统以下
-        [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound];
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound];
     }
 
         //注册远端消息通知获取device token
-    [application registerForRemoteNotifications];
+    [[UIApplication sharedApplication] registerForRemoteNotifications];
 }
 
 
@@ -186,9 +199,13 @@
 
 //定时推送
 + (void)createLocalizedUserNotification{
+    NSDate *nowDate = [NSDate dateWithTimeIntervalSinceNow:0];
+    NSDate *date = [NSDate dateWithTimeIntervalSinceNow:800];
+    
+    NSLog(@"%@,-- %@",nowDate,date);
     
     // 设置触发条件 UNNotificationTrigger
-    UNTimeIntervalNotificationTrigger *timeTrigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:10.0f repeats:NO];
+    UNTimeIntervalNotificationTrigger *timeTrigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:800 repeats:NO];
     
     // 创建通知内容 UNMutableNotificationContent, 注意不是 UNNotificationContent ,此对象为不可变对象。
     UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
@@ -197,6 +214,8 @@
     content.body = @"Dely 装逼大会总决赛时间到，欢迎你参加总决赛！希望你一统X界 - body";
     content.badge = @666;
     content.sound = [UNNotificationSound defaultSound];
+//    content.sound = [UNNotificationSound soundNamed:@"5603.mp3"];
+    
     content.userInfo = @{@"key1":@"value1",@"key2":@"value2"};
     
     // 创建通知标示
@@ -210,15 +229,20 @@
     [center addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
         if (!error) {
             NSLog(@"推送已添加成功 %@", requestIdentifier);
+            
+            [self showAlertView];
             //你自己的需求例如下面：
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"本地通知" message:@"成功添加推送" preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-            [alert addAction:cancelAction];
-            [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
             //此处省略一万行需求。。。。
         }
     }];
     
+}
+
++ (void)showAlertView{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"本地通知" message:@"成功添加推送" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+    [alert addAction:cancelAction];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
 }
 
 
